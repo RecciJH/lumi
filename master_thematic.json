@@ -1,0 +1,1078 @@
+{
+  "meta": {
+    "started_at": "2026-03-12T18:08:29.902228+00:00",
+    "finished_at": "2026-03-12T18:12:12.312328+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 27082
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 2,
+        "duration_ms": 101538
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 56027
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 37762
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP"
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "Descubriendo la Primavera",
+      "problematica": "Los estudiantes del grado 3 no tienen una comprensión clara de las estaciones del año y cómo afectan a los seres vivos en su entorno.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación, la experimentación y el análisis crítico. La primavera es una estación ideal para abordar estos aspectos, ya que los cambios climáticos y las plantas en flor ofrecen una rica oportunidad para explorar.",
+      "proposito": "Los estudiantes comprenderán y describirán los cambios que ocurren durante la primavera en el entorno natural y cómo afectan a los seres vivos, particularmente en lo relacionado con la reproducción y supervivencia de plantas y animales.",
+      "producto_final": "Un cuadro de la comunidad ecológica en primavera, incluyendo dibujos y textos que describan los cambios observados en las plantas y animales durante esta estación.",
+      "temporalidad": "{\"día_1\": \"Introducción a la estación de la primavera. Observaciones sobre los cambios climáticos y su impacto en el entorno. Inicio del cuadro ecológico.\", \"día_2\": \"Estudio de las plantas: crecimiento, reproducción y adaptaciones para sobrevivir.\", \"día_3\": \"Investigación sobre los animales que viven en la comunidad ecológica en primavera. Hábitats, alimentación y comportamientos específicos.\", \"día_4\": \"Análisis de cómo se interrelacionan las plantas y animales en el ecosistema durante la primavera.\", \"día_5\": \"Conclusión del cuadro ecológico. Presentaciones individuales o en grupo de los aprendizajes sobre la primavera y sus seres vivos.\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1,
+          "actividad": "Mapa de la comunidad local",
+          "materiales": [],
+          "pasos": []
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+          "materiales": [
+            "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+            "Un diagrama de partes de una planta",
+            "Papel de dibujo",
+            "Lápices de colores"
+          ],
+          "pasos": [
+            "{'paso': '1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.', 'duracion': '5 minutos'}",
+            "{'paso': '2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.', 'duracion': '10 minutos'}",
+            "{'paso': '3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.', 'duracion': '15 minutos'}",
+            "{'paso': '4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.', 'duracion': '10 minutos'}"
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+          "materiales": [
+            "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+            "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+            "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+          ],
+          "pasos": [
+            "{'paso': 'Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles).'}",
+            "{'paso': 'Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos.'}",
+            "{'paso': 'Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?'}",
+            "{'paso': 'Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera.'}",
+            "{'paso': 'Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando.'}"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Construcción del cuadro ecológico de la comunidad en primavera",
+          "materiales": [
+            "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+          ],
+          "pasos": [
+            "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+            "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+            "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+            "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+          "materiales": [
+            "Cuadros ecológicos realizados en días anteriores",
+            "Pizarras o papel para notas",
+            "Marcadores o lápices"
+          ],
+          "pasos": [
+            "{' paso': '1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.', 'tiempo': '5 minutos', 'participación': 'Individual'}",
+            "{' paso': '2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.', 'tiempo': '15 minutos', 'participación': 'Grupal'}",
+            "{' paso': '3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.', 'tiempo': '10 minutos', 'participación': 'Grupal'}",
+            "{' paso': '4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.', 'tiempo': '10 minutos', 'participación': 'Grupal e individual'}"
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1,
+          "materiales": [],
+          "pasos": []
+        }
+      },
+      "desarrollo": [
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "nombre": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+            "materiales": [
+              "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+              "Un diagrama de partes de una planta",
+              "Papel de dibujo",
+              "Lápices de colores"
+            ],
+            "pasos": [
+              {
+                "paso": "1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.",
+                "duracion": "5 minutos"
+              },
+              {
+                "paso": "2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.",
+                "duracion": "10 minutos"
+              },
+              {
+                "paso": "3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.",
+                "duracion": "15 minutos"
+              },
+              {
+                "paso": "4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.",
+                "duracion": "10 minutos"
+              }
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "nombre": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+            "materiales": [
+              "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+              "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+              "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+            ],
+            "pasos": [
+              {
+                "paso": "Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles)."
+              },
+              {
+                "paso": "Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos."
+              },
+              {
+                "paso": "Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?"
+              },
+              {
+                "paso": "Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera."
+              },
+              {
+                "paso": "Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "nombre": "Construcción del cuadro ecológico de la comunidad en primavera",
+            "materiales": [
+              "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+            ],
+            "pasos": [
+              "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+              "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+              "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+              "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "nombre": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+            "materiales": [
+              "Cuadros ecológicos realizados en días anteriores",
+              "Pizarras o papel para notas",
+              "Marcadores o lápices"
+            ],
+            "pasos": [
+              {
+                "paso": "1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.",
+                "tiempo": "5 minutos",
+                "participación": "Individual"
+              },
+              {
+                "paso": "2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.",
+                "tiempo": "15 minutos",
+                "participación": "Grupal"
+              },
+              {
+                "paso": "3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.",
+                "tiempo": "10 minutos",
+                "participación": "Grupal"
+              },
+              {
+                "paso": "4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.",
+                "tiempo": "10 minutos",
+                "participación": "Grupal e individual"
+              }
+            ]
+          }
+        }
+      ],
+      "evaluacion": {
+        "criterios de evaluacion": [],
+        "indicadores de logro": []
+      },
+      "evidencias": [
+        {
+          "nombre": "Cuadros ecológicos",
+          "descripcion": "Describen los cambios observados en la comunidad ecológica durante la primavera"
+        },
+        {
+          "nombre": "Investigaciones sobre animales y plantas",
+          "descripcion": "Muestran cómo se adaptan las plantas y animales a la estación de la primavera"
+        }
+      ],
+      "materiales": [
+        {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Guías de campo para identificar animales",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Imágenes y videos de animales en su hábitat natural",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Hoja de trabajo para anotar observaciones",
+          "cantidad": 2
+        },
+        {
+          "nombre": "Papel, lápices, marcadores color, papel adhesivo",
+          "cantidad": 1
+        }
+      ],
+      "cierre": ""
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Conoce y describe las estaciones del año y su impacto en el entorno natural",
+          "indicadores": [
+            "Describe las características climáticas de la primavera",
+            "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera",
+          "niveles": {
+            "Insuficiente": "No describe las características climáticas de la primavera ni explica su impacto en el entorno natural.",
+            "Básico": "Describe algunas características climáticas de la primavera, pero no explora su impacto en el entorno natural.",
+            "Satisfactorio": "Describe las características climáticas de la primavera y explica cómo se relacionan con la reproducción y supervivencia de plantas y animales.",
+            "Destacado": "Describe exhaustivamente las características climáticas de la primavera y analiza profundamente su impacto en el entorno natural."
+          }
+        },
+        {
+          "criterio": "Investiga y comprende los cambios que ocurren en la comunidad ecológica durante la primavera",
+          "indicadores": [
+            "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+            "Explica cómo se relacionan las plantas y animales con su entorno natural"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+          "niveles": {
+            "Insuficiente": "No investiga sobre las plantas y animales que se adaptan a la estación de la primavera.",
+            "Básico": "Investiga algunas características de las plantas y animales que se adaptan a la estación de la primavera, pero no explora su relación con el entorno natural.",
+            "Satisfactorio": "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera y explica cómo se relacionan con su entorno natural.",
+            "Destacado": "Investiga exhaustivamente sobre las plantas y animales que se adaptan a la estación de la primavera y analiza profundamente su relación con el entorno natural."
+          }
+        },
+        {
+          "criterio": "Comunica sus conocimientos y habilidades a través de un producto final",
+          "indicadores": [
+            "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje",
+            "Explica claramente su trabajo en una presentación individual o en grupo"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+          "niveles": {
+            "Insuficiente": "No presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje.",
+            "Básico": "Presenta un cuadro ecológico de la comunidad en primavera, pero no explica claramente su trabajo.",
+            "Satisfactorio": "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje y explica claramente su trabajo.",
+            "Destacado": "Presenta un cuadro ecológico de la comunidad en primavera que es excepcionalmente creativo y comunicativo, y refleja un alto nivel de aprendizaje."
+          }
+        }
+      ],
+      "indicadores": [
+        "Describe las características climáticas de la primavera",
+        "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales",
+        "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+        "Explica cómo se relacionan las plantas y animales con su entorno natural",
+        "Presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje",
+        "Explica claramente su trabajo en una presentación individual o en grupo"
+      ]
+    },
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "Descubriendo la Primavera",
+        "problematica": "Los estudiantes del grado 3 no tienen una comprensión clara de las estaciones del año y cómo afectan a los seres vivos en su entorno.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación, la experimentación y el análisis crítico. La primavera es una estación ideal para abordar estos aspectos, ya que los cambios climáticos y las plantas en flor ofrecen una rica oportunidad para explorar.",
+        "proposito": "Los estudiantes comprenderán y describirán los cambios que ocurren durante la primavera en el entorno natural y cómo afectan a los seres vivos, particularmente en lo relacionado con la reproducción y supervivencia de plantas y animales.",
+        "producto_final": "Un cuadro de la comunidad ecológica en primavera, incluyendo dibujos y textos que describan los cambios observados en las plantas y animales durante esta estación.",
+        "temporalidad": "{\"día_1\": \"Introducción a la estación de la primavera. Observaciones sobre los cambios climáticos y su impacto en el entorno. Inicio del cuadro ecológico.\", \"día_2\": \"Estudio de las plantas: crecimiento, reproducción y adaptaciones para sobrevivir.\", \"día_3\": \"Investigación sobre los animales que viven en la comunidad ecológica en primavera. Hábitats, alimentación y comportamientos específicos.\", \"día_4\": \"Análisis de cómo se interrelacionan las plantas y animales en el ecosistema durante la primavera.\", \"día_5\": \"Conclusión del cuadro ecológico. Presentaciones individuales o en grupo de los aprendizajes sobre la primavera y sus seres vivos.\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [
+          {
+            "criterio": "Conoce y describe las estaciones del año y su impacto en el entorno natural",
+            "indicadores": [
+              "Describe las características climáticas de la primavera",
+              "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales"
+            ],
+            "evidencia": "Cuadro ecológico de la comunidad en primavera",
+            "niveles": {
+              "Insuficiente": "No describe las características climáticas de la primavera ni explica su impacto en el entorno natural.",
+              "Básico": "Describe algunas características climáticas de la primavera, pero no explora su impacto en el entorno natural.",
+              "Satisfactorio": "Describe las características climáticas de la primavera y explica cómo se relacionan con la reproducción y supervivencia de plantas y animales.",
+              "Destacado": "Describe exhaustivamente las características climáticas de la primavera y analiza profundamente su impacto en el entorno natural."
+            }
+          },
+          {
+            "criterio": "Investiga y comprende los cambios que ocurren en la comunidad ecológica durante la primavera",
+            "indicadores": [
+              "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+              "Explica cómo se relacionan las plantas y animales con su entorno natural"
+            ],
+            "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+            "niveles": {
+              "Insuficiente": "No investiga sobre las plantas y animales que se adaptan a la estación de la primavera.",
+              "Básico": "Investiga algunas características de las plantas y animales que se adaptan a la estación de la primavera, pero no explora su relación con el entorno natural.",
+              "Satisfactorio": "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera y explica cómo se relacionan con su entorno natural.",
+              "Destacado": "Investiga exhaustivamente sobre las plantas y animales que se adaptan a la estación de la primavera y analiza profundamente su relación con el entorno natural."
+            }
+          },
+          {
+            "criterio": "Comunica sus conocimientos y habilidades a través de un producto final",
+            "indicadores": [
+              "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje",
+              "Explica claramente su trabajo en una presentación individual o en grupo"
+            ],
+            "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+            "niveles": {
+              "Insuficiente": "No presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje.",
+              "Básico": "Presenta un cuadro ecológico de la comunidad en primavera, pero no explica claramente su trabajo.",
+              "Satisfactorio": "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje y explica claramente su trabajo.",
+              "Destacado": "Presenta un cuadro ecológico de la comunidad en primavera que es excepcionalmente creativo y comunicativo, y refleja un alto nivel de aprendizaje."
+            }
+          }
+        ],
+        "indicadores": [
+          "Describe las características climáticas de la primavera",
+          "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales",
+          "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+          "Explica cómo se relacionan las plantas y animales con su entorno natural",
+          "Presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje",
+          "Explica claramente su trabajo en una presentación individual o en grupo"
+        ]
+      },
+      "secuencia_didactica": {
+        "inicio": {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "nombre": "Mapa de la comunidad local",
+            "cantidad": 1,
+            "materiales": [],
+            "pasos": []
+          }
+        },
+        "desarrollo": [
+          {
+            "dia": 2,
+            "momento": "Planeación",
+            "actividad": {
+              "nombre": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+              "materiales": [
+                "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+                "Un diagrama de partes de una planta",
+                "Papel de dibujo",
+                "Lápices de colores"
+              ],
+              "pasos": [
+                {
+                  "paso": "1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.",
+                  "duracion": "5 minutos"
+                },
+                {
+                  "paso": "2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.",
+                  "duracion": "10 minutos"
+                },
+                {
+                  "paso": "3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.",
+                  "duracion": "15 minutos"
+                },
+                {
+                  "paso": "4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.",
+                  "duracion": "10 minutos"
+                }
+              ]
+            }
+          },
+          {
+            "dia": 3,
+            "momento": "A trabajar",
+            "actividad": {
+              "nombre": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+              "materiales": [
+                "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+                "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+                "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+              ],
+              "pasos": [
+                {
+                  "paso": "Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles)."
+                },
+                {
+                  "paso": "Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos."
+                },
+                {
+                  "paso": "Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?"
+                },
+                {
+                  "paso": "Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera."
+                },
+                {
+                  "paso": "Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando."
+                }
+              ]
+            }
+          },
+          {
+            "dia": 4,
+            "momento": "Comunicar",
+            "actividad": {
+              "nombre": "Construcción del cuadro ecológico de la comunidad en primavera",
+              "materiales": [
+                "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+              ],
+              "pasos": [
+                "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+                "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+                "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+                "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+              ]
+            }
+          },
+          {
+            "dia": 5,
+            "momento": "Reflexión",
+            "actividad": {
+              "nombre": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+              "materiales": [
+                "Cuadros ecológicos realizados en días anteriores",
+                "Pizarras o papel para notas",
+                "Marcadores o lápices"
+              ],
+              "pasos": [
+                {
+                  "paso": "1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.",
+                  "tiempo": "5 minutos",
+                  "participación": "Individual"
+                },
+                {
+                  "paso": "2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.",
+                  "tiempo": "15 minutos",
+                  "participación": "Grupal"
+                },
+                {
+                  "paso": "3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.",
+                  "tiempo": "10 minutos",
+                  "participación": "Grupal"
+                },
+                {
+                  "paso": "4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.",
+                  "tiempo": "10 minutos",
+                  "participación": "Grupal e individual"
+                }
+              ]
+            }
+          }
+        ],
+        "evaluacion": {
+          "criterios de evaluacion": [],
+          "indicadores de logro": []
+        },
+        "evidencias": [
+          {
+            "nombre": "Cuadros ecológicos",
+            "descripcion": "Describen los cambios observados en la comunidad ecológica durante la primavera"
+          },
+          {
+            "nombre": "Investigaciones sobre animales y plantas",
+            "descripcion": "Muestran cómo se adaptan las plantas y animales a la estación de la primavera"
+          }
+        ],
+        "materiales": [
+          {
+            "nombre": "Mapa de la comunidad local",
+            "cantidad": 1
+          },
+          {
+            "nombre": "Guías de campo para identificar animales",
+            "cantidad": 1
+          },
+          {
+            "nombre": "Imágenes y videos de animales en su hábitat natural",
+            "cantidad": 1
+          },
+          {
+            "nombre": "Hoja de trabajo para anotar observaciones",
+            "cantidad": 2
+          },
+          {
+            "nombre": "Papel, lápices, marcadores color, papel adhesivo",
+            "cantidad": 1
+          }
+        ],
+        "cierre": ""
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "nombre": "Mapa de la comunidad local",
+            "cantidad": 1,
+            "actividad": "Mapa de la comunidad local",
+            "materiales": [],
+            "pasos": []
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+            "materiales": [
+              "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+              "Un diagrama de partes de una planta",
+              "Papel de dibujo",
+              "Lápices de colores"
+            ],
+            "pasos": [
+              "{'paso': '1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.', 'duracion': '5 minutos'}",
+              "{'paso': '2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.', 'duracion': '10 minutos'}",
+              "{'paso': '3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.', 'duracion': '15 minutos'}",
+              "{'paso': '4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.', 'duracion': '10 minutos'}"
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+            "materiales": [
+              "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+              "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+              "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+            ],
+            "pasos": [
+              "{'paso': 'Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles).'}",
+              "{'paso': 'Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos.'}",
+              "{'paso': 'Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?'}",
+              "{'paso': 'Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera.'}",
+              "{'paso': 'Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando.'}"
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Construcción del cuadro ecológico de la comunidad en primavera",
+            "materiales": [
+              "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+            ],
+            "pasos": [
+              "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+              "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+              "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+              "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+            "materiales": [
+              "Cuadros ecológicos realizados en días anteriores",
+              "Pizarras o papel para notas",
+              "Marcadores o lápices"
+            ],
+            "pasos": [
+              "{' paso': '1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.', 'tiempo': '5 minutos', 'participación': 'Individual'}",
+              "{' paso': '2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.', 'tiempo': '15 minutos', 'participación': 'Grupal'}",
+              "{' paso': '3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.', 'tiempo': '10 minutos', 'participación': 'Grupal'}",
+              "{' paso': '4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.', 'tiempo': '10 minutos', 'participación': 'Grupal e individual'}"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "Descubriendo la Primavera",
+      "problematica": "Los estudiantes del grado 3 no tienen una comprensión clara de las estaciones del año y cómo afectan a los seres vivos en su entorno.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación, la experimentación y el análisis crítico. La primavera es una estación ideal para abordar estos aspectos, ya que los cambios climáticos y las plantas en flor ofrecen una rica oportunidad para explorar.",
+      "proposito": "Los estudiantes comprenderán y describirán los cambios que ocurren durante la primavera en el entorno natural y cómo afectan a los seres vivos, particularmente en lo relacionado con la reproducción y supervivencia de plantas y animales.",
+      "producto_final": "Un cuadro de la comunidad ecológica en primavera, incluyendo dibujos y textos que describan los cambios observados en las plantas y animales durante esta estación.",
+      "temporalidad": "{\"día_1\": \"Introducción a la estación de la primavera. Observaciones sobre los cambios climáticos y su impacto en el entorno. Inicio del cuadro ecológico.\", \"día_2\": \"Estudio de las plantas: crecimiento, reproducción y adaptaciones para sobrevivir.\", \"día_3\": \"Investigación sobre los animales que viven en la comunidad ecológica en primavera. Hábitats, alimentación y comportamientos específicos.\", \"día_4\": \"Análisis de cómo se interrelacionan las plantas y animales en el ecosistema durante la primavera.\", \"día_5\": \"Conclusión del cuadro ecológico. Presentaciones individuales o en grupo de los aprendizajes sobre la primavera y sus seres vivos.\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Conoce y describe las estaciones del año y su impacto en el entorno natural",
+          "indicadores": [
+            "Describe las características climáticas de la primavera",
+            "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera",
+          "niveles": {
+            "Insuficiente": "No describe las características climáticas de la primavera ni explica su impacto en el entorno natural.",
+            "Básico": "Describe algunas características climáticas de la primavera, pero no explora su impacto en el entorno natural.",
+            "Satisfactorio": "Describe las características climáticas de la primavera y explica cómo se relacionan con la reproducción y supervivencia de plantas y animales.",
+            "Destacado": "Describe exhaustivamente las características climáticas de la primavera y analiza profundamente su impacto en el entorno natural."
+          }
+        },
+        {
+          "criterio": "Investiga y comprende los cambios que ocurren en la comunidad ecológica durante la primavera",
+          "indicadores": [
+            "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+            "Explica cómo se relacionan las plantas y animales con su entorno natural"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+          "niveles": {
+            "Insuficiente": "No investiga sobre las plantas y animales que se adaptan a la estación de la primavera.",
+            "Básico": "Investiga algunas características de las plantas y animales que se adaptan a la estación de la primavera, pero no explora su relación con el entorno natural.",
+            "Satisfactorio": "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera y explica cómo se relacionan con su entorno natural.",
+            "Destacado": "Investiga exhaustivamente sobre las plantas y animales que se adaptan a la estación de la primavera y analiza profundamente su relación con el entorno natural."
+          }
+        },
+        {
+          "criterio": "Comunica sus conocimientos y habilidades a través de un producto final",
+          "indicadores": [
+            "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje",
+            "Explica claramente su trabajo en una presentación individual o en grupo"
+          ],
+          "evidencia": "Cuadro ecológico de la comunidad en primavera y presentaciones individuales o en grupo",
+          "niveles": {
+            "Insuficiente": "No presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje.",
+            "Básico": "Presenta un cuadro ecológico de la comunidad en primavera, pero no explica claramente su trabajo.",
+            "Satisfactorio": "Presenta un cuadro ecológico de la comunidad en primavera que refleja su aprendizaje y explica claramente su trabajo.",
+            "Destacado": "Presenta un cuadro ecológico de la comunidad en primavera que es excepcionalmente creativo y comunicativo, y refleja un alto nivel de aprendizaje."
+          }
+        }
+      ],
+      "indicadores": [
+        "Describe las características climáticas de la primavera",
+        "Explica cómo se relacionan los cambios climáticos con la reproducción y supervivencia de plantas y animales",
+        "Investiga sobre las plantas y animales que se adaptan a la estación de la primavera",
+        "Explica cómo se relacionan las plantas y animales con su entorno natural",
+        "Presenta un cuadro ecológico de la comunidad en primavera que refleje su aprendizaje",
+        "Explica claramente su trabajo en una presentación individual o en grupo"
+      ]
+    },
+    "secuencia_didactica": {
+      "inicio": {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1,
+          "materiales": [],
+          "pasos": []
+        }
+      },
+      "desarrollo": [
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "nombre": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+            "materiales": [
+              "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+              "Un diagrama de partes de una planta",
+              "Papel de dibujo",
+              "Lápices de colores"
+            ],
+            "pasos": [
+              {
+                "paso": "1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.",
+                "duracion": "5 minutos"
+              },
+              {
+                "paso": "2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.",
+                "duracion": "10 minutos"
+              },
+              {
+                "paso": "3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.",
+                "duracion": "15 minutos"
+              },
+              {
+                "paso": "4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.",
+                "duracion": "10 minutos"
+              }
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "nombre": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+            "materiales": [
+              "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+              "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+              "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+            ],
+            "pasos": [
+              {
+                "paso": "Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles)."
+              },
+              {
+                "paso": "Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos."
+              },
+              {
+                "paso": "Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?"
+              },
+              {
+                "paso": "Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera."
+              },
+              {
+                "paso": "Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "nombre": "Construcción del cuadro ecológico de la comunidad en primavera",
+            "materiales": [
+              "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+            ],
+            "pasos": [
+              "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+              "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+              "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+              "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "nombre": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+            "materiales": [
+              "Cuadros ecológicos realizados en días anteriores",
+              "Pizarras o papel para notas",
+              "Marcadores o lápices"
+            ],
+            "pasos": [
+              {
+                "paso": "1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.",
+                "tiempo": "5 minutos",
+                "participación": "Individual"
+              },
+              {
+                "paso": "2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.",
+                "tiempo": "15 minutos",
+                "participación": "Grupal"
+              },
+              {
+                "paso": "3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.",
+                "tiempo": "10 minutos",
+                "participación": "Grupal"
+              },
+              {
+                "paso": "4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.",
+                "tiempo": "10 minutos",
+                "participación": "Grupal e individual"
+              }
+            ]
+          }
+        }
+      ],
+      "evaluacion": {
+        "criterios de evaluacion": [],
+        "indicadores de logro": []
+      },
+      "evidencias": [
+        {
+          "nombre": "Cuadros ecológicos",
+          "descripcion": "Describen los cambios observados en la comunidad ecológica durante la primavera"
+        },
+        {
+          "nombre": "Investigaciones sobre animales y plantas",
+          "descripcion": "Muestran cómo se adaptan las plantas y animales a la estación de la primavera"
+        }
+      ],
+      "materiales": [
+        {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Guías de campo para identificar animales",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Imágenes y videos de animales en su hábitat natural",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Hoja de trabajo para anotar observaciones",
+          "cantidad": 2
+        },
+        {
+          "nombre": "Papel, lápices, marcadores color, papel adhesivo",
+          "cantidad": 1
+        }
+      ],
+      "cierre": ""
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "nombre": "Mapa de la comunidad local",
+          "cantidad": 1,
+          "actividad": "Mapa de la comunidad local",
+          "materiales": [],
+          "pasos": []
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Estudio de las plantas: crecimiento, reproducción y adaptaciones",
+          "materiales": [
+            "Imágenes de diferentes plantas en primavera (flores, frutos, hojas)",
+            "Un diagrama de partes de una planta",
+            "Papel de dibujo",
+            "Lápices de colores"
+          ],
+          "pasos": [
+            "{'paso': '1. Distribuye las imágenes de plantas en primavera entre los estudiantes y pide que cada uno elija una para estudiar.', 'duracion': '5 minutos'}",
+            "{'paso': '2. Pide a los estudiantes que identifiquen las partes de la planta en el diagrama proporcionado y dibujen la imagen de su planta elegida con estas partes destacadas.', 'duracion': '10 minutos'}",
+            "{'paso': '3. En grupos, pide a los estudiantes que investiguen cómo crecen, se reproducen y adaptan las plantas en primavera.', 'duracion': '15 minutos'}",
+            "{'paso': '4. Pide a cada grupo que prepare un dibujo o esquema de la planta estudiada mostrando sus cambios y adaptaciones en primavera, junto con textos concisos explicativos.', 'duracion': '10 minutos'}"
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Investigación sobre los animales que viven en la comunidad ecológica en primavera",
+          "materiales": [
+            "{'nombre': 'Guías de campo para identificar animales', 'cantidad': 1}",
+            "{'nombre': 'Imágenes y videos de animales en su hábitat natural', 'cantidad': 1}",
+            "{'nombre': 'Hoja de trabajo para anotar observaciones', 'cantidad': 2}"
+          ],
+          "pasos": [
+            "{'paso': 'Divide a los estudiantes en grupos de 3-4 personas y asigna cada grupo un tipo de animal (por ejemplo, mamíferos, aves, reptiles).'}",
+            "{'paso': 'Pregúntale a cada grupo que investigue y busque información sobre su animal designado. Pueden utilizar guías de campo, imágenes y videos para obtener más conocimientos.'}",
+            "{'paso': 'Pide a los grupos que observen las adaptaciones físicas y comportamientos del animal en la primavera. ¿Qué cambios ocurren en su hábitat durante esta estación?'}",
+            "{'paso': 'Pregúntale a cada grupo que presente sus hallazgos al resto de la clase y explique cómo el animal se adapta para sobrevivir y reproducirse en primavera.'}",
+            "{'paso': 'Mientras los grupos presentan, pide a los demás estudiantes que observen atentamente y tomen nota de las diferencias entre los animales que se están presentando.'}"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Construcción del cuadro ecológico de la comunidad en primavera",
+          "materiales": [
+            "papel, lápices, marcadores color, papel adhesivo, fotos o ilustraciones de plantas y animales"
+          ],
+          "pasos": [
+            "Los estudiantes revisarán su mapa de la comunidad local y las investigaciones realizadas en los días anteriores. Identificarán qué cambios climáticos se están produciendo en la primavera y cómo afectan a las plantas y animales.",
+            "Los estudiantes dividirán el papel en secciones, utilizando el papel adhesivo para organizar los dibujos y textos sobre cada grupo de seres vivos (plantas y animales).",
+            "Los estudiantes incluirán ilustraciones o fotos de plantas y animales, junto con breves descripciones sobre cómo se adaptan a la estación de la primavera. Utilizarán marcadores para destacar los cambios en cada grupo.",
+            "Los estudiantes presentarán sus trabajos al grupo, explicando qué cambios observaron y cómo se relacionan las plantas y animales en la comunidad durante la primavera."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión y revisión final sobre la primavera y sus seres vivos",
+          "materiales": [
+            "Cuadros ecológicos realizados en días anteriores",
+            "Pizarras o papel para notas",
+            "Marcadores o lápices"
+          ],
+          "pasos": [
+            "{' paso': '1. Revisa los cuadros ecológicos creados en días anteriores y anota las observaciones más destacadas sobre la primavera y sus efectos en el entorno.', 'tiempo': '5 minutos', 'participación': 'Individual'}",
+            "{' paso': '2. En pequeños grupos, discute y compara las observaciones hechas por cada uno de los estudiantes sobre las plantas y animales durante la primavera.', 'tiempo': '15 minutos', 'participación': 'Grupal'}",
+            "{' paso': '3. Cada grupo elabora un resumen final del aprendizaje sobre la estación de la primavera en su comunidad ecológica, incluyendo sus efectos en las plantas y animales.', 'tiempo': '10 minutos', 'participación': 'Grupal'}",
+            "{' paso': '4. Los grupos comparten sus resúmenes con la clase completa y se solicita que cada estudiante escriba un breve texto reflexivo sobre lo aprendido durante el proyecto.', 'tiempo': '10 minutos', 'participación': 'Grupal e individual'}"
+          ]
+        }
+      }
+    ]
+  }
+}

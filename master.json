@@ -1,0 +1,1228 @@
+{
+  "meta": {
+    "started_at": "2026-03-12T17:50:17.794232+00:00",
+    "finished_at": "2026-03-12T17:54:26.558673+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 2,
+        "duration_ms": 67756
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 89361
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 66469
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 25169
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP"
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La primavera y los seres vivos: una aventura de observación",
+      "problematica": "Los estudiantes del grado 3 de la escuela elemental tienen dificultades para comprender el concepto de la estación primavera y su relación con los seres vivos. También tienen un conocimiento limitado sobre las características y necesidades de los diferentes tipos de plantas y animales en este período del año.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación y el estudio directo del medio ambiente para comprender los conceptos científicos. La primavera es un momento ideal para explorar la naturaleza y aprender sobre la adaptación de los seres vivos a sus entornos.",
+      "proposito": "El objetivo principal de este proyecto es que los estudiantes comprendan y aprecien el papel de la estación primavera en el ciclo natural, identifiquen las características de diferentes tipos de plantas y animales, y desarrollen habilidades para observar y describir la naturaleza.",
+      "producto_final": "Un cuaderno de observaciones colectivo, donde cada estudiante contribuye con dibujos y descripciones sobre los seres vivos que observan en su entorno durante las diferentes sesiones del proyecto. Al finalizar el proyecto, se presentará un resumen grupal de lo aprendido.",
+      "temporalidad": "{\"día_1\": \"Introducción a la estación primavera y sus características generales\", \"actividades\": [\"Presentación sobre la primavera\", \"Observación y descripción de los primeros signos de la primavera\"], \"tiempo\": 60}",
+      "día_2": {
+        "tema": "La flora en la primavera",
+        "actividades": [
+          "Identificación y descripción de diferentes tipos de flores",
+          "Observación de cómo las plantas se preparan para el crecimiento"
+        ],
+        "tiempo": 60
+      },
+      "día_3": {
+        "tema": "La fauna en la primavera",
+        "actividades": [
+          "Identificación y descripción de diferentes tipos de animales que aparecen durante la primavera",
+          "Observación de cómo los animales se adaptan a su entorno"
+        ],
+        "tiempo": 60
+      },
+      "día_4": {
+        "tema": "La interacción entre flora y fauna en la primavera",
+        "actividades": [
+          "Análisis de cómo las plantas y animales dependen el uno del otro",
+          "Discusión sobre el equilibrio ecológico"
+        ],
+        "tiempo": 60
+      },
+      "día_5": {
+        "tema": "Presentación final",
+        "actividades": [
+          "Revisión del cuaderno de observaciones colectivo",
+          "Presentación grupal de lo aprendido"
+        ],
+        "tiempo": 90
+      }
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Introducción a la estación primavera y sus características generales",
+          "materiales": [
+            "Presentación sobre la primavera",
+            "Observación y descripción de los primeros signos de la primavera"
+          ],
+          "pasos": [
+            "Comenzamos recordando la definición de estación primavera y sus características generales",
+            "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "La Observación de la Primavera",
+          "materiales": [
+            "Pizarra y lápices",
+            "Cuaderno de observaciones colectivo (producto final del proyecto)",
+            "Ficha de observación con diferentes categorías"
+          ],
+          "pasos": [
+            "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+            "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+            "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparta sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "La fauna en la primavera",
+          "materiales": [
+            "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+            "Pizarras o papel para dibujar",
+            "Marcadores y lápices"
+          ],
+          "pasos": [
+            "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+            "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y descriva un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+            "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+            "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo. Recuerda que este es un paso importante para preparar el producto final del proyecto."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "La fauna en la primavera: una aventura de observación",
+          "materiales": [
+            "Cuaderno de observaciones colectivo",
+            "Lapiceros y bolígrafos para cada estudiante",
+            "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+            "Imágenes de mapas o diagramas de hábitats de los animales"
+          ],
+          "pasos": [
+            "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+            "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+            "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+            "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+          "materiales": [
+            "Cuaderno colectivo para observaciones",
+            "Lápices o lápices de colores",
+            "Papel adhesivo (opcional)",
+            "Fotografías o imágenes de diferentes tipos de plantas y animales"
+          ],
+          "pasos": [
+            "{'passo': 'Presentación previa sobre la importancia del equilibrio ecológico en la primavera', 'tiempo': 5}",
+            "{'passo': 'Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto', 'tiempo': 10}",
+            "{'passo': 'Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida', 'tiempo': 15}",
+            "{'passo': 'Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección', 'tiempo': 10}"
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": {
+        "día_1": {
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Introducción a la estación primavera y sus características generales",
+            "materiales": [
+              "Presentación sobre la primavera",
+              "Observación y descripción de los primeros signos de la primavera"
+            ],
+            "pasos": [
+              "Comenzamos recordando la definición de estación primavera y sus características generales",
+              "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+            ]
+          }
+        }
+      },
+      "desarrollo": {
+        "día_2": {
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "La Observación de la Primavera",
+            "materiales": [
+              "Pizarra y lápices",
+              "Cuaderno de observaciones colectivo (producto final del proyecto)",
+              "Ficha de observación con diferentes categorías"
+            ],
+            "pasos": [
+              "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+              "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+              "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparte sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+            ]
+          }
+        },
+        "día_3": {
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "La fauna en la primavera",
+            "materiales": [
+              "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+              "Pizarras o papel para dibujar",
+              "Marcadores y lápices"
+            ],
+            "pasos": [
+              "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+              "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y describa un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+              "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+              "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo."
+            ]
+          }
+        },
+        "día_4": {
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "La fauna en la primavera: una aventura de observación",
+            "materiales": [
+              "Cuaderno de observaciones colectivo",
+              "Lapiceros y bolígrafos para cada estudiante",
+              "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+              "Imágenes de mapas o diagramas de hábitats de los animales"
+            ],
+            "pasos": [
+              "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+              "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+              "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+              "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+            ]
+          }
+        },
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "cierre": {
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "evaluacion": {
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "evidencias": [],
+      "materiales": [
+        "Presentación sobre la primavera",
+        "Observación y descripción de los primeros signos de la primavera",
+        "Pizarra y lápices",
+        "Cuaderno de observaciones colectivo (producto final del proyecto)",
+        "Ficha de observación con diferentes categorías",
+        "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+        "Pizarras o papel para dibujar",
+        "Marcadores y lápices",
+        "Cuaderno colectivo para observaciones",
+        "Lápices o lápices de colores",
+        "Papel adhesivo (opcional)",
+        "Fotografías o imágenes de diferentes tipos de plantas y animales"
+      ]
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprende y describe las características de la estación primavera",
+          "indicadores": [
+            "Pide a los estudiantes que describan las señales de la primavera en su entorno"
+          ],
+          "evidencia": "Cuaderno de observaciones colectivo, Bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No describe ni compara las características de la estación primavera.",
+            "Básico": "Describe algunas características de la estación primavera pero no se refiere a su entorno.",
+            "Satisfactorio": "Describe y compara las características de la estación primavera, incluyendo sus cambios en el entorno.",
+            "Destacado": "Describe con precisión y detalladamente las características de la estación primavera, incluyendo sus cambios en el entorno y analiza su importancia."
+          }
+        },
+        {
+          "criterio": "Identifica y describe los animales que aparecen durante la primavera",
+          "indicadores": [
+            "Pide a los estudiantes que identifiquen y describan los animales que aparecen durante la primavera"
+          ],
+          "evidencia": "Cuaderno de observaciones colectivo, Presentación final",
+          "niveles": {
+            "Insuficiente": "No identifica ni describe los animales que aparecen durante la primavera.",
+            "Básico": "Identifica algunos animales pero no se refiere a su adaptación al entorno.",
+            "Satisfactorio": "Identifica y describe algunos animales que aparecen durante la primavera, incluyendo sus cambios en el entorno.",
+            "Destacado": "Describe con precisión y detalladamente los animales que aparecen durante la primavera, incluyendo su adaptación al entorno y analiza su importancia."
+          }
+        },
+        {
+          "criterio": "Participa activamente en las actividades del proyecto",
+          "indicadores": [
+            "Pide a los estudiantes que participen en las actividades del proyecto"
+          ],
+          "evidencia": "Bitácora de clase, Participación en clase",
+          "niveles": {
+            "Insuficiente": "No participa en ninguna actividad del proyecto.",
+            "Básico": "Participa en algunas actividades pero no se refiere a su entorno.",
+            "Satisfactorio": "Participa activamente en las actividades del proyecto, incluyendo su observación y descripción de los cambios en el entorno.",
+            "Destacado": "Participa con gran dedicación y entusiasmo en todas las actividades del proyecto, incluyendo la descripción detallada de los cambios en el entorno."
+          }
+        }
+      ],
+      "indicadores": [
+        "Participación activa en clase",
+        "Descripción detallada de las características de la estación primavera",
+        "Identificación y descripción de los animales que aparecen durante la primavera"
+      ]
+    },
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La primavera y los seres vivos: una aventura de observación",
+        "problematica": "Los estudiantes del grado 3 de la escuela elemental tienen dificultades para comprender el concepto de la estación primavera y su relación con los seres vivos. También tienen un conocimiento limitado sobre las características y necesidades de los diferentes tipos de plantas y animales en este período del año.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación y el estudio directo del medio ambiente para comprender los conceptos científicos. La primavera es un momento ideal para explorar la naturaleza y aprender sobre la adaptación de los seres vivos a sus entornos.",
+        "proposito": "El objetivo principal de este proyecto es que los estudiantes comprendan y aprecien el papel de la estación primavera en el ciclo natural, identifiquen las características de diferentes tipos de plantas y animales, y desarrollen habilidades para observar y describir la naturaleza.",
+        "producto_final": "Un cuaderno de observaciones colectivo, donde cada estudiante contribuye con dibujos y descripciones sobre los seres vivos que observan en su entorno durante las diferentes sesiones del proyecto. Al finalizar el proyecto, se presentará un resumen grupal de lo aprendido.",
+        "temporalidad": "{\"día_1\": \"Introducción a la estación primavera y sus características generales\", \"actividades\": [\"Presentación sobre la primavera\", \"Observación y descripción de los primeros signos de la primavera\"], \"tiempo\": 60}",
+        "día_2": {
+          "tema": "La flora en la primavera",
+          "actividades": [
+            "Identificación y descripción de diferentes tipos de flores",
+            "Observación de cómo las plantas se preparan para el crecimiento"
+          ],
+          "tiempo": 60
+        },
+        "día_3": {
+          "tema": "La fauna en la primavera",
+          "actividades": [
+            "Identificación y descripción de diferentes tipos de animales que aparecen durante la primavera",
+            "Observación de cómo los animales se adaptan a su entorno"
+          ],
+          "tiempo": 60
+        },
+        "día_4": {
+          "tema": "La interacción entre flora y fauna en la primavera",
+          "actividades": [
+            "Análisis de cómo las plantas y animales dependen el uno del otro",
+            "Discusión sobre el equilibrio ecológico"
+          ],
+          "tiempo": 60
+        },
+        "día_5": {
+          "tema": "Presentación final",
+          "actividades": [
+            "Revisión del cuaderno de observaciones colectivo",
+            "Presentación grupal de lo aprendido"
+          ],
+          "tiempo": 90
+        }
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [
+          {
+            "criterio": "Comprende y describe las características de la estación primavera",
+            "indicadores": [
+              "Pide a los estudiantes que describan las señales de la primavera en su entorno"
+            ],
+            "evidencia": "Cuaderno de observaciones colectivo, Bitácora de clase",
+            "niveles": {
+              "Insuficiente": "No describe ni compara las características de la estación primavera.",
+              "Básico": "Describe algunas características de la estación primavera pero no se refiere a su entorno.",
+              "Satisfactorio": "Describe y compara las características de la estación primavera, incluyendo sus cambios en el entorno.",
+              "Destacado": "Describe con precisión y detalladamente las características de la estación primavera, incluyendo sus cambios en el entorno y analiza su importancia."
+            }
+          },
+          {
+            "criterio": "Identifica y describe los animales que aparecen durante la primavera",
+            "indicadores": [
+              "Pide a los estudiantes que identifiquen y describan los animales que aparecen durante la primavera"
+            ],
+            "evidencia": "Cuaderno de observaciones colectivo, Presentación final",
+            "niveles": {
+              "Insuficiente": "No identifica ni describe los animales que aparecen durante la primavera.",
+              "Básico": "Identifica algunos animales pero no se refiere a su adaptación al entorno.",
+              "Satisfactorio": "Identifica y describe algunos animales que aparecen durante la primavera, incluyendo sus cambios en el entorno.",
+              "Destacado": "Describe con precisión y detalladamente los animales que aparecen durante la primavera, incluyendo su adaptación al entorno y analiza su importancia."
+            }
+          },
+          {
+            "criterio": "Participa activamente en las actividades del proyecto",
+            "indicadores": [
+              "Pide a los estudiantes que participen en las actividades del proyecto"
+            ],
+            "evidencia": "Bitácora de clase, Participación en clase",
+            "niveles": {
+              "Insuficiente": "No participa en ninguna actividad del proyecto.",
+              "Básico": "Participa en algunas actividades pero no se refiere a su entorno.",
+              "Satisfactorio": "Participa activamente en las actividades del proyecto, incluyendo su observación y descripción de los cambios en el entorno.",
+              "Destacado": "Participa con gran dedicación y entusiasmo en todas las actividades del proyecto, incluyendo la descripción detallada de los cambios en el entorno."
+            }
+          }
+        ],
+        "indicadores": [
+          "Participación activa en clase",
+          "Descripción detallada de las características de la estación primavera",
+          "Identificación y descripción de los animales que aparecen durante la primavera"
+        ]
+      },
+      "secuencia_didactica": {
+        "inicio": {
+          "día_1": {
+            "momento": "Punto de partida",
+            "actividad": {
+              "actividad": "Introducción a la estación primavera y sus características generales",
+              "materiales": [
+                "Presentación sobre la primavera",
+                "Observación y descripción de los primeros signos de la primavera"
+              ],
+              "pasos": [
+                "Comenzamos recordando la definición de estación primavera y sus características generales",
+                "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+              ]
+            }
+          }
+        },
+        "desarrollo": {
+          "día_2": {
+            "momento": "Planeación",
+            "actividad": {
+              "actividad": "La Observación de la Primavera",
+              "materiales": [
+                "Pizarra y lápices",
+                "Cuaderno de observaciones colectivo (producto final del proyecto)",
+                "Ficha de observación con diferentes categorías"
+              ],
+              "pasos": [
+                "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+                "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+                "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparte sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+              ]
+            }
+          },
+          "día_3": {
+            "momento": "A trabajar",
+            "actividad": {
+              "actividad": "La fauna en la primavera",
+              "materiales": [
+                "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+                "Pizarras o papel para dibujar",
+                "Marcadores y lápices"
+              ],
+              "pasos": [
+                "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+                "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y describa un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+                "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+                "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo."
+              ]
+            }
+          },
+          "día_4": {
+            "momento": "Comunicar",
+            "actividad": {
+              "actividad": "La fauna en la primavera: una aventura de observación",
+              "materiales": [
+                "Cuaderno de observaciones colectivo",
+                "Lapiceros y bolígrafos para cada estudiante",
+                "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+                "Imágenes de mapas o diagramas de hábitats de los animales"
+              ],
+              "pasos": [
+                "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+                "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+                "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+                "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+              ]
+            }
+          },
+          "día_5": {
+            "momento": "Reflexión",
+            "actividad": {
+              "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+              "materiales": [
+                "Cuaderno colectivo para observaciones",
+                "Lápices o lápices de colores",
+                "Papel adhesivo (opcional)",
+                "Fotografías o imágenes de diferentes tipos de plantas y animales"
+              ],
+              "pasos": [
+                {
+                  "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                  "tiempo": 5
+                },
+                {
+                  "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                  "tiempo": 10
+                },
+                {
+                  "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                  "tiempo": 15
+                },
+                {
+                  "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                  "tiempo": 10
+                }
+              ]
+            }
+          }
+        },
+        "cierre": {
+          "día_5": {
+            "momento": "Reflexión",
+            "actividad": {
+              "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+              "materiales": [
+                "Cuaderno colectivo para observaciones",
+                "Lápices o lápices de colores",
+                "Papel adhesivo (opcional)",
+                "Fotografías o imágenes de diferentes tipos de plantas y animales"
+              ],
+              "pasos": [
+                {
+                  "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                  "tiempo": 5
+                },
+                {
+                  "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                  "tiempo": 10
+                },
+                {
+                  "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                  "tiempo": 15
+                },
+                {
+                  "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                  "tiempo": 10
+                }
+              ]
+            }
+          }
+        },
+        "evaluacion": {
+          "día_5": {
+            "momento": "Reflexión",
+            "actividad": {
+              "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+              "materiales": [
+                "Cuaderno colectivo para observaciones",
+                "Lápices o lápices de colores",
+                "Papel adhesivo (opcional)",
+                "Fotografías o imágenes de diferentes tipos de plantas y animales"
+              ],
+              "pasos": [
+                {
+                  "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                  "tiempo": 5
+                },
+                {
+                  "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                  "tiempo": 10
+                },
+                {
+                  "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                  "tiempo": 15
+                },
+                {
+                  "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                  "tiempo": 10
+                }
+              ]
+            }
+          }
+        },
+        "evidencias": [],
+        "materiales": [
+          "Presentación sobre la primavera",
+          "Observación y descripción de los primeros signos de la primavera",
+          "Pizarra y lápices",
+          "Cuaderno de observaciones colectivo (producto final del proyecto)",
+          "Ficha de observación con diferentes categorías",
+          "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+          "Pizarras o papel para dibujar",
+          "Marcadores y lápices",
+          "Cuaderno colectivo para observaciones",
+          "Lápices o lápices de colores",
+          "Papel adhesivo (opcional)",
+          "Fotografías o imágenes de diferentes tipos de plantas y animales"
+        ]
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Introducción a la estación primavera y sus características generales",
+            "materiales": [
+              "Presentación sobre la primavera",
+              "Observación y descripción de los primeros signos de la primavera"
+            ],
+            "pasos": [
+              "Comenzamos recordando la definición de estación primavera y sus características generales",
+              "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "La Observación de la Primavera",
+            "materiales": [
+              "Pizarra y lápices",
+              "Cuaderno de observaciones colectivo (producto final del proyecto)",
+              "Ficha de observación con diferentes categorías"
+            ],
+            "pasos": [
+              "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+              "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+              "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparta sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "La fauna en la primavera",
+            "materiales": [
+              "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+              "Pizarras o papel para dibujar",
+              "Marcadores y lápices"
+            ],
+            "pasos": [
+              "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+              "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y descriva un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+              "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+              "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo. Recuerda que este es un paso importante para preparar el producto final del proyecto."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "La fauna en la primavera: una aventura de observación",
+            "materiales": [
+              "Cuaderno de observaciones colectivo",
+              "Lapiceros y bolígrafos para cada estudiante",
+              "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+              "Imágenes de mapas o diagramas de hábitats de los animales"
+            ],
+            "pasos": [
+              "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+              "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+              "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+              "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              "{'passo': 'Presentación previa sobre la importancia del equilibrio ecológico en la primavera', 'tiempo': 5}",
+              "{'passo': 'Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto', 'tiempo': 10}",
+              "{'passo': 'Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida', 'tiempo': 15}",
+              "{'passo': 'Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección', 'tiempo': 10}"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La primavera y los seres vivos: una aventura de observación",
+      "problematica": "Los estudiantes del grado 3 de la escuela elemental tienen dificultades para comprender el concepto de la estación primavera y su relación con los seres vivos. También tienen un conocimiento limitado sobre las características y necesidades de los diferentes tipos de plantas y animales en este período del año.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de la observación y el estudio directo del medio ambiente para comprender los conceptos científicos. La primavera es un momento ideal para explorar la naturaleza y aprender sobre la adaptación de los seres vivos a sus entornos.",
+      "proposito": "El objetivo principal de este proyecto es que los estudiantes comprendan y aprecien el papel de la estación primavera en el ciclo natural, identifiquen las características de diferentes tipos de plantas y animales, y desarrollen habilidades para observar y describir la naturaleza.",
+      "producto_final": "Un cuaderno de observaciones colectivo, donde cada estudiante contribuye con dibujos y descripciones sobre los seres vivos que observan en su entorno durante las diferentes sesiones del proyecto. Al finalizar el proyecto, se presentará un resumen grupal de lo aprendido.",
+      "temporalidad": "{\"día_1\": \"Introducción a la estación primavera y sus características generales\", \"actividades\": [\"Presentación sobre la primavera\", \"Observación y descripción de los primeros signos de la primavera\"], \"tiempo\": 60}",
+      "día_2": {
+        "tema": "La flora en la primavera",
+        "actividades": [
+          "Identificación y descripción de diferentes tipos de flores",
+          "Observación de cómo las plantas se preparan para el crecimiento"
+        ],
+        "tiempo": 60
+      },
+      "día_3": {
+        "tema": "La fauna en la primavera",
+        "actividades": [
+          "Identificación y descripción de diferentes tipos de animales que aparecen durante la primavera",
+          "Observación de cómo los animales se adaptan a su entorno"
+        ],
+        "tiempo": 60
+      },
+      "día_4": {
+        "tema": "La interacción entre flora y fauna en la primavera",
+        "actividades": [
+          "Análisis de cómo las plantas y animales dependen el uno del otro",
+          "Discusión sobre el equilibrio ecológico"
+        ],
+        "tiempo": 60
+      },
+      "día_5": {
+        "tema": "Presentación final",
+        "actividades": [
+          "Revisión del cuaderno de observaciones colectivo",
+          "Presentación grupal de lo aprendido"
+        ],
+        "tiempo": 90
+      }
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprende y describe las características de la estación primavera",
+          "indicadores": [
+            "Pide a los estudiantes que describan las señales de la primavera en su entorno"
+          ],
+          "evidencia": "Cuaderno de observaciones colectivo, Bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No describe ni compara las características de la estación primavera.",
+            "Básico": "Describe algunas características de la estación primavera pero no se refiere a su entorno.",
+            "Satisfactorio": "Describe y compara las características de la estación primavera, incluyendo sus cambios en el entorno.",
+            "Destacado": "Describe con precisión y detalladamente las características de la estación primavera, incluyendo sus cambios en el entorno y analiza su importancia."
+          }
+        },
+        {
+          "criterio": "Identifica y describe los animales que aparecen durante la primavera",
+          "indicadores": [
+            "Pide a los estudiantes que identifiquen y describan los animales que aparecen durante la primavera"
+          ],
+          "evidencia": "Cuaderno de observaciones colectivo, Presentación final",
+          "niveles": {
+            "Insuficiente": "No identifica ni describe los animales que aparecen durante la primavera.",
+            "Básico": "Identifica algunos animales pero no se refiere a su adaptación al entorno.",
+            "Satisfactorio": "Identifica y describe algunos animales que aparecen durante la primavera, incluyendo sus cambios en el entorno.",
+            "Destacado": "Describe con precisión y detalladamente los animales que aparecen durante la primavera, incluyendo su adaptación al entorno y analiza su importancia."
+          }
+        },
+        {
+          "criterio": "Participa activamente en las actividades del proyecto",
+          "indicadores": [
+            "Pide a los estudiantes que participen en las actividades del proyecto"
+          ],
+          "evidencia": "Bitácora de clase, Participación en clase",
+          "niveles": {
+            "Insuficiente": "No participa en ninguna actividad del proyecto.",
+            "Básico": "Participa en algunas actividades pero no se refiere a su entorno.",
+            "Satisfactorio": "Participa activamente en las actividades del proyecto, incluyendo su observación y descripción de los cambios en el entorno.",
+            "Destacado": "Participa con gran dedicación y entusiasmo en todas las actividades del proyecto, incluyendo la descripción detallada de los cambios en el entorno."
+          }
+        }
+      ],
+      "indicadores": [
+        "Participación activa en clase",
+        "Descripción detallada de las características de la estación primavera",
+        "Identificación y descripción de los animales que aparecen durante la primavera"
+      ]
+    },
+    "secuencia_didactica": {
+      "inicio": {
+        "día_1": {
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Introducción a la estación primavera y sus características generales",
+            "materiales": [
+              "Presentación sobre la primavera",
+              "Observación y descripción de los primeros signos de la primavera"
+            ],
+            "pasos": [
+              "Comenzamos recordando la definición de estación primavera y sus características generales",
+              "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+            ]
+          }
+        }
+      },
+      "desarrollo": {
+        "día_2": {
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "La Observación de la Primavera",
+            "materiales": [
+              "Pizarra y lápices",
+              "Cuaderno de observaciones colectivo (producto final del proyecto)",
+              "Ficha de observación con diferentes categorías"
+            ],
+            "pasos": [
+              "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+              "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+              "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparte sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+            ]
+          }
+        },
+        "día_3": {
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "La fauna en la primavera",
+            "materiales": [
+              "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+              "Pizarras o papel para dibujar",
+              "Marcadores y lápices"
+            ],
+            "pasos": [
+              "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+              "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y describa un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+              "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+              "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo."
+            ]
+          }
+        },
+        "día_4": {
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "La fauna en la primavera: una aventura de observación",
+            "materiales": [
+              "Cuaderno de observaciones colectivo",
+              "Lapiceros y bolígrafos para cada estudiante",
+              "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+              "Imágenes de mapas o diagramas de hábitats de los animales"
+            ],
+            "pasos": [
+              "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+              "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+              "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+              "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+            ]
+          }
+        },
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "cierre": {
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "evaluacion": {
+        "día_5": {
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+            "materiales": [
+              "Cuaderno colectivo para observaciones",
+              "Lápices o lápices de colores",
+              "Papel adhesivo (opcional)",
+              "Fotografías o imágenes de diferentes tipos de plantas y animales"
+            ],
+            "pasos": [
+              {
+                "passo": "Presentación previa sobre la importancia del equilibrio ecológico en la primavera",
+                "tiempo": 5
+              },
+              {
+                "passo": "Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto",
+                "tiempo": 10
+              },
+              {
+                "passo": "Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida",
+                "tiempo": 15
+              },
+              {
+                "passo": "Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección",
+                "tiempo": 10
+              }
+            ]
+          }
+        }
+      },
+      "evidencias": [],
+      "materiales": [
+        "Presentación sobre la primavera",
+        "Observación y descripción de los primeros signos de la primavera",
+        "Pizarra y lápices",
+        "Cuaderno de observaciones colectivo (producto final del proyecto)",
+        "Ficha de observación con diferentes categorías",
+        "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+        "Pizarras o papel para dibujar",
+        "Marcadores y lápices",
+        "Cuaderno colectivo para observaciones",
+        "Lápices o lápices de colores",
+        "Papel adhesivo (opcional)",
+        "Fotografías o imágenes de diferentes tipos de plantas y animales"
+      ]
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Introducción a la estación primavera y sus características generales",
+          "materiales": [
+            "Presentación sobre la primavera",
+            "Observación y descripción de los primeros signos de la primavera"
+          ],
+          "pasos": [
+            "Comenzamos recordando la definición de estación primavera y sus características generales",
+            "Pide a los estudiantes que miren fuera del salón o en su casa y busquen señales de la primavera como flores brotando, hojas nuevas o aves migratorias"
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "La Observación de la Primavera",
+          "materiales": [
+            "Pizarra y lápices",
+            "Cuaderno de observaciones colectivo (producto final del proyecto)",
+            "Ficha de observación con diferentes categorías"
+          ],
+          "pasos": [
+            "Presentación Inicial: Introduce el tema de la estación primavera y pide a los estudiantes que compartan sus conocimientos previos sobre este tema.",
+            "Observación y Descripción: Divide al grupo en parejas o pequeños grupos para realizar una breve observación del entorno natural cercano. Pida a cada pareja que complete la ficha de observación sobre las plantas o animales que hayan visto.",
+            "Compromiso y Orientación: Trae a todo el grupo nuevamente juntos. Pide que cada par comparta sus observaciones con el resto del grupo, utilizando la ficha como herramienta de ayuda. Fomentar un compromiso colectivo en torno al cuaderno de observaciones."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "La fauna en la primavera",
+          "materiales": [
+            "Ilustraciones y fotos de diferentes animales que aparecen durante la primavera",
+            "Pizarras o papel para dibujar",
+            "Marcadores y lápices"
+          ],
+          "pasos": [
+            "Introduce el tema de la fauna en la primavera, mostrando ilustraciones y fotos de diferentes animales que aparecen durante este período del año.",
+            "Divide a los estudiantes en grupos y proporciona material para dibujar. Pide que cada grupo identifique y descriva un tipo de animal que aparece durante la primavera, como las abejas, los pájaros o los conejos.",
+            "Pide a los estudiantes que observen cómo los animales se adaptan a su entorno durante la primavera. Pregúntale a cada grupo si han observado algún cambio en el comportamiento o hábitat de sus animales seleccionados.",
+            "Pide a los estudiantes que registren sus observaciones y descripciones en su cuaderno colectivo. Recuerda que este es un paso importante para preparar el producto final del proyecto."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "La fauna en la primavera: una aventura de observación",
+          "materiales": [
+            "Cuaderno de observaciones colectivo",
+            "Lapiceros y bolígrafos para cada estudiante",
+            "Fotografías y videos de diferentes tipos de animales que aparecen durante la primavera",
+            "Imágenes de mapas o diagramas de hábitats de los animales"
+          ],
+          "pasos": [
+            "Recapitular las observaciones y conocimientos previos sobre la fauna en la primavera, revisando el cuaderno de observaciones colectivo.",
+            "Mostrar a los estudiantes fotografías y videos de diferentes tipos de animales que aparecen durante la primavera, como aves, mamíferos o insectos. Preguntarles a los estudiantes sobre las características y hábitats de cada tipo de animal.",
+            "Pedir a los estudiantes que identifiquen y describan en el cuaderno de observaciones colectivo los diferentes tipos de animales que han observado, incluyendo sus características y hábitats.",
+            "Realizar una discusión en grupo sobre la importancia de la fauna en la primavera y cómo los animales se adaptan a su entorno. Preguntarles a los estudiantes sobre lo que han aprendido hasta el momento."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "La Aventura de la Observación: Identificando y Describiendo Seres Vivos en la Primavera",
+          "materiales": [
+            "Cuaderno colectivo para observaciones",
+            "Lápices o lápices de colores",
+            "Papel adhesivo (opcional)",
+            "Fotografías o imágenes de diferentes tipos de plantas y animales"
+          ],
+          "pasos": [
+            "{'passo': 'Presentación previa sobre la importancia del equilibrio ecológico en la primavera', 'tiempo': 5}",
+            "{'passo': 'Dividir a los estudiantes en grupos y asignar cada grupo un tipo de ser vivo (planta o animal) para que observe y describa durante el proyecto', 'tiempo': 10}",
+            "{'passo': 'Mandar a los estudiantes a observar su entorno y recopilar información sobre sus plantas y animales, utilizando la hoja de observación previamente distribuida', 'tiempo': 15}",
+            "{'passo': 'Al regresar a la clase, pedir a cada grupo que presente su ser vivo elegido, mostrando fotografías o imágenes y describiendo las características y necesidades de su elección', 'tiempo': 10}"
+          ]
+        }
+      }
+    ]
+  }
+}
