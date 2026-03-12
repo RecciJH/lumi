@@ -14,7 +14,6 @@ import argparse
 import json
 import logging
 import sys
-import time
 from pathlib import Path
 from typing import Any, Dict
 
@@ -46,22 +45,20 @@ def main(argv: list[str] | None = None) -> int:
     _ensure_backend_on_syspath()
 
     from agents.coordinador_agent import generar_planeacion_maestra  # noqa: WPS433
-    from design.theme_system import get_design_theme, pick_theme_id  # noqa: WPS433
     from renderers.pdf_renderer import PdfRenderOptions, render_planeacion_pdf  # noqa: WPS433
 
     parser = argparse.ArgumentParser(description="Generar planeación (Lumi) en PDF.")
-    parser.add_argument("--input", required=True, help="Ruta a JSON con planeacion_input.")
-    parser.add_argument("--out", required=True, help="Ruta de salida .pdf")
+    parser.add_argument("--input", default="", help="Ruta a JSON con planeacion_input (si no usas --master).")
+    parser.add_argument("--master", default="", help="Ruta a JSON maestro ya generado (salida del coordinador).")
+    parser.add_argument(
+        "--out",
+        default=str(Path("outputs") / "planeaciones" / "planeacion.pdf"),
+        help="Ruta de salida .pdf (por defecto dentro del proyecto).",
+    )
     parser.add_argument("--out-master", default="", help="Opcional: guardar JSON maestro aquí.")
     parser.add_argument("--log-level", default="INFO", help="DEBUG|INFO|WARNING|ERROR")
     parser.add_argument("--include-raw-json", action="store_true", help="Incluye anexo de JSON maestro (recortado).")
-    parser.add_argument("--theme", default="", help="Tema visual (default|primavera|lenguajes|matematicas).")
-    parser.add_argument("--mode", default="screen", help="Modo de render: screen|print")
-    parser.add_argument("--cover-image", default="", help="Opcional: ruta a imagen local para portada (usa solo imágenes con derechos/licencia).")
-    parser.add_argument("--cover-attribution", default="", help="Opcional: texto corto de atribución/licencia para la portada.")
-    parser.add_argument("--remote-images", action="store_true", help="Intenta descargar una imagen real (licenciada) para portada.")
-    parser.add_argument("--asset-cache-dir", default="", help="Opcional: override del cache de imágenes (default: ~/.lumi/cache/assets).")
-    parser.add_argument("--design-seed", default="", help="Semilla para variar el diseño (vacío => cambia en cada ejecución).")
+    parser.add_argument("--include-evaluacion", action="store_true", help="Incluye evaluación/rúbrica (puede tardar más).")
     args = parser.parse_args(argv)
 
     logging.basicConfig(
@@ -69,65 +66,36 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s %(levelname)s %(name)s - %(message)s",
     )
 
-    planeacion_input = _load_json(args.input)
-    master = generar_planeacion_maestra(planeacion_input)
+    if args.master:
+        master = _load_json(args.master)
+    else:
+        if not args.input:
+            raise SystemExit("Debes proporcionar --input (planeacion_input) o --master (JSON maestro).")
+        planeacion_input = _load_json(args.input)
+        if not args.include_evaluacion:
+            planeacion_input = dict(planeacion_input)
+            planeacion_input["skip_steps"] = list(set(list(planeacion_input.get("skip_steps") or []) + ["evaluation_agent"]))
+
+        master = generar_planeacion_maestra(planeacion_input)
 
     if args.out_master:
         _write_json(args.out_master, master)
 
-    options = PdfRenderOptions(include_raw_master_json=bool(args.include_raw_json))
-    theme_id = (args.theme or "").strip().lower() or pick_theme_id(planeacion_input, master)
-    design_theme = get_design_theme(theme_id, mode=(args.mode or "screen").strip().lower())
+    out_path = Path(args.out)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        project_root = Path(__file__).resolve().parents[2]
+        if not out_path.resolve().is_relative_to(project_root.resolve()):
+            print(f"ADVERTENCIA: El PDF se guardará fuera del proyecto: {out_path.resolve()}", file=sys.stderr)
+    except Exception:
+        pass
 
-    # Propaga el tema a meta para trazabilidad
-    master.setdefault("meta", {})
-    master["meta"]["theme_id"] = design_theme.id
-    master["meta"]["theme_mode"] = design_theme.mode
-    master["meta"]["title"] = master.get("meta", {}).get("title") or "Lumi — Planeación didáctica"
-    if args.design_seed != "":
-        try:
-            master["meta"]["design_seed"] = int(args.design_seed)
-        except Exception:
-            raise ValueError("--design-seed debe ser entero.")
-    else:
-        # Variación por ejecución (sin afectar el contenido del JSON).
-        master["meta"]["design_seed"] = int(time.time())
-
-    if args.cover_image:
-        cover_path = Path(args.cover_image).expanduser().resolve()
-        if not cover_path.exists():
-            raise ValueError(f"No existe --cover-image: {cover_path}")
-        master["meta"].setdefault("assets", {})
-        master["meta"]["assets"]["cover"] = {
-            "source": "local",
-            "path": str(cover_path),
-            "attribution": (args.cover_attribution or "").strip(),
-        }
-
-    if args.remote_images:
-        from pathlib import Path  # noqa: WPS433
-
-        from design.remote_assets import fetch_cover_image, get_default_cache_dir  # noqa: WPS433
-
-        cache_dir = Path(args.asset_cache_dir).expanduser().resolve() if args.asset_cache_dir else get_default_cache_dir()
-        try:
-            cover = fetch_cover_image(planeacion_input, theme_id=design_theme.id, cache_dir=cache_dir)
-            if cover:
-                master["meta"].setdefault("assets", {})
-                master["meta"]["assets"]["cover"] = cover.to_meta()
-            else:
-                logging.getLogger(__name__).warning(
-                    "No se encontró imagen remota para portada; usando ilustración vectorial."
-                )
-        except Exception as exc:  # noqa: BLE001
-            logging.getLogger(__name__).warning(
-                "Fallo al descargar imagen remota (se continuará con portada vectorial): %s: %s",
-                type(exc).__name__,
-                exc,
-            )
-
-    render_planeacion_pdf(master, args.out, options=options, design_theme=design_theme)
-    print(args.out)
+    options = PdfRenderOptions(
+        include_raw_master_json=bool(args.include_raw_json),
+        include_evaluacion=bool(args.include_evaluacion),
+    )
+    render_planeacion_pdf(master, str(out_path), options=options)
+    print(str(out_path))
     return 0
 
 

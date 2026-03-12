@@ -1,0 +1,1613 @@
+{
+  "meta": {
+    "started_at": "2026-03-12T19:47:28.459333+00:00",
+    "finished_at": "2026-03-12T19:51:06.782986+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 17402
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 90834
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 93547
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 16537
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+      "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+      "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+      "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.",
+      "temporalidad": "Durante cinco días aproximadamente, cada día (aproximadamente una sesión) se enfocará en un aspecto diferente: Día 1: Introducción a la primavera y su impacto en los ecosistemas. Actividades prácticas como observación de cambios climáticos en el entorno cercano. Día 2: Exploración de cómo la primavera afecta a diferentes especies vegetales (germinación, crecimiento). Día 3: Investigación sobre cómo los animales se adaptan y aprovechan las condiciones de la primavera para su supervivencia. Día 4: Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera. Día 5: Elaboración del informe gráfico o presentación final."
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Explorando la Primavera en Nuestro Entorno",
+          "materiales": [
+            "Mapas de México que muestren las regiones climáticas",
+            "Fotos y videos de la naturaleza durante la primavera",
+            "Un cuaderno por estudiante para anotar observaciones y preguntas"
+          ],
+          "pasos": [
+            "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+            "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.",
+            "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+            "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Explorando cómo la primavera afecta a las plantas",
+          "materiales": [
+            "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+            "Tierra y macetas para siembra",
+            "Agua",
+            "Ejemplos de plantas en diferentes estados de crecimiento"
+          ],
+          "pasos": [
+            "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+            "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}",
+            "{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}",
+            "{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+            "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}"
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+          "materiales": [
+            "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+            "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+            "Papel y lápices para anotar y dibujar"
+          ],
+          "pasos": [
+            "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+            "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?",
+            "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+            "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera",
+          "materiales": [
+            "Papel y lápices para cada estudiante",
+            "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+          ],
+          "pasos": [
+            "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+            "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+            "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Elaboración de un informe gráfico o presentación final sobre La Primavera y los seres vivos",
+          "materiales": [
+            "Computadoras o tablets con acceso a la red",
+            "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+            "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+            "Herramientas de diseño y edición de imágenes (opcional)"
+          ],
+          "pasos": [
+            "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+            "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+            "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}"
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": {
+        "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+        "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+        "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+        "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+      },
+      "desarrollo": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "nombre_actividad": "Explorando la Primavera en Nuestro Entorno",
+            "materiales": [
+              "Mapas de México que muestren las regiones climáticas",
+              "Fotos y videos de la naturaleza durante la primavera",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              {
+                "titulo": "Presentación",
+                "contenido": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera."
+              },
+              {
+                "titulo": "Observación",
+                "contenido": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve."
+              },
+              {
+                "titulo": "Comprensión",
+                "contenido": "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema."
+              },
+              {
+                "titulo": "Prevención",
+                "contenido": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "nombre_actividad": "Explorando cómo la primavera afecta a las plantas",
+            "materiales": [
+              "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+              "Tierra y macetas para siembra",
+              "Agua",
+              "Ejemplos de plantas en diferentes estados de crecimiento"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas."
+              },
+              {
+                "titulo": "Experimento de siembra",
+                "contenido": "Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad)."
+              },
+              {
+                "titulo": "Observación y análisis",
+                "contenido": "Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas."
+              },
+              {
+                "titulo": "Conexiones con la realidad",
+                "contenido": "Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?"
+              },
+              {
+                "titulo": "Conclusión",
+                "contenido": "Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "nombre_actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+            "materiales": [
+              "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+              "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+              "Papel y lápices para anotar y dibujar"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación."
+              },
+              {
+                "titulo": "Observación y análisis",
+                "contenido": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?"
+              },
+              {
+                "titulo": "Investigación",
+                "contenido": "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera."
+              },
+              {
+                "titulo": "Creación",
+                "contenido": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "nombre_actividad": "Reflexión y debate sobre el impacto de las actividades humanas en la primavera",
+            "materiales": [
+              "Papel y lápices para anotar y dibujar",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Resumen lo aprendido sobre el impacto de las actividades humanas en la primavera. Pide a los estudiantes que compartan sus ideas y pensamientos sobre cómo podemos proteger y cuidar el medio ambiente durante esta estación."
+              },
+              {
+                "titulo": "Comprensión",
+                "contenido": "Pregúntale a los estudiantes qué pueden hacer para ayudar a proteger y cuidar el medio ambiente durante la primavera. ¿Cómo pueden contribuir con su comunidad?"
+              }
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Cierre",
+          "actividad": {
+            "nombre_actividad": "Presentación del informe gráfico o presentación",
+            "materiales": [
+              "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+            ],
+            "pasos": [
+              {
+                "titulo": "Creación",
+                "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+              },
+              {
+                "titulo": "Presentación",
+                "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+              }
+            ]
+          }
+        }
+      ],
+      "evaluacion": {
+        "nombre_evaluacion": "Evaluación del proyecto",
+        "materiales": [
+          "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+        ],
+        "pasos": [
+          {
+            "titulo": "Revisión de la información",
+            "contenido": "Los estudiantes deben revisar su informe gráfico o presentación para asegurarse de que incluye toda la información aprendida durante el proyecto."
+          },
+          {
+            "titulo": "Presentación",
+            "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+          }
+        ]
+      },
+      "evidencias": [
+        {
+          "nombre_evidencia": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México",
+          "materiales": [
+            "Papel y lápices para anotar y dibujar",
+            "Un cuaderno por estudiante para anotar observaciones y preguntas"
+          ],
+          "pasos": [
+            {
+              "titulo": "Creación",
+              "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+            },
+            {
+              "titulo": "Presentación",
+              "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+            }
+          ]
+        }
+      ],
+      "materiales": [
+        {
+          "nombre_material": "Mapas de México que muestren las regiones climáticas",
+          "cantidad": "1"
+        },
+        {
+          "nombre_material": "Fotos y videos de la naturaleza durante la primavera",
+          "cantidad": "1"
+        },
+        {
+          "nombre_material": "Un cuaderno por estudiante para anotar observaciones y preguntas",
+          "cantidad": "1"
+        }
+      ],
+      "cierre": ""
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y de lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades",
+        "De lo humano y de lo comunitario"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Describen las características de la primavera y su impacto en los ecosistemas.",
+          "procesos": {
+            "prev": "Identificar las estaciones del año",
+            "3°": "Explicar las causas de la primavera (temperatura, luz solar)",
+            "4°": "Analizar el efecto de la primavera en la biodiversidad"
+          }
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Discuten sobre las responsabilidades individuales y colectivas ante los cambios climáticos.",
+          "procesos": {
+            "prev": "",
+            "3°": "Explicar la importancia de cuidar el medio ambiente durante la primavera",
+            "next": "Reflexionan sobre la relación entre la actividad humana y la sostenibilidad del planeta"
+          }
+        },
+        {
+          "campo_formativo": "De lo humano y de lo comunitario",
+          "contenido": "Comparten formas de apreciar y disfrutar la primavera en diferentes contextos culturales.",
+          "procesos": {
+            "prev": "",
+            "3°": "Describen tradiciones y costumbres relacionadas con la primavera en México",
+            "next": "Reflexionan sobre la importancia de valorar las diferencias culturales"
+          }
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+        "desarrollo": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.\nLos estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+        "cierre": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Mapas de México que muestren las regiones climáticas",
+          "Fotos y videos de la naturaleza durante la primavera",
+          "Un cuaderno por estudiante para anotar observaciones y preguntas"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+        "desarrollo": "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}\n{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}\n{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+        "cierre": "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+          "Tierra y macetas para siembra",
+          "Agua",
+          "Ejemplos de plantas en diferentes estados de crecimiento"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+        "desarrollo": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?\nProporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+        "cierre": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+          "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+          "Papel y lápices para anotar y dibujar"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+        "desarrollo": "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+        "cierre": "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel y lápices para cada estudiante",
+          "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+        "desarrollo": "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+        "cierre": "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Computadoras o tablets con acceso a la red",
+          "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+          "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+          "Herramientas de diseño y edición de imágenes (opcional)"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+        "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+        "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+        "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.",
+        "temporalidad": "Durante cinco días aproximadamente, cada día (aproximadamente una sesión) se enfocará en un aspecto diferente: Día 1: Introducción a la primavera y su impacto en los ecosistemas. Actividades prácticas como observación de cambios climáticos en el entorno cercano. Día 2: Exploración de cómo la primavera afecta a diferentes especies vegetales (germinación, crecimiento). Día 3: Investigación sobre cómo los animales se adaptan y aprovechan las condiciones de la primavera para su supervivencia. Día 4: Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera. Día 5: Elaboración del informe gráfico o presentación final."
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "inicio": {
+          "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+          "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+          "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+          "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+          "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+        },
+        "desarrollo": [
+          {
+            "dia": 1,
+            "momento": "Punto de partida",
+            "actividad": {
+              "nombre_actividad": "Explorando la Primavera en Nuestro Entorno",
+              "materiales": [
+                "Mapas de México que muestren las regiones climáticas",
+                "Fotos y videos de la naturaleza durante la primavera",
+                "Un cuaderno por estudiante para anotar observaciones y preguntas"
+              ],
+              "pasos": [
+                {
+                  "titulo": "Presentación",
+                  "contenido": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera."
+                },
+                {
+                  "titulo": "Observación",
+                  "contenido": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve."
+                },
+                {
+                  "titulo": "Comprensión",
+                  "contenido": "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema."
+                },
+                {
+                  "titulo": "Prevención",
+                  "contenido": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+                }
+              ]
+            }
+          },
+          {
+            "dia": 2,
+            "momento": "Planeación",
+            "actividad": {
+              "nombre_actividad": "Explorando cómo la primavera afecta a las plantas",
+              "materiales": [
+                "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+                "Tierra y macetas para siembra",
+                "Agua",
+                "Ejemplos de plantas en diferentes estados de crecimiento"
+              ],
+              "pasos": [
+                {
+                  "titulo": "Introducción",
+                  "contenido": "Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas."
+                },
+                {
+                  "titulo": "Experimento de siembra",
+                  "contenido": "Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad)."
+                },
+                {
+                  "titulo": "Observación y análisis",
+                  "contenido": "Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas."
+                },
+                {
+                  "titulo": "Conexiones con la realidad",
+                  "contenido": "Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?"
+                },
+                {
+                  "titulo": "Conclusión",
+                  "contenido": "Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación."
+                }
+              ]
+            }
+          },
+          {
+            "dia": 3,
+            "momento": "A trabajar",
+            "actividad": {
+              "nombre_actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+              "materiales": [
+                "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+                "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+                "Papel y lápices para anotar y dibujar"
+              ],
+              "pasos": [
+                {
+                  "titulo": "Introducción",
+                  "contenido": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación."
+                },
+                {
+                  "titulo": "Observación y análisis",
+                  "contenido": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?"
+                },
+                {
+                  "titulo": "Investigación",
+                  "contenido": "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera."
+                },
+                {
+                  "titulo": "Creación",
+                  "contenido": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+                }
+              ]
+            }
+          },
+          {
+            "dia": 4,
+            "momento": "Comunicar",
+            "actividad": {
+              "nombre_actividad": "Reflexión y debate sobre el impacto de las actividades humanas en la primavera",
+              "materiales": [
+                "Papel y lápices para anotar y dibujar",
+                "Un cuaderno por estudiante para anotar observaciones y preguntas"
+              ],
+              "pasos": [
+                {
+                  "titulo": "Introducción",
+                  "contenido": "Resumen lo aprendido sobre el impacto de las actividades humanas en la primavera. Pide a los estudiantes que compartan sus ideas y pensamientos sobre cómo podemos proteger y cuidar el medio ambiente durante esta estación."
+                },
+                {
+                  "titulo": "Comprensión",
+                  "contenido": "Pregúntale a los estudiantes qué pueden hacer para ayudar a proteger y cuidar el medio ambiente durante la primavera. ¿Cómo pueden contribuir con su comunidad?"
+                }
+              ]
+            }
+          },
+          {
+            "dia": 5,
+            "momento": "Cierre",
+            "actividad": {
+              "nombre_actividad": "Presentación del informe gráfico o presentación",
+              "materiales": [
+                "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+              ],
+              "pasos": [
+                {
+                  "titulo": "Creación",
+                  "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+                },
+                {
+                  "titulo": "Presentación",
+                  "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+                }
+              ]
+            }
+          }
+        ],
+        "evaluacion": {
+          "nombre_evaluacion": "Evaluación del proyecto",
+          "materiales": [
+            "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+          ],
+          "pasos": [
+            {
+              "titulo": "Revisión de la información",
+              "contenido": "Los estudiantes deben revisar su informe gráfico o presentación para asegurarse de que incluye toda la información aprendida durante el proyecto."
+            },
+            {
+              "titulo": "Presentación",
+              "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+            }
+          ]
+        },
+        "evidencias": [
+          {
+            "nombre_evidencia": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México",
+            "materiales": [
+              "Papel y lápices para anotar y dibujar",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              {
+                "titulo": "Creación",
+                "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+              },
+              {
+                "titulo": "Presentación",
+                "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+              }
+            ]
+          }
+        ],
+        "materiales": [
+          {
+            "nombre_material": "Mapas de México que muestren las regiones climáticas",
+            "cantidad": "1"
+          },
+          {
+            "nombre_material": "Fotos y videos de la naturaleza durante la primavera",
+            "cantidad": "1"
+          },
+          {
+            "nombre_material": "Un cuaderno por estudiante para anotar observaciones y preguntas",
+            "cantidad": "1"
+          }
+        ],
+        "cierre": ""
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Explorando la Primavera en Nuestro Entorno",
+            "materiales": [
+              "Mapas de México que muestren las regiones climáticas",
+              "Fotos y videos de la naturaleza durante la primavera",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+              "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.",
+              "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+              "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Explorando cómo la primavera afecta a las plantas",
+            "materiales": [
+              "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+              "Tierra y macetas para siembra",
+              "Agua",
+              "Ejemplos de plantas en diferentes estados de crecimiento"
+            ],
+            "pasos": [
+              "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+              "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}",
+              "{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}",
+              "{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+              "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}"
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+            "materiales": [
+              "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+              "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+              "Papel y lápices para anotar y dibujar"
+            ],
+            "pasos": [
+              "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+              "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?",
+              "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+              "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera",
+            "materiales": [
+              "Papel y lápices para cada estudiante",
+              "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+            ],
+            "pasos": [
+              "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+              "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+              "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Elaboración de un informe gráfico o presentación final sobre La Primavera y los seres vivos",
+            "materiales": [
+              "Computadoras o tablets con acceso a la red",
+              "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+              "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+              "Herramientas de diseño y edición de imágenes (opcional)"
+            ],
+            "pasos": [
+              "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+              "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+              "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}"
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y de lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Describen las características de la primavera y su impacto en los ecosistemas.",
+            "procesos": {
+              "prev": "Identificar las estaciones del año",
+              "3°": "Explicar las causas de la primavera (temperatura, luz solar)",
+              "4°": "Analizar el efecto de la primavera en la biodiversidad"
+            }
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Discuten sobre las responsabilidades individuales y colectivas ante los cambios climáticos.",
+            "procesos": {
+              "prev": "",
+              "3°": "Explicar la importancia de cuidar el medio ambiente durante la primavera",
+              "next": "Reflexionan sobre la relación entre la actividad humana y la sostenibilidad del planeta"
+            }
+          },
+          {
+            "campo_formativo": "De lo humano y de lo comunitario",
+            "contenido": "Comparten formas de apreciar y disfrutar la primavera en diferentes contextos culturales.",
+            "procesos": {
+              "prev": "",
+              "3°": "Describen tradiciones y costumbres relacionadas con la primavera en México",
+              "next": "Reflexionan sobre la importancia de valorar las diferencias culturales"
+            }
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+          "desarrollo": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.\nLos estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+          "cierre": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Mapas de México que muestren las regiones climáticas",
+            "Fotos y videos de la naturaleza durante la primavera",
+            "Un cuaderno por estudiante para anotar observaciones y preguntas"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+          "desarrollo": "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}\n{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}\n{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+          "cierre": "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+            "Tierra y macetas para siembra",
+            "Agua",
+            "Ejemplos de plantas en diferentes estados de crecimiento"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+          "desarrollo": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?\nProporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+          "cierre": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+            "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+            "Papel y lápices para anotar y dibujar"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+          "desarrollo": "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+          "cierre": "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Papel y lápices para cada estudiante",
+            "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+          "desarrollo": "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+          "cierre": "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Computadoras o tablets con acceso a la red",
+            "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+            "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+            "Herramientas de diseño y edición de imágenes (opcional)"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+      "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+      "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+      "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.",
+      "temporalidad": "Durante cinco días aproximadamente, cada día (aproximadamente una sesión) se enfocará en un aspecto diferente: Día 1: Introducción a la primavera y su impacto en los ecosistemas. Actividades prácticas como observación de cambios climáticos en el entorno cercano. Día 2: Exploración de cómo la primavera afecta a diferentes especies vegetales (germinación, crecimiento). Día 3: Investigación sobre cómo los animales se adaptan y aprovechan las condiciones de la primavera para su supervivencia. Día 4: Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera. Día 5: Elaboración del informe gráfico o presentación final."
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "inicio": {
+        "nombre_proyecto": "La Primavera: Un Nuevo Amanecer",
+        "problematica": "Los estudiantes pueden desconocer cómo se relacionan entre sí los cambios climáticos durante las estaciones, especialmente la primavera. Además, podrían no entender el impacto que tienen en diferentes seres vivos.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de una educación integral y contextualizada. Al explorar el tema de la primaverra a través de actividades prácticas y reflexiones, los estudiantes desarrollan habilidades de pensamiento crítico, observación y resolución de problemas, así como una mayor conciencia ambiental.",
+        "proposito": "Al finalizar el proyecto, los estudiantes podrán describir las características distintivas de la primavera en México, identificar cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y explicar cómo estas relaciones son fundamentales para el equilibrio del ecosistema.",
+        "producto_final": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México, incluyendo sus características climáticas, los efectos en diferentes especies vegetales y animales, y ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+      },
+      "desarrollo": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "nombre_actividad": "Explorando la Primavera en Nuestro Entorno",
+            "materiales": [
+              "Mapas de México que muestren las regiones climáticas",
+              "Fotos y videos de la naturaleza durante la primavera",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              {
+                "titulo": "Presentación",
+                "contenido": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera."
+              },
+              {
+                "titulo": "Observación",
+                "contenido": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve."
+              },
+              {
+                "titulo": "Comprensión",
+                "contenido": "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema."
+              },
+              {
+                "titulo": "Prevención",
+                "contenido": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "nombre_actividad": "Explorando cómo la primavera afecta a las plantas",
+            "materiales": [
+              "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+              "Tierra y macetas para siembra",
+              "Agua",
+              "Ejemplos de plantas en diferentes estados de crecimiento"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas."
+              },
+              {
+                "titulo": "Experimento de siembra",
+                "contenido": "Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad)."
+              },
+              {
+                "titulo": "Observación y análisis",
+                "contenido": "Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas."
+              },
+              {
+                "titulo": "Conexiones con la realidad",
+                "contenido": "Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?"
+              },
+              {
+                "titulo": "Conclusión",
+                "contenido": "Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "nombre_actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+            "materiales": [
+              "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+              "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+              "Papel y lápices para anotar y dibujar"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación."
+              },
+              {
+                "titulo": "Observación y análisis",
+                "contenido": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?"
+              },
+              {
+                "titulo": "Investigación",
+                "contenido": "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera."
+              },
+              {
+                "titulo": "Creación",
+                "contenido": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+              }
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "nombre_actividad": "Reflexión y debate sobre el impacto de las actividades humanas en la primavera",
+            "materiales": [
+              "Papel y lápices para anotar y dibujar",
+              "Un cuaderno por estudiante para anotar observaciones y preguntas"
+            ],
+            "pasos": [
+              {
+                "titulo": "Introducción",
+                "contenido": "Resumen lo aprendido sobre el impacto de las actividades humanas en la primavera. Pide a los estudiantes que compartan sus ideas y pensamientos sobre cómo podemos proteger y cuidar el medio ambiente durante esta estación."
+              },
+              {
+                "titulo": "Comprensión",
+                "contenido": "Pregúntale a los estudiantes qué pueden hacer para ayudar a proteger y cuidar el medio ambiente durante la primavera. ¿Cómo pueden contribuir con su comunidad?"
+              }
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Cierre",
+          "actividad": {
+            "nombre_actividad": "Presentación del informe gráfico o presentación",
+            "materiales": [
+              "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+            ],
+            "pasos": [
+              {
+                "titulo": "Creación",
+                "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+              },
+              {
+                "titulo": "Presentación",
+                "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+              }
+            ]
+          }
+        }
+      ],
+      "evaluacion": {
+        "nombre_evaluacion": "Evaluación del proyecto",
+        "materiales": [
+          "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México"
+        ],
+        "pasos": [
+          {
+            "titulo": "Revisión de la información",
+            "contenido": "Los estudiantes deben revisar su informe gráfico o presentación para asegurarse de que incluye toda la información aprendida durante el proyecto."
+          },
+          {
+            "titulo": "Presentación",
+            "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+          }
+        ]
+      },
+      "evidencias": [
+        {
+          "nombre_evidencia": "Un informe gráfico o presentación (podría ser digital) que muestre la información aprendida sobre la primavera en México",
+          "materiales": [
+            "Papel y lápices para anotar y dibujar",
+            "Un cuaderno por estudiante para anotar observaciones y preguntas"
+          ],
+          "pasos": [
+            {
+              "titulo": "Creación",
+              "contenido": "Los estudiantes deben crear un informe gráfico o presentación que incluya la información aprendida sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación."
+            },
+            {
+              "titulo": "Presentación",
+              "contenido": "Los estudiantes deben presentar su informe gráfico o presentación a la clase. Deben explicar los diferentes aspectos de la primavera y cómo se relacionan con las actividades humanas."
+            }
+          ]
+        }
+      ],
+      "materiales": [
+        {
+          "nombre_material": "Mapas de México que muestren las regiones climáticas",
+          "cantidad": "1"
+        },
+        {
+          "nombre_material": "Fotos y videos de la naturaleza durante la primavera",
+          "cantidad": "1"
+        },
+        {
+          "nombre_material": "Un cuaderno por estudiante para anotar observaciones y preguntas",
+          "cantidad": "1"
+        }
+      ],
+      "cierre": ""
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Explorando la Primavera en Nuestro Entorno",
+          "materiales": [
+            "Mapas de México que muestren las regiones climáticas",
+            "Fotos y videos de la naturaleza durante la primavera",
+            "Un cuaderno por estudiante para anotar observaciones y preguntas"
+          ],
+          "pasos": [
+            "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+            "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.",
+            "Los estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+            "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Explorando cómo la primavera afecta a las plantas",
+          "materiales": [
+            "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+            "Tierra y macetas para siembra",
+            "Agua",
+            "Ejemplos de plantas en diferentes estados de crecimiento"
+          ],
+          "pasos": [
+            "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+            "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}",
+            "{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}",
+            "{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+            "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}"
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Día 3 - Los animales y la primavera: adaptaciones y supervivencia",
+          "materiales": [
+            "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+            "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+            "Papel y lápices para anotar y dibujar"
+          ],
+          "pasos": [
+            "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+            "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?",
+            "Proporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+            "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Reflexión y debate sobre el impacto humano en la naturaleza durante la primavera",
+          "materiales": [
+            "Papel y lápices para cada estudiante",
+            "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+          ],
+          "pasos": [
+            "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+            "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+            "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Elaboración de un informe gráfico o presentación final sobre La Primavera y los seres vivos",
+          "materiales": [
+            "Computadoras o tablets con acceso a la red",
+            "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+            "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+            "Herramientas de diseño y edición de imágenes (opcional)"
+          ],
+          "pasos": [
+            "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+            "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+            "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}"
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y de lo comunitario",
+        "seleccionado": true
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "La maestra presenta un mapa de México que muestre las regiones climáticas y explica cómo la primavera es una estación climática en México. Se pregunta a los estudiantes si saben qué hacer cuando llega la primavera.",
+        "desarrollo": "Los estudiantes salen al patio o un lugar cercano y observan las plantas, animales y el clima. Se les pide que anoten en su cuaderno lo que ven y cómo se sienten cuando hace calor o llueve.\nLos estudiantes vuelven a la clase y comparten sus observaciones y preguntas sobre la primavera. La maestra ayuda a los estudiantes a reflexionar sobre lo que han visto y cómo se relaciona con el tema.",
+        "cierre": "La maestra resume lo aprendido en la clase y se pregunta a los estudiantes qué esperan hacer durante la primavera para aprovecharla de manera positiva.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Mapas de México que muestren las regiones climáticas",
+          "Fotos y videos de la naturaleza durante la primavera",
+          "Un cuaderno por estudiante para anotar observaciones y preguntas"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "{'titulo': 'Introducción', 'contenido': 'Presentar a los estudiantes el tema del día: cómo la primavera afecta a las plantas. Recordarles que durante esta estación, las temperaturas y lluvias favorables permiten el crecimiento de las plantas.'}",
+        "desarrollo": "{'titulo': 'Experimento de siembra', 'contenido': 'Distribuir las semillas entre los estudiantes y pedirles que preparen un espacio adecuado para la siembra. Dejarlas germinar durante unos minutos y luego observar cómo reaccionan ante diferentes condiciones (temperatura, humedad).'}\n{'titulo': 'Observación y análisis', 'contenido': 'Preguntar a los estudiantes sobre lo que han observado en las semillas. Fomentar la discusión y el intercambio de ideas sobre cómo la primavera afecta el crecimiento de las plantas.'}\n{'titulo': 'Conexiones con la realidad', 'contenido': 'Mostrar ejemplos de plantas que están en diferentes estados de crecimiento (germinación, florecimiento) y preguntar a los estudiantes sobre cómo pueden aplicar lo aprendido en su vida cotidiana. ¿Cómo cuidan las plantas en casa? ¿Qué condiciones necesitan para crecer?'}",
+        "cierre": "{'titulo': 'Conclusión', 'contenido': 'Resumir lo aprendido y recordarle a los estudiantes que la primavera es un momento crucial para el crecimiento de las plantas. Pedirles que piensen en cómo pueden contribuir a proteger y cuidar el medio ambiente durante esta estación.'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Semillas de diferentes tipos (legumbres, frutas, verduras)",
+          "Tierra y macetas para siembra",
+          "Agua",
+          "Ejemplos de plantas en diferentes estados de crecimiento"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Introduce el tema de la primavera y su impacto en los animales. Pregúntale a los estudiantes si han observado algún animal que cambie de comportamiento o aparece durante esta estación.",
+        "desarrollo": "Muestra las fotografías de diferentes especies de animales relacionadas con la primavera. Pregúntale a los estudiantes qué adaptaciones pueden observar en cada uno de ellos. ¿Cómo se comunican? ¿Cómo buscan alimentos?\nProporciona las diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas. Pide a los estudiantes que investiguen en parejas sobre un animal específico y cómo se adapta para sobrevivir durante la primavera.",
+        "cierre": "Pide a cada pareja de estudiantes que elabore un boceto o dibujo de su animal, incluyendo algunas adaptaciones específicas que mencionaron durante la investigación. También deben escribir una breve descripción sobre el comportamiento y las adaptaciones del animal.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Fotografías de diferentes especies de animales que se encuentran en México, especialmente aquellos que están relacionados con la primavera (ej. conejos, aves migratorias)",
+          "Diapositivas o recursos digitales sobre adaptaciones de los animales a las condiciones climáticas",
+          "Papel y lápices para anotar y dibujar"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Los estudiantes reflexionan y comparten sus observaciones sobre cómo los seres humanos afectan el entorno durante la primavera, como por ejemplo la agricultura, la recolección de frutas y verduras, la construcción, etc.",
+        "desarrollo": "Los estudiantes analizan las acciones humanas y discuten cómo pueden afectar el equilibrio de los ecosistemas. Por ejemplo, la agricultura puede ser beneficiosa si se hace de manera sostenible pero perjudicial si se explota el suelo o se usan químicos tóxicos.",
+        "cierre": "Los estudiantes reflexionan sobre formas de reducir, reutilizar y reciclar en su comunidad. También pueden compartir ideas para proteger los ecosistemas y preservar las especies en peligro de extinción.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel y lápices para cada estudiante",
+          "Un gráfico o mapa mental de la comunidad para ubicar las acciones humanas que influyen en el medio ambiente"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "{'titulo': 'Paso 1: Revisión final de la información aprendida', 'descripción': 'Los estudiantes revisan los materiales y notas recopiladas a lo largo del proyecto, enfocándose en las características distintivas de la primavera en México, cómo los cambios climáticos durante esta estación afectan a diferentes seres vivos y cómo estas relaciones son fundamentales para el equilibrio del ecosistema.', 'tiempo': '10 minutos'}",
+        "desarrollo": "{'titulo': 'Paso 2: Selección de la plataforma de creación de presentaciones', 'descripción': 'Los estudiantes deciden si utilizarán una plantilla pre-diseñada o comenzarán desde cero. También deben elegir el software y la herramienta adecuados para su proyecto.', 'tiempo': '10 minutos'}",
+        "cierre": "{'titulo': 'Paso 3: Creación del informe gráfico o presentación', 'descripción': 'Con la plataforma seleccionada, los estudiantes comienzan a crear su informe gráfico o presentación. Deben incluir información sobre las características climáticas de la primavera en México, cómo afecta a diferentes especies vegetales y animales, así como ejemplos de cómo las actividades humanas pueden influir positiva o negativamente en el medio ambiente durante esta estación.', 'tiempo': '20 minutos'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Computadoras o tablets con acceso a la red",
+          "Software de creación de presentaciones (p. ej., PowerPoint, Google Slides)",
+          "Plantillas pre-diseñadas para informes gráficos o presentaciones",
+          "Herramientas de diseño y edición de imágenes (opcional)"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

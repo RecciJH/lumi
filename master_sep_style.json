@@ -1,0 +1,1214 @@
+{
+  "meta": {
+    "started_at": "2026-03-12T19:32:29.094953+00:00",
+    "finished_at": "2026-03-12T19:36:41.655673+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 23718
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 2,
+        "duration_ms": 162389
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 22780
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 15334
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 28333
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP"
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera y los Seres Vivos",
+      "problematica": "Los estudiantes del tercer grado tienen dificultades para comprender y describir las características de la estación primavera y su impacto en los seres vivos. Necesitan desarrollar habilidades de observación, pensamiento crítico y comunicación efectiva.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia del desarrollo integral de las personas, considerando aspectos cognitivos, afectivos y sociales. La temática de la primavera y los seres vivos permite integrar conocimientos científicos con la exploración de valores y hábitos de vida sostenible.",
+      "proposito": "Que los estudiantes comprendan y expliquen las características de la estación primavera, describan el impacto en los seres vivos y relacionen esto con hábitos de cuidado del medio ambiente.",
+      "producto_final": "Un diario de observaciones y reflexiones individuales, un mural colectivo que muestre la diversidad de vida en la estación primavera, y una presentación oral sobre el impacto de los cambios climáticos en la región.",
+      "temporalidad": "{\"día_1\": \"Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar\", \"día_2\": \"Investigación sobre los seres vivos que se desarrollan en la primavera. Creación del diario de observaciones y reflexiones individuales\", \"día_3\": \"Trabajo en equipo para crear el mural colectivo, utilizando imágenes y textos que describan la diversidad de vida durante la primavera.\", \"día_4\": \"Preparación para la presentación oral sobre los impactos climáticos. Investigación específica sobre la región\", \"día_5\": \"Presentaciones orales sobre el impacto climático y análisis grupal del diario de observaciones\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Descubriendo la Primavera",
+          "materiales": [
+            "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+            "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+            "Papel y lápices para cada estudiante"
+          ],
+          "pasos": [
+            "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+            "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+            "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Explorando la Vida en la Primavera",
+          "materiales": [
+            "Cuaderno de observaciones individuales para cada estudiante",
+            "Cámaras o dispositivos móviles para tomar fotos y videos",
+            "Pizarrón o tablero blanco",
+            "Marcadores y lápices coloreados",
+            "Imágenes y recursos sobre la primavera y los seres vivos"
+          ],
+          "pasos": [
+            "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+            "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.",
+            "3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+            "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Crear un mural colectivo que muestre la diversidad de vida en la estación primavera",
+          "materiales": [
+            "Papel mural o cartulina grande",
+            "Lapiceros y marcadores de colores",
+            "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+            "Tijeras y pegamento"
+          ],
+          "pasos": [
+            "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+            "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.",
+            "Comenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.",
+            "InterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+            "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Anñalisis grupal del diario de observaciones y reflexiones individuales",
+          "materiales": [
+            "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+            "Papel blanco para apuntes",
+            "Marcadores u otros instrumentos de escritura"
+          ],
+          "pasos": [
+            "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+            "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}",
+            "{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+            "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión sobre el impacto climático en la región",
+          "materiales": [
+            "Papel y lápiz para cada estudiante",
+            "Un mapa o planimetría de la región",
+            "Información previa sobre los cambios climáticos en la zona"
+          ],
+          "pasos": [
+            "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+            "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.",
+            "Solicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+            "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana."
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "Día 1": "Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar",
+      "Actividad": "Descubriendo la Primavera",
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": "",
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": []
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y de lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades",
+        "De lo humano y de lo comunitario"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Describe las características de la estación de primavera. Identifica los cambios que se producen en el medio ambiente durante esta época.",
+          "procesos": {
+            "2°": "Describe las estaciones del año con ejemplos básicos.",
+            "3°": "Describe las características de la estación de primavera y los cambios que se producen en el medio ambiente durante esta época.",
+            "4°": "Explica los procesos geológicos que originan las estaciones y describe sus efectos sobre el clima y la vida en la Tierra."
+          }
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Menciona algunos usos sostenibles del agua durante la primavera.",
+          "procesos": {
+            "prev": "",
+            "3°": "Menciona algunos usos sostenibles del agua durante la primavera.",
+            "next": "Analiza las implicaciones éticas de la conservación de recursos naturales en la comunidad."
+          }
+        },
+        {
+          "campo_formativo": "De lo humano y de lo comunitario",
+          "contenido": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+          "procesos": {
+            "prev": "",
+            "3°": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+            "next": "Describe las formas en que sus comunidades se organizan para mitigar los efectos de una crisis climática."
+          }
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Punto de partida",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+        "desarrollo": "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+        "cierre": "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+          "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+          "Papel y lápices para cada estudiante"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Planeación",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+        "desarrollo": "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.\n3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+        "cierre": "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno de observaciones individuales para cada estudiante",
+          "Cámaras o dispositivos móviles para tomar fotos y videos",
+          "Pizarrón o tablero blanco",
+          "Marcadores y lápices coloreados",
+          "Imágenes y recursos sobre la primavera y los seres vivos"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "A trabajar",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+        "desarrollo": "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.\nComenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.\nInterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+        "cierre": "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel mural o cartulina grande",
+          "Lapiceros y marcadores de colores",
+          "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+          "Tijeras y pegamento"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Comunicar",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+        "desarrollo": "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}\n{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+        "cierre": "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+          "Papel blanco para apuntes",
+          "Marcadores u otros instrumentos de escritura"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+        "desarrollo": "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.\nSolicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+        "cierre": "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel y lápiz para cada estudiante",
+          "Un mapa o planimetría de la región",
+          "Información previa sobre los cambios climáticos en la zona"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprensión de la estación primavera",
+          "indicadores": [
+            "Describe las características climáticas, vegetativas y faunísticas de la primavera",
+            "Identifica y describe los cambios en la naturaleza durante la primavera"
+          ],
+          "evidencia": "Diario de observaciones y reflexiones individuales (Día 2)",
+          "niveles": {
+            "Insuficiente": "No describe las características climáticas, vegetativas y faunísticas de la primavera o no identifica los cambios en la naturaleza.",
+            "Básico": "Describe algunas características climáticas, vegetativas y faunísticas de la primavera y/o identifica algunos cambios en la naturaleza.",
+            "Satisfactorio": "Describe las características climáticas, vegetativas y faunísticas de la primavera y identifica los cambios en la naturaleza con precisión.",
+            "Destacado": "Describe exhaustivamente las características climáticas, vegetativas y faunísticas de la primavera e identifica y describe detalladamente los cambios en la naturaleza."
+          }
+        },
+        {
+          "criterio": "Creación del mural colectivo",
+          "indicadores": [
+            "El mural muestra la diversidad de vida en la estación primavera",
+            "Las imágenes y textos son relevantes y adecuados para el tema"
+          ],
+          "evidencia": "Mural colectivo (Día 3)",
+          "niveles": {
+            "Insuficiente": "El mural no muestra la diversidad de vida en la estación primavera o las imágenes y textos son irrelevantes e inapropiados.",
+            "Básico": "El mural muestra algunos aspectos de la diversidad de vida en la estación primavera, pero las imágenes y textos pueden ser mejorados.",
+            "Satisfactorio": "El mural muestra la diversidad de vida en la estación primavera con precisión y las imágenes y textos son relevantes y adecuados.",
+            "Destacado": "El mural muestra exhaustivamente la diversidad de vida en la estación primavera e incluye imágenes y textos innovadores y creativos."
+          }
+        },
+        {
+          "criterio": "Presentación oral sobre el impacto climático",
+          "indicadores": [
+            "La presentación es clara y concisa",
+            "Se identifican y describen los cambios climáticos en la región"
+          ],
+          "evidencia": "Presentaciones orales (Día 5)",
+          "niveles": {
+            "Insuficiente": "La presentación no es clara o no se identifican los cambios climáticos en la región.",
+            "Básico": "La presentación es confusa y/o no se identifican algunos cambios climáticos en la región.",
+            "Satisfactorio": "La presentación es clara y concisa, e identifica y describe con precisión los cambios climáticos en la región.",
+            "Destacado": "La presentación es innovadora y creativa, e incluye información detallada y precisa sobre los cambios climáticos en la región."
+          }
+        }
+      ],
+      "indicadores": [
+        "Diario de observaciones y reflexiones individuales",
+        "Mural colectivo",
+        "Presentaciones orales"
+      ]
+    },
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La Primavera y los Seres Vivos",
+        "problematica": "Los estudiantes del tercer grado tienen dificultades para comprender y describir las características de la estación primavera y su impacto en los seres vivos. Necesitan desarrollar habilidades de observación, pensamiento crítico y comunicación efectiva.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia del desarrollo integral de las personas, considerando aspectos cognitivos, afectivos y sociales. La temática de la primavera y los seres vivos permite integrar conocimientos científicos con la exploración de valores y hábitos de vida sostenible.",
+        "proposito": "Que los estudiantes comprendan y expliquen las características de la estación primavera, describan el impacto en los seres vivos y relacionen esto con hábitos de cuidado del medio ambiente.",
+        "producto_final": "Un diario de observaciones y reflexiones individuales, un mural colectivo que muestre la diversidad de vida en la estación primavera, y una presentación oral sobre el impacto de los cambios climáticos en la región.",
+        "temporalidad": "{\"día_1\": \"Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar\", \"día_2\": \"Investigación sobre los seres vivos que se desarrollan en la primavera. Creación del diario de observaciones y reflexiones individuales\", \"día_3\": \"Trabajo en equipo para crear el mural colectivo, utilizando imágenes y textos que describan la diversidad de vida durante la primavera.\", \"día_4\": \"Preparación para la presentación oral sobre los impactos climáticos. Investigación específica sobre la región\", \"día_5\": \"Presentaciones orales sobre el impacto climático y análisis grupal del diario de observaciones\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [
+          {
+            "criterio": "Comprensión de la estación primavera",
+            "indicadores": [
+              "Describe las características climáticas, vegetativas y faunísticas de la primavera",
+              "Identifica y describe los cambios en la naturaleza durante la primavera"
+            ],
+            "evidencia": "Diario de observaciones y reflexiones individuales (Día 2)",
+            "niveles": {
+              "Insuficiente": "No describe las características climáticas, vegetativas y faunísticas de la primavera o no identifica los cambios en la naturaleza.",
+              "Básico": "Describe algunas características climáticas, vegetativas y faunísticas de la primavera y/o identifica algunos cambios en la naturaleza.",
+              "Satisfactorio": "Describe las características climáticas, vegetativas y faunísticas de la primavera y identifica los cambios en la naturaleza con precisión.",
+              "Destacado": "Describe exhaustivamente las características climáticas, vegetativas y faunísticas de la primavera e identifica y describe detalladamente los cambios en la naturaleza."
+            }
+          },
+          {
+            "criterio": "Creación del mural colectivo",
+            "indicadores": [
+              "El mural muestra la diversidad de vida en la estación primavera",
+              "Las imágenes y textos son relevantes y adecuados para el tema"
+            ],
+            "evidencia": "Mural colectivo (Día 3)",
+            "niveles": {
+              "Insuficiente": "El mural no muestra la diversidad de vida en la estación primavera o las imágenes y textos son irrelevantes e inapropiados.",
+              "Básico": "El mural muestra algunos aspectos de la diversidad de vida en la estación primavera, pero las imágenes y textos pueden ser mejorados.",
+              "Satisfactorio": "El mural muestra la diversidad de vida en la estación primavera con precisión y las imágenes y textos son relevantes y adecuados.",
+              "Destacado": "El mural muestra exhaustivamente la diversidad de vida en la estación primavera e incluye imágenes y textos innovadores y creativos."
+            }
+          },
+          {
+            "criterio": "Presentación oral sobre el impacto climático",
+            "indicadores": [
+              "La presentación es clara y concisa",
+              "Se identifican y describen los cambios climáticos en la región"
+            ],
+            "evidencia": "Presentaciones orales (Día 5)",
+            "niveles": {
+              "Insuficiente": "La presentación no es clara o no se identifican los cambios climáticos en la región.",
+              "Básico": "La presentación es confusa y/o no se identifican algunos cambios climáticos en la región.",
+              "Satisfactorio": "La presentación es clara y concisa, e identifica y describe con precisión los cambios climáticos en la región.",
+              "Destacado": "La presentación es innovadora y creativa, e incluye información detallada y precisa sobre los cambios climáticos en la región."
+            }
+          }
+        ],
+        "indicadores": [
+          "Diario de observaciones y reflexiones individuales",
+          "Mural colectivo",
+          "Presentaciones orales"
+        ]
+      },
+      "secuencia_didactica": {
+        "Día 1": "Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar",
+        "Actividad": "Descubriendo la Primavera",
+        "inicio": "",
+        "desarrollo": "",
+        "cierre": "",
+        "evaluacion": "",
+        "evidencias": [],
+        "materiales": []
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Descubriendo la Primavera",
+            "materiales": [
+              "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+              "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+              "Papel y lápices para cada estudiante"
+            ],
+            "pasos": [
+              "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+              "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+              "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera."
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Explorando la Vida en la Primavera",
+            "materiales": [
+              "Cuaderno de observaciones individuales para cada estudiante",
+              "Cámaras o dispositivos móviles para tomar fotos y videos",
+              "Pizarrón o tablero blanco",
+              "Marcadores y lápices coloreados",
+              "Imágenes y recursos sobre la primavera y los seres vivos"
+            ],
+            "pasos": [
+              "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+              "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.",
+              "3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+              "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto."
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Crear un mural colectivo que muestre la diversidad de vida en la estación primavera",
+            "materiales": [
+              "Papel mural o cartulina grande",
+              "Lapiceros y marcadores de colores",
+              "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+              "Tijeras y pegamento"
+            ],
+            "pasos": [
+              "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+              "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.",
+              "Comenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.",
+              "InterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+              "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Anñalisis grupal del diario de observaciones y reflexiones individuales",
+            "materiales": [
+              "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+              "Papel blanco para apuntes",
+              "Marcadores u otros instrumentos de escritura"
+            ],
+            "pasos": [
+              "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+              "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}",
+              "{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+              "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}"
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Reflexión sobre el impacto climático en la región",
+            "materiales": [
+              "Papel y lápiz para cada estudiante",
+              "Un mapa o planimetría de la región",
+              "Información previa sobre los cambios climáticos en la zona"
+            ],
+            "pasos": [
+              "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+              "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.",
+              "Solicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+              "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana."
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y de lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Describe las características de la estación de primavera. Identifica los cambios que se producen en el medio ambiente durante esta época.",
+            "procesos": {
+              "2°": "Describe las estaciones del año con ejemplos básicos.",
+              "3°": "Describe las características de la estación de primavera y los cambios que se producen en el medio ambiente durante esta época.",
+              "4°": "Explica los procesos geológicos que originan las estaciones y describe sus efectos sobre el clima y la vida en la Tierra."
+            }
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Menciona algunos usos sostenibles del agua durante la primavera.",
+            "procesos": {
+              "prev": "",
+              "3°": "Menciona algunos usos sostenibles del agua durante la primavera.",
+              "next": "Analiza las implicaciones éticas de la conservación de recursos naturales en la comunidad."
+            }
+          },
+          {
+            "campo_formativo": "De lo humano y de lo comunitario",
+            "contenido": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+            "procesos": {
+              "prev": "",
+              "3°": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+              "next": "Describe las formas en que sus comunidades se organizan para mitigar los efectos de una crisis climática."
+            }
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Punto de partida",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+          "desarrollo": "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+          "cierre": "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+            "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+            "Papel y lápices para cada estudiante"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Planeación",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+          "desarrollo": "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.\n3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+          "cierre": "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuaderno de observaciones individuales para cada estudiante",
+            "Cámaras o dispositivos móviles para tomar fotos y videos",
+            "Pizarrón o tablero blanco",
+            "Marcadores y lápices coloreados",
+            "Imágenes y recursos sobre la primavera y los seres vivos"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "A trabajar",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+          "desarrollo": "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.\nComenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.\nInterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+          "cierre": "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Papel mural o cartulina grande",
+            "Lapiceros y marcadores de colores",
+            "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+            "Tijeras y pegamento"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Comunicar",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+          "desarrollo": "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}\n{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+          "cierre": "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+            "Papel blanco para apuntes",
+            "Marcadores u otros instrumentos de escritura"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+          "desarrollo": "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.\nSolicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+          "cierre": "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Papel y lápiz para cada estudiante",
+            "Un mapa o planimetría de la región",
+            "Información previa sobre los cambios climáticos en la zona"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera y los Seres Vivos",
+      "problematica": "Los estudiantes del tercer grado tienen dificultades para comprender y describir las características de la estación primavera y su impacto en los seres vivos. Necesitan desarrollar habilidades de observación, pensamiento crítico y comunicación efectiva.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia del desarrollo integral de las personas, considerando aspectos cognitivos, afectivos y sociales. La temática de la primavera y los seres vivos permite integrar conocimientos científicos con la exploración de valores y hábitos de vida sostenible.",
+      "proposito": "Que los estudiantes comprendan y expliquen las características de la estación primavera, describan el impacto en los seres vivos y relacionen esto con hábitos de cuidado del medio ambiente.",
+      "producto_final": "Un diario de observaciones y reflexiones individuales, un mural colectivo que muestre la diversidad de vida en la estación primavera, y una presentación oral sobre el impacto de los cambios climáticos en la región.",
+      "temporalidad": "{\"día_1\": \"Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar\", \"día_2\": \"Investigación sobre los seres vivos que se desarrollan en la primavera. Creación del diario de observaciones y reflexiones individuales\", \"día_3\": \"Trabajo en equipo para crear el mural colectivo, utilizando imágenes y textos que describan la diversidad de vida durante la primavera.\", \"día_4\": \"Preparación para la presentación oral sobre los impactos climáticos. Investigación específica sobre la región\", \"día_5\": \"Presentaciones orales sobre el impacto climático y análisis grupal del diario de observaciones\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprensión de la estación primavera",
+          "indicadores": [
+            "Describe las características climáticas, vegetativas y faunísticas de la primavera",
+            "Identifica y describe los cambios en la naturaleza durante la primavera"
+          ],
+          "evidencia": "Diario de observaciones y reflexiones individuales (Día 2)",
+          "niveles": {
+            "Insuficiente": "No describe las características climáticas, vegetativas y faunísticas de la primavera o no identifica los cambios en la naturaleza.",
+            "Básico": "Describe algunas características climáticas, vegetativas y faunísticas de la primavera y/o identifica algunos cambios en la naturaleza.",
+            "Satisfactorio": "Describe las características climáticas, vegetativas y faunísticas de la primavera y identifica los cambios en la naturaleza con precisión.",
+            "Destacado": "Describe exhaustivamente las características climáticas, vegetativas y faunísticas de la primavera e identifica y describe detalladamente los cambios en la naturaleza."
+          }
+        },
+        {
+          "criterio": "Creación del mural colectivo",
+          "indicadores": [
+            "El mural muestra la diversidad de vida en la estación primavera",
+            "Las imágenes y textos son relevantes y adecuados para el tema"
+          ],
+          "evidencia": "Mural colectivo (Día 3)",
+          "niveles": {
+            "Insuficiente": "El mural no muestra la diversidad de vida en la estación primavera o las imágenes y textos son irrelevantes e inapropiados.",
+            "Básico": "El mural muestra algunos aspectos de la diversidad de vida en la estación primavera, pero las imágenes y textos pueden ser mejorados.",
+            "Satisfactorio": "El mural muestra la diversidad de vida en la estación primavera con precisión y las imágenes y textos son relevantes y adecuados.",
+            "Destacado": "El mural muestra exhaustivamente la diversidad de vida en la estación primavera e incluye imágenes y textos innovadores y creativos."
+          }
+        },
+        {
+          "criterio": "Presentación oral sobre el impacto climático",
+          "indicadores": [
+            "La presentación es clara y concisa",
+            "Se identifican y describen los cambios climáticos en la región"
+          ],
+          "evidencia": "Presentaciones orales (Día 5)",
+          "niveles": {
+            "Insuficiente": "La presentación no es clara o no se identifican los cambios climáticos en la región.",
+            "Básico": "La presentación es confusa y/o no se identifican algunos cambios climáticos en la región.",
+            "Satisfactorio": "La presentación es clara y concisa, e identifica y describe con precisión los cambios climáticos en la región.",
+            "Destacado": "La presentación es innovadora y creativa, e incluye información detallada y precisa sobre los cambios climáticos en la región."
+          }
+        }
+      ],
+      "indicadores": [
+        "Diario de observaciones y reflexiones individuales",
+        "Mural colectivo",
+        "Presentaciones orales"
+      ]
+    },
+    "secuencia_didactica": {
+      "Día 1": "Presentación inicial: descripción de la estación primavera. Observaciones iniciales en el jardín o parque escolar",
+      "Actividad": "Descubriendo la Primavera",
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": "",
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": []
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Descubriendo la Primavera",
+          "materiales": [
+            "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+            "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+            "Papel y lápices para cada estudiante"
+          ],
+          "pasos": [
+            "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+            "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+            "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Explorando la Vida en la Primavera",
+          "materiales": [
+            "Cuaderno de observaciones individuales para cada estudiante",
+            "Cámaras o dispositivos móviles para tomar fotos y videos",
+            "Pizarrón o tablero blanco",
+            "Marcadores y lápices coloreados",
+            "Imágenes y recursos sobre la primavera y los seres vivos"
+          ],
+          "pasos": [
+            "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+            "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.",
+            "3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+            "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Crear un mural colectivo que muestre la diversidad de vida en la estación primavera",
+          "materiales": [
+            "Papel mural o cartulina grande",
+            "Lapiceros y marcadores de colores",
+            "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+            "Tijeras y pegamento"
+          ],
+          "pasos": [
+            "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+            "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.",
+            "Comenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.",
+            "InterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+            "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Anñalisis grupal del diario de observaciones y reflexiones individuales",
+          "materiales": [
+            "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+            "Papel blanco para apuntes",
+            "Marcadores u otros instrumentos de escritura"
+          ],
+          "pasos": [
+            "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+            "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}",
+            "{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+            "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión sobre el impacto climático en la región",
+          "materiales": [
+            "Papel y lápiz para cada estudiante",
+            "Un mapa o planimetría de la región",
+            "Información previa sobre los cambios climáticos en la zona"
+          ],
+          "pasos": [
+            "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+            "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.",
+            "Solicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+            "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana."
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación de las culturas a través de la Lectura y Escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y de lo comunitario",
+        "seleccionado": true
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Describe las características de la estación de primavera. Identifica los cambios que se producen en el medio ambiente durante esta época.",
+          "procesos": {
+            "2°": "Describe las estaciones del año con ejemplos básicos.",
+            "3°": "Describe las características de la estación de primavera y los cambios que se producen en el medio ambiente durante esta época.",
+            "4°": "Explica los procesos geológicos que originan las estaciones y describe sus efectos sobre el clima y la vida en la Tierra."
+          }
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Menciona algunos usos sostenibles del agua durante la primavera.",
+          "procesos": {
+            "prev": "",
+            "3°": "Menciona algunos usos sostenibles del agua durante la primavera.",
+            "next": "Analiza las implicaciones éticas de la conservación de recursos naturales en la comunidad."
+          }
+        },
+        {
+          "campo_formativo": "De lo humano y de lo comunitario",
+          "contenido": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+          "procesos": {
+            "prev": "",
+            "3°": "Comenta una tradición o celebración relacionada con la primavera en su comunidad.",
+            "next": "Describe las formas en que sus comunidades se organizan para mitigar los efectos de una crisis climática."
+          }
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Punto de partida",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "La profesora presenta una breve introducción sobre la estación primavera, explicando las características climáticas, vegetativas y faunísticas que se presentan en esta época del año. Se muestra un video o imágenes para dar a entender visualmente lo descrito.",
+        "desarrollo": "Los estudiantes se dirigen al jardín o parque escolar con el profesor, quienes realizan observaciones y registros de los cambios que están sucediendo en la naturaleza durante la primavera. Se les pide que identifiquen y describan las plantas, animales y entornos que están cambiando debido a la estación del año.",
+        "cierre": "Una vez en el salón de clase, los estudiantes escriben en su diario personal sobre lo observado. Se les pide que describan qué vieron, cómo se sienten ante estos cambios y qué significan para ellos. También se les pregunta si han notado algún cambio en sus rutinas o hábitos debido a la estación primavera.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Fotografías de la naturaleza en primavera (flores, árboles en flor, pájaros, etc.)",
+          "Mapa o dibujo del entorno escolar y su relación con la estación primavera",
+          "Papel y lápices para cada estudiante"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Planeación",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "1. Presentación inicial (5 minutos): Describir brevemente las características de la estación primavera, enfatizando la reapertura de las flores, el surgimiento de nuevos brotes y el aumento en la actividad de los animales.",
+        "desarrollo": "2. Observaciones iniciales (10 minutos): Llevar a los estudiantes al jardín o parque escolar para que observen y describan lo que ven durante la estación primavera. Pueden tomar fotos y videos con sus dispositivos móviles.\n3. Registro de observaciones (15 minutos): En el salón de clases, piden a cada estudiante registrar en su cuaderno de observaciones las cosas notables que vieron en el jardín o parque escolar durante la primavera.",
+        "cierre": "4. Resumen y anticipación (10 minutos): Preguntan a los estudiantes para hacer un breve resumen de lo que han aprendido sobre la estación primavera hasta ese momento, anticipando qué se verá más adelante en el proyecto.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno de observaciones individuales para cada estudiante",
+          "Cámaras o dispositivos móviles para tomar fotos y videos",
+          "Pizarrón o tablero blanco",
+          "Marcadores y lápices coloreados",
+          "Imágenes y recursos sobre la primavera y los seres vivos"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "A trabajar",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Dividimos el mural en secciones para cada uno de nosotros. Cada estudiante escribe su nombre al lado de su sección.",
+        "desarrollo": "Investigamos y elegimos imágenes y textos que representen la diversidad de vida durante la primavera. Podemos utilizar imágenes de flores, árboles en flor, abejas, mariposas, etc.\nComenzamos a colorear y decorar nuestras secciones del mural utilizando los materiales disponibles. Recuerda que debemos incluir textos que describan la estación primavera y los seres vivos presentes en ella.\nInterCambiamos ideas y sugerencias con nuestros compañeros para agregar detalles y mejorar nuestro mural colectivo.",
+        "cierre": "Finalmente, juntamos todas las secciones y pegamos el mural en su lugar definitivo. ¡Listo! Ahora tenemos un mural grandioso que refleja la belleza de la primavera y los seres vivos que la acompañan.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel mural o cartulina grande",
+          "Lapiceros y marcadores de colores",
+          "Imágenes y textos impresos sobre la estación primavera y los seres vivos que se desarrollan en ella",
+          "Tijeras y pegamento"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Comunicar",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "{'paso': 'Dividir a los estudiantes en grupos pequeños, cada uno con un líder', 'explicación': 'Para que puedan discutir y analizar las observaciones y reflexiones individuales'}",
+        "desarrollo": "{'paso': 'Leer y compartir apuntes sobre la diversidad de vida en la primavera', 'explicación': 'Fomentar la comprensión mutua entre los estudiantes'}\n{'paso': 'Identificar patrones o diferencias en las observaciones, con respecto a la temperatura y el clima.', 'explicación': 'Promover pensamiento crítico y análisis de datos'}",
+        "cierre": "{'paso': 'Completar un cuadro sinóptico comparativo sobre los cambios observados durante la primavera', 'explicación': 'Reflexionar sobre el impacto de los cambios climáticos en la región'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Copias impresas o digitales del diario de observaciones y reflexiones individuales",
+          "Papel blanco para apuntes",
+          "Marcadores u otros instrumentos de escritura"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Presenta a los estudiantes el objetivo de la actividad y recuerda su trabajo anterior en la creación del mural colectivo y el diario de observaciones.",
+        "desarrollo": "Divide a los estudiantes en grupos pequeños y asigna a cada grupo una sección específica del mapa o planimetría de la región. Pregúntales que identifiquen y describan los cambios climáticos que han observado en esa zona durante la primavera.\nSolicita a cada grupo que presente sus hallazgos sobre el impacto climático en su sección asignada, utilizando el mapa o planimetría como referencia.",
+        "cierre": "Realiza un breve recapitulación del trabajo grupal y solicita a los estudiantes que reflexionen sobre lo aprendido durante la actividad, pensando en cómo pueden aplicar estos conocimientos en su vida cotidiana.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel y lápiz para cada estudiante",
+          "Un mapa o planimetría de la región",
+          "Información previa sobre los cambios climáticos en la zona"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

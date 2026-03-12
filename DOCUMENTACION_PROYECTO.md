@@ -70,38 +70,10 @@ Opcional (para depuración):
 python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion.pdf --out-master master.json --include-raw-json --log-level DEBUG
 ```
 
-Opcional (diseño/tema):
+Opcional (incluir evaluación/rúbrica; puede tardar más):
 
 ```powershell
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion.pdf --theme primavera --mode screen
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_print.pdf --theme primavera --mode print
-```
-
-Variación de diseño por ejecución (sin descargar muchas imágenes):
-
-```powershell
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_v1.pdf --theme primavera --mode screen
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_v2.pdf --theme primavera --mode screen
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_seed_42.pdf --theme primavera --mode screen --design-seed 42
-```
-
-Opcional (portada con imagen real de internet, con licencia y atribución):
-
-```powershell
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_real_cover.pdf --theme primavera --remote-images
-```
-
-Si tu red bloquea Wikimedia o devuelve `403`, define un User-Agent descriptivo:
-
-```powershell
-$env:LUMI_HTTP_USER_AGENT = "Lumi/1.0 (educational planning generator; contacto: tu-email@dominio.com)"
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_real_cover.pdf --theme primavera --remote-images
-```
-
-Opcional (portada con imagen local):
-
-```powershell
-python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion_cover_local.pdf --theme primavera --cover-image .\\mi_portada.png --cover-attribution "Autor — Licencia"
+python backend/scripts/generar_planeacion_pdf.py --input input.json --out planeacion.pdf --include-evaluacion
 ```
 
 ## Mapa de carpetas y archivos

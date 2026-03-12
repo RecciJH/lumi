@@ -13,9 +13,11 @@ import logging
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 
 from agents.activity_agent import generar_actividades
+from agents.contenidos_pda_agent import generar_contenidos_pda
 from agents.curriculum_agent import elegir_curriculum
 from agents.didactic_sequence_agent import generar_secuencia_didactica
 from agents.evaluation_agent import generar_evaluacion
@@ -159,6 +161,35 @@ def _validate_planeacion(value: Any) -> dict:
     return _ensure_dict(value, name="planeacion")
 
 
+def _validate_ejes_campos(value: Any) -> dict:
+    data = _ensure_dict(value, name="ejes_campos")
+    data.setdefault("ejes_articuladores", [])
+    data.setdefault("campos_formativos", [])
+    if not isinstance(data["ejes_articuladores"], list):
+        data["ejes_articuladores"] = []
+    if not isinstance(data["campos_formativos"], list):
+        data["campos_formativos"] = []
+    return data
+
+
+def _validate_contenidos_pda(value: Any) -> dict:
+    return _ensure_dict(value, name="contenidos_pda")
+
+
+def _validate_sesiones(value: Any) -> list[dict]:
+    sesiones = _ensure_list(value, name="sesiones")
+    out: list[dict] = []
+    for s in sesiones:
+        if not isinstance(s, dict):
+            continue
+        if "sesion" not in s:
+            continue
+        out.append(s)
+    if not out:
+        raise ValueError("La lista de 'sesiones' llegó vacía o inválida.")
+    return out
+
+
 def _step_curriculum(state: dict) -> dict:
     return elegir_curriculum(state["tema"])
 
@@ -214,14 +245,194 @@ def _step_planeacion(state: dict) -> dict:
             self.__dict__.update(d)
 
     data = _DataShim(state)
-    return construir_planeacion(
+    evaluacion = state.get("evaluacion") or {"instrumento": "rubrica", "criterios": [], "indicadores": []}
+    planeacion = construir_planeacion(
         data,
         state["curriculum"],
         state["proyecto"],
-        state["evaluacion"],
+        evaluacion,
         state["secuencia_didactica"],
         state["actividades"],
     )
+    # Campos extra para PDF estilo SEP
+    ejes_campos = state.get("ejes_campos") or {}
+    planeacion["ejes_articuladores"] = ejes_campos.get("ejes_articuladores", [])
+    planeacion["campos_formativos"] = ejes_campos.get("campos_formativos", [])
+    planeacion["contenidos_pda"] = state.get("contenidos_pda") or {}
+    planeacion["sesiones"] = state.get("sesiones") or []
+    return planeacion
+
+
+def _step_ejes_campos(state: dict) -> dict:
+    # Selección automática (sin red): carga lista de ejes desde backend/utils/preescolar/ejesarticuladores.txt si existe.
+    base_dir = Path(__file__).resolve().parents[1] / "utils" / "preescolar"
+    ejes_path = base_dir / "ejesarticuladores.txt"
+    if ejes_path.exists():
+        raw_lines = ejes_path.read_text(encoding="utf-8", errors="replace").splitlines()
+        ejes = [ln.strip().lstrip("-").strip() for ln in raw_lines if ln.strip().lstrip("-").strip()]
+    else:
+        ejes = [
+            "Inclusión",
+            "Pensamiento Crítico",
+            "Interculturalidad crítica",
+            "Igualdad de género",
+            "Vida Saludable",
+            "Apropiación cultural a través de la lectura y escritura",
+            "Artes y experiencias estéticas",
+        ]
+    campos = [
+        "Lenguajes",
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades",
+        "De lo humano y lo comunitario",
+    ]
+
+    tema = str(state.get("tema") or "")
+    curriculum = state.get("curriculum") or {}
+    campo_principal = str(curriculum.get("campo_formativo") or "")
+    eje = str(curriculum.get("eje") or "")
+    proyecto = state.get("proyecto") or {}
+
+    contexto = " ".join(
+        [
+            tema,
+            str(proyecto.get("nombre_proyecto") or ""),
+            str(proyecto.get("problematica") or ""),
+            str(proyecto.get("proposito") or ""),
+            str(state.get("metodologia") or ""),
+        ]
+    ).lower()
+
+    def _score(keywords: list[str]) -> float:
+        return float(sum(1 for k in keywords if k in contexto))
+
+    eje_keywords = {
+        "Vida Saludable": ["salud", "higien", "aliment", "cuerpo", "naturaleza", "ambiente", "cuidado", "clima"],
+        "Pensamiento Crítico": ["pregunta", "analiz", "explica", "argument", "reflex"],
+        "Apropiación cultural a través de la lectura y escritura": ["lectura", "escrit", "texto", "cuento", "relato", "narr", "poema"],
+        "Artes y experiencias estéticas": ["arte", "música", "dibujo", "pintura", "teatro", "danza", "creativ"],
+        "Inclusión": ["inclus", "divers", "apoyo", "acces", "respeto"],
+        "Igualdad de género": ["género", "igualdad", "equidad"],
+        "Interculturalidad crítica": ["cultura", "intercultural", "tradición", "comunidad", "lengua materna"],
+    }
+
+    selected_ejes: set[str] = set()
+    eje_lower = eje.lower()
+    if "pensamiento" in eje_lower:
+        selected_ejes.add("Pensamiento Crítico")
+    if "salud" in eje_lower:
+        selected_ejes.add("Vida Saludable")
+
+    scored_ejes = [(name, _score(kw)) for name, kw in eje_keywords.items()]
+    scored_ejes.sort(key=lambda x: x[1], reverse=True)
+    for name, sc in scored_ejes[:3]:
+        if sc > 0:
+            selected_ejes.add(name)
+    if not selected_ejes:
+        selected_ejes.update({"Pensamiento Crítico", "Vida Saludable"})
+
+    campo_keywords = {
+        "Lenguajes": ["lenguaje", "comunica", "oral", "lectura", "escrit", "cuento", "relato", "texto"],
+        "Saberes y pensamiento científico": ["naturaleza", "seres vivos", "plantas", "animales", "ecosistema", "clima", "observa", "experimenta"],
+        "Ética, naturaleza y sociedades": ["cuidado", "responsabilidad", "reglas", "respeto", "medio ambiente", "sosten", "conviv"],
+        "De lo humano y lo comunitario": ["comunidad", "colabor", "emocion", "identidad", "particip", "acuerdo"],
+    }
+
+    selected_campos: set[str] = set()
+    if campo_principal:
+        selected_campos.add(campo_principal)
+
+    scored_campos = [(name, _score(kw)) for name, kw in campo_keywords.items()]
+    scored_campos.sort(key=lambda x: x[1], reverse=True)
+    for name, sc in scored_campos[:3]:
+        if sc > 0:
+            selected_campos.add(name)
+
+    if len(selected_campos) < 2:
+        selected_campos.update({"Lenguajes", "Saberes y pensamiento científico"})
+
+    return {
+        "ejes_articuladores": [{"nombre": n, "seleccionado": n in selected_ejes} for n in ejes],
+        "campos_formativos": [{"nombre": n, "seleccionado": n in selected_campos} for n in campos],
+        "campos_seleccionados": [n for n in campos if n in selected_campos],
+    }
+
+
+def _step_contenidos_pda(state: dict) -> dict:
+    campos_full = [
+        "Lenguajes",
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades",
+        "De lo humano y lo comunitario",
+    ]
+    return generar_contenidos_pda(tema=state["tema"], grado=state["grado"], campos_formativos=campos_full)
+
+
+def _step_sesiones(state: dict) -> list[dict]:
+    # Convierte actividades (día/momento) a estructura tipo SEP: ETAPA/SESIÓN/INICIO/DESARROLLO/CIERRE/PAUSA/RECURSOS/INDICADORES.
+    sesiones: list[dict] = []
+    actividades = state.get("actividades") or []
+    if not isinstance(actividades, list):
+        actividades = []
+
+    for item in actividades:
+        if not isinstance(item, dict):
+            continue
+        dia = item.get("dia")
+        momento = str(item.get("momento") or "")
+        mom_lower = momento.lower()
+        if "punto" in mom_lower or "partida" in mom_lower:
+            etapa = "Lectura de la realidad (Saberes previos)"
+        elif "plane" in mom_lower:
+            etapa = "Identificación de la problemática"
+        elif "trabaj" in mom_lower:
+            etapa = "Organización y desarrollo"
+        elif "comun" in mom_lower:
+            etapa = "Aplicación en el contexto / Comunicación"
+        else:
+            etapa = "Participación activa y reflexión"
+        act = item.get("actividad") or {}
+        pasos = act.get("pasos") if isinstance(act, dict) else None
+        materiales = act.get("materiales") if isinstance(act, dict) else None
+        if not isinstance(pasos, list):
+            pasos = []
+        if not isinstance(materiales, list):
+            materiales = []
+
+        inicio = str(pasos[0]) if len(pasos) >= 1 else ""
+        cierre = str(pasos[-1]) if len(pasos) >= 2 else ""
+        desarrollo = "\n".join([str(p) for p in pasos[1:-1]]) if len(pasos) > 2 else ""
+
+        # Indicadores simples por momento
+        inds = []
+        if "punto" in mom_lower or "partida" in mom_lower:
+            inds = ["Expresa saberes previos", "Participa en el diálogo", "Representa ideas de forma oral o gráfica"]
+        elif "plane" in mom_lower:
+            inds = ["Propone ideas y preguntas", "Organiza información básica", "Colabora con el grupo"]
+        elif "trabaj" in mom_lower:
+            inds = ["Sigue instrucciones", "Registra y comunica hallazgos", "Usa materiales de forma responsable"]
+        elif "comun" in mom_lower:
+            inds = ["Explica su proceso", "Comparte resultados", "Escucha y respeta turnos"]
+        else:
+            inds = ["Reflexiona sobre lo aprendido", "Identifica mejoras", "Relaciona con su contexto"]
+
+        sesiones.append(
+            {
+                "etapa": etapa,
+                "sesion": int(dia) if dia is not None else len(sesiones) + 1,
+                "fecha": "",
+                "inicio": inicio,
+                "desarrollo": desarrollo,
+                "cierre": cierre,
+                "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+                "recursos": [str(x) for x in materiales if str(x).strip()],
+                "indicadores": inds,
+            }
+        )
+
+    if not sesiones:
+        raise ValueError("No se pudieron construir sesiones a partir de actividades.")
+    return sesiones
 
 
 DEFAULT_PIPELINE: Tuple[PipelineStep, ...] = (
@@ -268,6 +479,27 @@ DEFAULT_PIPELINE: Tuple[PipelineStep, ...] = (
         validator=_validate_secuencia,
     ),
     PipelineStep(
+        name="ejes_campos_builder",
+        output_key="ejes_campos",
+        requires=("tema", "curriculum"),
+        fn=_step_ejes_campos,
+        validator=_validate_ejes_campos,
+    ),
+    PipelineStep(
+        name="contenidos_pda_agent",
+        output_key="contenidos_pda",
+        requires=("tema", "grado", "ejes_campos"),
+        fn=_step_contenidos_pda,
+        validator=_validate_contenidos_pda,
+    ),
+    PipelineStep(
+        name="sesiones_builder",
+        output_key="sesiones",
+        requires=("actividades",),
+        fn=_step_sesiones,
+        validator=_validate_sesiones,
+    ),
+    PipelineStep(
         name="evaluation_agent",
         output_key="evaluacion",
         requires=("tema", "grado", "curriculum", "proyecto", "secuencia_didactica", "actividades"),
@@ -277,7 +509,7 @@ DEFAULT_PIPELINE: Tuple[PipelineStep, ...] = (
     PipelineStep(
         name="planning_agent",
         output_key="planeacion",
-        requires=("curriculum", "proyecto", "evaluacion", "secuencia_didactica", "actividades"),
+        requires=("curriculum", "proyecto", "secuencia_didactica", "actividades", "sesiones"),
         fn=_step_planeacion,
         validator=_validate_planeacion,
         skip_if_present=False,
@@ -354,6 +586,11 @@ def generar_planeacion_maestra(
         raise ValueError("planeacion_input debe ser un dict.")
 
     state: dict = dict(planeacion_input)
+    skip_steps = state.get("skip_steps") or []
+    if isinstance(skip_steps, (list, tuple, set)):
+        skip_steps_set = {str(s).strip() for s in skip_steps if str(s).strip()}
+    else:
+        skip_steps_set = set()
     step_metas: list[dict] = []
     results_by_step: dict = {}
 
@@ -361,6 +598,17 @@ def generar_planeacion_maestra(
     logger.info("Coordinación iniciada: %s", started_at)
 
     for step in pipeline:
+        if step.name in skip_steps_set:
+            logger.info("Omitiendo %s: solicitado por skip_steps", step.name)
+            step_metas.append(
+                {
+                    "name": step.name,
+                    "output_key": step.output_key,
+                    "status": "skipped",
+                    "reason": "skip_steps",
+                }
+            )
+            continue
         missing = [k for k in step.requires if k not in state or state[k] in (None, "")]
         if missing:
             logger.info("Omitiendo %s: faltan llaves requeridas: %s", step.name, missing)
