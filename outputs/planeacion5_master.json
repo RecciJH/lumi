@@ -1,0 +1,1240 @@
+{
+  "meta": {
+    "started_at": "2026-03-13T19:43:15.104188+00:00",
+    "finished_at": "2026-03-13T19:46:13.465849+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 22685
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 134244
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 21412
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 13
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera Vive",
+      "problematica": "Los estudiantes no comprenden la relación entre las estaciones y la vida en la naturaleza.",
+      "justificacion": "Con este proyecto se busca fomentar el interés por la naturaleza y promover una actitud de respeto y cuidado hacia los seres vivos, al mismo tiempo que se desarrollan habilidades cognitivas y afectivas. La Nueva Escuela Mexicana enfatiza la importancia de considerar las necesidades del individuo y el mundo que le rodea.",
+      "proposito": "Promover una comprensión profunda sobre los ciclos naturales, especialmente la primavera y su impacto en el ecosistema local, así como fomentar hábitos de observación, descripción y respeto hacia la vida.",
+      "producto_final": "Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación.",
+      "temporalidad": "{\"día_1\": \"Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\", \"día_2\": \"Observación directa de los cambios en la naturaleza durante la primavera y registrar las observaciones.\", \"día_3\": \"Creación del reportaje audiovisual.\", \"día_4\": \"Revisión y ajuste de los proyectos.\", \"día_5\": \"Presentación de los trabajos finales.\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel",
+            "lápiz",
+            "enciclopedia de botánica (opcional)"
+          ],
+          "pasos": [
+            "(5 min) Activación y saberes previos:",
+            "Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.",
+            "Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?",
+            "Registra ideas en el pizarrón/papel bond.",
+            "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+            "¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?",
+            "¿Qué seres vivos aparecen o se mueven más en esta temporada?",
+            "¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?",
+            "Organización: plenaria → equipos pequeños (3–4).",
+            "Contribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).",
+            "Alumnado registra con dibujo + 2 palabras clave (según el grado).",
+            "En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+            "Docente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz)."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "inicio": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "actividad": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.",
+            "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+            "¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?",
+            "¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?",
+            "¿Qué nos falta observar para explicarlo mejor?",
+            "Organización: parejas.",
+            "Contribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).",
+            "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+            "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante.",
+            "Esta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.",
+            "Participa y argumenta con base en lo que observa/registra.",
+            "Sigue la consigna y usa materiales con cuidado.",
+            "Comunica un hallazgo con evidencia (dibujo, marcas, palabras)."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Día 3: Creación del reportaje audiovisual.",
+          "inicio": "(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Cámaras fotográficas o smartphones",
+            "Lápices y papel para dibujos/esquemas",
+            "Tabla de resultados y espacio para escritura"
+          ],
+          "pasos": [
+            "(5 min) Consigna y roles:",
+            "Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).",
+            "Reglas de uso de materiales y cuidado del entorno.",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué variable vamos a cambiar y cuál vamos a mantener igual?",
+            "¿Qué esperamos que pase y por qué?",
+            "¿Cómo registraremos el resultado para compararlo?",
+            "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.",
+            "Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.",
+            "Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.",
+            "Registran resultados con una tabla simple o pictogramas.",
+            "Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\")."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Revisión y ajuste del reportaje audiovisual",
+          "inicio": "Docente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+          "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+          "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Guion breve",
+            "Presentación/galería con retroalimentación"
+          ],
+          "pasos": [
+            "Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante",
+            "Revisar el guion breve y presentación/galería con retroalimentación",
+            "Ajustar el reportaje audiovisual según sea necesario",
+            "Compartir trabajo con un compañero o el docente para revisión",
+            "Circula por el salón para verificar el progreso de cada estudiante",
+            "Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual",
+            "Presentar los ajustes realizados en el reportaje audiovisual",
+            "Realizar una retroalimentación final a cada estudiante sobre su trabajo",
+            "¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?",
+            "Organización: Individual",
+            "Tiempo: 5 minutos",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Día 5: Presentación de los trabajos finales.",
+          "inicio": "(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+          "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Hoja de autoevaluación"
+          ],
+          "pasos": [
+            "Repasa lo trabajado y muestra 2 evidencias del grupo.",
+            "Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?",
+            "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+            "Organización: plenaria y equipos.",
+            "¿Qué aprendí y qué evidencia tengo de ello?",
+            "¿Qué fue difícil y cómo lo resolví o lo resolvería?",
+            "¿Qué mejoraría para que el producto final sea más claro?",
+            "Contribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.",
+            "En equipos, proponen 2 mejoras para el producto final.",
+            "Docente registra acuerdos y apoya con ejemplos.",
+            "Docente: guía autoevaluación (semáforo) y recupera evidencias del grupo.",
+            "Alumnado: propone 2 mejoras y explica por qué.",
+            "Esta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto."
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "dia": 1,
+      "momento": "Observar",
+      "actividad": {
+        "inicio": "Se describe el plan para observar y registrar los cambios de los seres vivos durante la primavera.",
+        "desarrollo": "Los estudiantes se dividen en grupos y realizan las observaciones en el entorno natural.",
+        "cierre": "Los estudiantes regresan a la clase y comparten sus hallazgos y registros."
+      },
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": [],
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": ""
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel",
+          "lápiz",
+          "enciclopedia de botánica (opcional)"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc\n\nLlegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Día 3: Creación del reportaje audiovisual.\n\n(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+        "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cámaras fotográficas o smartphones",
+          "Lápices y papel para dibujos/esquemas",
+          "Tabla de resultados y espacio para escritura"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Revisión y ajuste del reportaje audiovisual\n\nDocente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+        "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+        "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Guion breve",
+          "Presentación/galería con retroalimentación"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Día 5: Presentación de los trabajos finales.\n\n(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+        "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Hoja de autoevaluación"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La Primavera Vive",
+        "problematica": "Los estudiantes no comprenden la relación entre las estaciones y la vida en la naturaleza.",
+        "justificacion": "Con este proyecto se busca fomentar el interés por la naturaleza y promover una actitud de respeto y cuidado hacia los seres vivos, al mismo tiempo que se desarrollan habilidades cognitivas y afectivas. La Nueva Escuela Mexicana enfatiza la importancia de considerar las necesidades del individuo y el mundo que le rodea.",
+        "proposito": "Promover una comprensión profunda sobre los ciclos naturales, especialmente la primavera y su impacto en el ecosistema local, así como fomentar hábitos de observación, descripción y respeto hacia la vida.",
+        "producto_final": "Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación.",
+        "temporalidad": "{\"día_1\": \"Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\", \"día_2\": \"Observación directa de los cambios en la naturaleza durante la primavera y registrar las observaciones.\", \"día_3\": \"Creación del reportaje audiovisual.\", \"día_4\": \"Revisión y ajuste de los proyectos.\", \"día_5\": \"Presentación de los trabajos finales.\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "dia": 1,
+        "momento": "Observar",
+        "actividad": {
+          "inicio": "Se describe el plan para observar y registrar los cambios de los seres vivos durante la primavera.",
+          "desarrollo": "Los estudiantes se dividen en grupos y realizan las observaciones en el entorno natural.",
+          "cierre": "Los estudiantes regresan a la clase y comparten sus hallazgos y registros."
+        },
+        "evaluacion": "",
+        "evidencias": [],
+        "materiales": [],
+        "inicio": "",
+        "desarrollo": "",
+        "cierre": ""
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.",
+            "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "papel",
+              "lápiz",
+              "enciclopedia de botánica (opcional)"
+            ],
+            "pasos": [
+              "(5 min) Activación y saberes previos:",
+              "Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.",
+              "Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?",
+              "Registra ideas en el pizarrón/papel bond.",
+              "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+              "¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?",
+              "¿Qué seres vivos aparecen o se mueven más en esta temporada?",
+              "¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?",
+              "Organización: plenaria → equipos pequeños (3–4).",
+              "Contribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+              "Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).",
+              "Alumnado registra con dibujo + 2 palabras clave (según el grado).",
+              "En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+              "Docente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz)."
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "inicio": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "actividad": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc",
+            "materiales": [
+              "Cuaderno",
+              "Lápiz",
+              "Pizarrón o papel bond",
+              "Marcadores"
+            ],
+            "pasos": [
+              "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.",
+              "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+              "¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?",
+              "¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?",
+              "¿Qué nos falta observar para explicarlo mejor?",
+              "Organización: parejas.",
+              "Contribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+              "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).",
+              "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+              "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante.",
+              "Esta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.",
+              "Participa y argumenta con base en lo que observa/registra.",
+              "Sigue la consigna y usa materiales con cuidado.",
+              "Comunica un hallazgo con evidencia (dibujo, marcas, palabras)."
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Día 3: Creación del reportaje audiovisual.",
+            "inicio": "(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+            "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Cámaras fotográficas o smartphones",
+              "Lápices y papel para dibujos/esquemas",
+              "Tabla de resultados y espacio para escritura"
+            ],
+            "pasos": [
+              "(5 min) Consigna y roles:",
+              "Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).",
+              "Reglas de uso de materiales y cuidado del entorno.",
+              "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+              "Organización: equipos con roles.",
+              "¿Qué variable vamos a cambiar y cuál vamos a mantener igual?",
+              "¿Qué esperamos que pase y por qué?",
+              "¿Cómo registraremos el resultado para compararlo?",
+              "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+              "Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.",
+              "Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.",
+              "Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.",
+              "Registran resultados con una tabla simple o pictogramas.",
+              "Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\")."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Revisión y ajuste del reportaje audiovisual",
+            "inicio": "Docente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+            "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+            "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Guion breve",
+              "Presentación/galería con retroalimentación"
+            ],
+            "pasos": [
+              "Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante",
+              "Revisar el guion breve y presentación/galería con retroalimentación",
+              "Ajustar el reportaje audiovisual según sea necesario",
+              "Compartir trabajo con un compañero o el docente para revisión",
+              "Circula por el salón para verificar el progreso de cada estudiante",
+              "Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual",
+              "Presentar los ajustes realizados en el reportaje audiovisual",
+              "Realizar una retroalimentación final a cada estudiante sobre su trabajo",
+              "¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?",
+              "Organización: Individual",
+              "Tiempo: 5 minutos",
+              "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+              "Organización: equipos.",
+              "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Día 5: Presentación de los trabajos finales.",
+            "inicio": "(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+            "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Hoja de autoevaluación"
+            ],
+            "pasos": [
+              "Repasa lo trabajado y muestra 2 evidencias del grupo.",
+              "Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?",
+              "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+              "Organización: plenaria y equipos.",
+              "¿Qué aprendí y qué evidencia tengo de ello?",
+              "¿Qué fue difícil y cómo lo resolví o lo resolvería?",
+              "¿Qué mejoraría para que el producto final sea más claro?",
+              "Contribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+              "Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.",
+              "En equipos, proponen 2 mejoras para el producto final.",
+              "Docente registra acuerdos y apoya con ejemplos.",
+              "Docente: guía autoevaluación (semáforo) y recupera evidencias del grupo.",
+              "Alumnado: propone 2 mejoras y explica por qué.",
+              "Esta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto."
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+            "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "papel",
+            "lápiz",
+            "enciclopedia de botánica (opcional)"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc\n\nLlegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: Día 3: Creación del reportaje audiovisual.\n\n(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cámaras fotográficas o smartphones",
+            "Lápices y papel para dibujos/esquemas",
+            "Tabla de resultados y espacio para escritura"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: Revisión y ajuste del reportaje audiovisual\n\nDocente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+          "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+          "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Guion breve",
+            "Presentación/galería con retroalimentación"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Día 5: Presentación de los trabajos finales.\n\n(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+          "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Hoja de autoevaluación"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera Vive",
+      "problematica": "Los estudiantes no comprenden la relación entre las estaciones y la vida en la naturaleza.",
+      "justificacion": "Con este proyecto se busca fomentar el interés por la naturaleza y promover una actitud de respeto y cuidado hacia los seres vivos, al mismo tiempo que se desarrollan habilidades cognitivas y afectivas. La Nueva Escuela Mexicana enfatiza la importancia de considerar las necesidades del individuo y el mundo que le rodea.",
+      "proposito": "Promover una comprensión profunda sobre los ciclos naturales, especialmente la primavera y su impacto en el ecosistema local, así como fomentar hábitos de observación, descripción y respeto hacia la vida.",
+      "producto_final": "Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación.",
+      "temporalidad": "{\"día_1\": \"Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\", \"día_2\": \"Observación directa de los cambios en la naturaleza durante la primavera y registrar las observaciones.\", \"día_3\": \"Creación del reportaje audiovisual.\", \"día_4\": \"Revisión y ajuste de los proyectos.\", \"día_5\": \"Presentación de los trabajos finales.\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "dia": 1,
+      "momento": "Observar",
+      "actividad": {
+        "inicio": "Se describe el plan para observar y registrar los cambios de los seres vivos durante la primavera.",
+        "desarrollo": "Los estudiantes se dividen en grupos y realizan las observaciones en el entorno natural.",
+        "cierre": "Los estudiantes regresan a la clase y comparten sus hallazgos y registros."
+      },
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": [],
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": ""
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel",
+            "lápiz",
+            "enciclopedia de botánica (opcional)"
+          ],
+          "pasos": [
+            "(5 min) Activación y saberes previos:",
+            "Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.",
+            "Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?",
+            "Registra ideas en el pizarrón/papel bond.",
+            "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+            "¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?",
+            "¿Qué seres vivos aparecen o se mueven más en esta temporada?",
+            "¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?",
+            "Organización: plenaria → equipos pequeños (3–4).",
+            "Contribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).",
+            "Alumnado registra con dibujo + 2 palabras clave (según el grado).",
+            "En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+            "Docente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz)."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "inicio": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "actividad": "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.",
+            "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+            "¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?",
+            "¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?",
+            "¿Qué nos falta observar para explicarlo mejor?",
+            "Organización: parejas.",
+            "Contribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).",
+            "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+            "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante.",
+            "Esta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.",
+            "Participa y argumenta con base en lo que observa/registra.",
+            "Sigue la consigna y usa materiales con cuidado.",
+            "Comunica un hallazgo con evidencia (dibujo, marcas, palabras)."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Día 3: Creación del reportaje audiovisual.",
+          "inicio": "(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Cámaras fotográficas o smartphones",
+            "Lápices y papel para dibujos/esquemas",
+            "Tabla de resultados y espacio para escritura"
+          ],
+          "pasos": [
+            "(5 min) Consigna y roles:",
+            "Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).",
+            "Reglas de uso de materiales y cuidado del entorno.",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué variable vamos a cambiar y cuál vamos a mantener igual?",
+            "¿Qué esperamos que pase y por qué?",
+            "¿Cómo registraremos el resultado para compararlo?",
+            "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.",
+            "Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.",
+            "Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.",
+            "Registran resultados con una tabla simple o pictogramas.",
+            "Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\")."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Revisión y ajuste del reportaje audiovisual",
+          "inicio": "Docente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+          "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+          "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Guion breve",
+            "Presentación/galería con retroalimentación"
+          ],
+          "pasos": [
+            "Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante",
+            "Revisar el guion breve y presentación/galería con retroalimentación",
+            "Ajustar el reportaje audiovisual según sea necesario",
+            "Compartir trabajo con un compañero o el docente para revisión",
+            "Circula por el salón para verificar el progreso de cada estudiante",
+            "Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual",
+            "Presentar los ajustes realizados en el reportaje audiovisual",
+            "Realizar una retroalimentación final a cada estudiante sobre su trabajo",
+            "¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?",
+            "Organización: Individual",
+            "Tiempo: 5 minutos",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Día 5: Presentación de los trabajos finales.",
+          "inicio": "(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+          "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+          "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Hoja de autoevaluación"
+          ],
+          "pasos": [
+            "Repasa lo trabajado y muestra 2 evidencias del grupo.",
+            "Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?",
+            "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+            "Organización: plenaria y equipos.",
+            "¿Qué aprendí y qué evidencia tengo de ello?",
+            "¿Qué fue difícil y cómo lo resolví o lo resolvería?",
+            "¿Qué mejoraría para que el producto final sea más claro?",
+            "Contribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+            "Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.",
+            "En equipos, proponen 2 mejoras para el producto final.",
+            "Docente registra acuerdos y apoya con ejemplos.",
+            "Docente: guía autoevaluación (semáforo) y recupera evidencias del grupo.",
+            "Alumnado: propone 2 mejoras y explica por qué.",
+            "Esta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto."
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": false
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Día 1: Introducción al proyecto: Desarrollo de una actitud reflexiva sobre el tema.\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?\n- ¿Qué seres vivos aparecen o se mueven más en esta temporada?\n- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?\nOrganización: plenaria → equipos pequeños (3–4).\nContribución al producto final: insumos (dibujos/observaciones) para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel",
+          "lápiz",
+          "enciclopedia de botánica (opcional)"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Llegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cerc\n\nLlegada al lugar de observación (5 min). El docente lleva a los estudiantes a un área cercana donde puedan observar cambios en la naturaleza durante la primavera.; Se revisan las observaciones realizadas en días anteriores y se conectan con la tarea actual de llenar el Organizador Gráfico.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?\n- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?\n- ¿Qué nos falta observar para explicarlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador (clima/plantas/animales) que alimenta Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "Llenado del Organizador Gráfico (25 min). Los estudiantes dividen el cuadro o tabla en secciones para registrar sus observaciones.; Primero, enumeran las especies de plantas y animales que encuentran (por ejemplo, rosas, dientes de león, mariposas, etc.).; Luego, describen los cambios en el entorno debido a la primavera (como aumento de temperatura, humedad, crecimiento de vegetación, etc.).; Finalmente, anotan cualquier otra información relevante (por ejemplo, cómo afecta la lluvia o el sol a las plantas y animales).\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Revisión del Organizador Gráfico (10 min). El docente pide a los estudiantes que compartan sus observaciones con un compañero o en pequeños grupos.; Identificación de puntos en común y fomento de la discusión.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Día 3: Creación del reportaje audiovisual.\n\n(5 min) Consigna y roles:\n- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n- Reglas de uso de materiales y cuidado del entorno.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?\n- ¿Qué esperamos que pase y por qué?\n- ¿Cómo registraremos el resultado para compararlo?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Trabajo práctico:\n- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar La primavera y los seres vivos.\n- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n- Registran resultados con una tabla simple o pictogramas.\n- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\").\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+        "cierre": "(10 min) Socialización:\n- Presentan hallazgos y justifican con su registro.\n- Retroalimentación breve: qué fue claro y qué mejorar.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cámaras fotográficas o smartphones",
+          "Lápices y papel para dibujos/esquemas",
+          "Tabla de resultados y espacio para escritura"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Revisión y ajuste del reportaje audiovisual\n\nDocente:\n- Entregar el guion breve y presentación/galería con retroalimentación a cada estudiante\nPreguntas detonadoras:\n- ¿Qué creen que es lo más importante destacar sobre la primavera y su impacto en los seres vivos locales?\nOrganización: Individual\nTiempo: 5 minutos\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\n- ¿Qué queremos que el público entienda en 1 minuto?",
+        "desarrollo": "Docente:\n- Circula por el salón para verificar el progreso de cada estudiante\n- Hacer preguntas precisas a los estudiantes sobre su reportaje audiovisual\nPreguntas detonadoras:\n- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?\nOrganización: Parejas\nTiempo: 25 minutos\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):",
+        "cierre": "Docente:\n- Presentar los ajustes realizados en el reportaje audiovisual\n- Realizar una retroalimentación final a cada estudiante sobre su trabajo\nPreguntas detonadoras:\n- ¿Qué habilidades han desarrollado a lo largo del proyecto?\nOrganización: Individual\nTiempo: 10 minutos\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Guion breve",
+          "Presentación/galería con retroalimentación"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Día 5: Presentación de los trabajos finales.\n\n(5 min) Recuperación:\n- Repasa lo trabajado y muestra 2 evidencias del grupo.\n- Pregunta: ¿qué aprendimos sobre La primavera y los seres vivos?\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un reportaje audiovisual que muestre cómo la primavera afecta a los seres vivos locales, incluyendo fotografías, dibujos y textos descriptivos. Se valorará creatividad, originalidad y precisión en la representación..",
+        "desarrollo": "(25 min) Reflexión guiada:\n- Semáforo (verde/amarillo/rojo): qué entendí, qué dudo, qué necesito practicar.\n- En equipos, proponen 2 mejoras para el producto final.\n- Docente registra acuerdos y apoya con ejemplos.\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:",
+        "cierre": "(10 min) Cierre:\n- Compromiso: 1 acción concreta para mejorar el trabajo.\n- Evidencia: autoevaluación + acuerdos del grupo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Hoja de autoevaluación"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

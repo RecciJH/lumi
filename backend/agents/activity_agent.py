@@ -1,4 +1,6 @@
 from services.llm_json_service import parse_llm_json
+import ast
+import json
 import re
 
 from services.llm_service import generar_respuesta
@@ -82,8 +84,75 @@ def _clean_text(text: str) -> str:
     s = s.replace("**", "")
     s = re.sub(r"^\s*#{1,6}\s*", "", s, flags=re.MULTILINE)
     s = re.sub(r"^\s*\*\s+", "- ", s, flags=re.MULTILINE)
+    # Si el modelo usa ';' como separador de pasos, lo convertimos a saltos de línea para legibilidad.
+    if s.count(";") >= 2:
+        s = s.replace("; ", "\n")
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s.strip()
+
+
+def _short_text(text: str, *, max_len: int = 160) -> str:
+    t = _to_text(text)
+    if not t:
+        return ""
+    # Primera línea o primera oración
+    first_line = t.splitlines()[0].strip()
+    first_sentence = first_line.split(".")[0].strip() if "." in first_line else first_line
+    out = first_sentence or first_line
+    out = out.strip().rstrip(".")
+    if len(out) > max_len:
+        out = out[: max_len - 1].rstrip() + "…"
+    return out
+
+
+def _try_parse_mapping(value) -> dict:
+    if value is None:
+        return {}
+    if isinstance(value, dict):
+        return value
+    if isinstance(value, str):
+        t = value.strip()
+        if not t:
+            return {}
+        if t.startswith("{") and t.endswith("}"):
+            try:
+                parsed = json.loads(t)
+                return parsed if isinstance(parsed, dict) else {}
+            except Exception:
+                try:
+                    parsed = ast.literal_eval(t)  # noqa: S307 (solo literales)
+                    return parsed if isinstance(parsed, dict) else {}
+                except Exception:
+                    return {}
+    return {}
+
+
+def _day_focus_from_project(proyecto, dia: int | None) -> str:
+    if dia is None or not isinstance(dia, int):
+        return ""
+    if not isinstance(proyecto, dict):
+        return ""
+    temporalidad = _try_parse_mapping(proyecto.get("temporalidad"))
+    if not temporalidad:
+        return ""
+
+    candidates = [
+        f"día_{dia}",
+        f"dia_{dia}",
+        f"día {dia}",
+        f"dia {dia}",
+        str(dia),
+    ]
+    for k in candidates:
+        if k in temporalidad:
+            return _to_text(temporalidad.get(k))
+
+    for k, v in temporalidad.items():
+        ks = _to_text(k).lower()
+        if str(dia) in ks:
+            return _to_text(v)
+
+    return ""
 
 
 def _to_text(value) -> str:
@@ -295,7 +364,16 @@ def _coerce_activity_payload(value, *, momento: str) -> dict:
     }
 
 
-def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento: str) -> dict:
+def _ensure_activity_sections(
+    activity: dict,
+    *,
+    tema: str,
+    grado: str,
+    momento: str,
+    dia: int | None = None,
+    enfoque_dia: str = "",
+    producto_final: str = "",
+) -> dict:
     """
     Asegura que inicio/desarrollo/cierre tengan contenido útil.
 
@@ -340,6 +418,9 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
         return "Reflexión"
 
     mlab = moment_label(momento)
+    producto_final_txt = _to_text(producto_final)
+    producto_final_short = _short_text(producto_final_txt, max_len=140)
+    enfoque_txt = _to_text(enfoque_dia)
 
     # Fallback con VARIACIÓN por momento (evita que todas queden iguales).
     if not (inicio and desarrollo and cierre):
@@ -386,7 +467,9 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             )
             desarrollo = desarrollo or (
                 "(25 min) Trabajo práctico:\n"
-                "- Actividad manipulativa: comparar 2 escenarios (con/sin sombra, seco/húmedo, etc.) según {tema}.\n"
+                f"- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar {tema}.\n"
+                "- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n"
+                "- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n"
                 "- Registran resultados con una tabla simple o pictogramas.\n"
                 "- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\")."
             )
@@ -403,7 +486,7 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             )
             desarrollo = desarrollo or (
                 "(25 min) Elaboración del producto:\n"
-                "- En equipos, transforman sus registros en un material para explicar {tema}.\n"
+                f"- En equipos, transforman sus registros en un material para explicar {tema}.\n"
                 "- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n"
                 "- Docente apoya con preguntas: ¿qué quieres que el público entienda?"
             )
@@ -416,7 +499,7 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             inicio = inicio or (
                 "(5 min) Recuperación:\n"
                 "- Repasa lo trabajado y muestra 2 evidencias del grupo.\n"
-                "- Pregunta: ¿qué aprendimos sobre {tema}?"
+                f"- Pregunta: ¿qué aprendimos sobre {tema}?"
             )
             desarrollo = desarrollo or (
                 "(25 min) Reflexión guiada:\n"
@@ -430,9 +513,14 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
                 "- Evidencia: autoevaluación + acuerdos del grupo."
             )
 
-    # Si el título quedó genérico, proponemos uno específico según momento/tema.
+    # Si el título quedó genérico, proponemos uno específico (preferimos enfoque de temporalidad del proyecto).
     if _to_text(activity.get("actividad")).strip().lower() in ("actividad", "") or _to_text(activity.get("actividad")).strip().lower().startswith("actividad ("):
-        activity["actividad"] = f"{mlab}: {tema}".strip()
+        if enfoque_txt and dia is not None:
+            activity["actividad"] = f"Día {dia}: {enfoque_txt}".strip()
+        elif enfoque_txt:
+            activity["actividad"] = enfoque_txt
+        else:
+            activity["actividad"] = f"{mlab}: {tema}".strip()
 
     # Enforce: nunca breve. Si el modelo dio texto corto, lo ampliamos (sin depender de otro llamado).
     def ensure_lines(section: str, min_lines: int, extras: list[str]) -> str:
@@ -454,11 +542,35 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
                 break
         return "\n".join(out_lines).strip()
 
-    preguntas_base = [
+    preguntas_punto_partida = [
         "Preguntas detonadoras:",
-        "- ¿Qué observaste que cambió y cómo lo sabes?",
-        "- ¿Qué relación tiene ese cambio con el clima/estación?",
-        "- ¿Qué pasaría si no ocurriera ese cambio?",
+        "- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?",
+        "- ¿Qué seres vivos aparecen o se mueven más en esta temporada?",
+        "- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?",
+    ]
+    preguntas_planeacion = [
+        "Preguntas detonadoras:",
+        "- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?",
+        "- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?",
+        "- ¿Qué nos falta observar para explicarlo mejor?",
+    ]
+    preguntas_trabajo = [
+        "Preguntas detonadoras:",
+        "- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?",
+        "- ¿Qué esperamos que pase y por qué?",
+        "- ¿Cómo registraremos el resultado para compararlo?",
+    ]
+    preguntas_comunicar = [
+        "Preguntas detonadoras:",
+        "- ¿Qué queremos que el público entienda en 1 minuto?",
+        "- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?",
+        "- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?",
+    ]
+    preguntas_reflexion = [
+        "Preguntas detonadoras:",
+        "- ¿Qué aprendí y qué evidencia tengo de ello?",
+        "- ¿Qué fue difícil y cómo lo resolví o lo resolvería?",
+        "- ¿Qué mejoraría para que el producto final sea más claro?",
     ]
     evaluacion_base = [
         "Evaluación formativa (observables):",
@@ -474,14 +586,28 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
     ]
     evidencia_base = ["Evidencia: registro en cuaderno/hoja de trabajo + participación oral."]
 
+    contribucion = ""
+    if producto_final_txt:
+        if mlab == "Punto de partida":
+            contribucion = f"Contribución al producto final: insumos (dibujos/observaciones) para {producto_final_short or producto_final_txt}."
+        elif mlab == "Planeación":
+            contribucion = f"Contribución al producto final: organizador (clima/plantas/animales) que alimenta {producto_final_short or producto_final_txt}."
+        elif mlab == "A trabajar":
+            contribucion = f"Contribución al producto final: tabla de resultados y conclusión breve para integrar en {producto_final_short or producto_final_txt}."
+        elif mlab == "Comunicar":
+            contribucion = f"Contribución al producto final: ensayo de explicación y ajustes a {producto_final_short or producto_final_txt}."
+        else:
+            contribucion = f"Contribución al producto final: mejoras y reflexiones finales para {producto_final_short or producto_final_txt}."
+
     if mlab == "Punto de partida":
         inicio = ensure_lines(
             inicio,
             10,
             [
                 "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
-                *preguntas_base,
+                *preguntas_punto_partida,
                 "Organización: plenaria → equipos pequeños (3–4).",
+                contribucion,
             ],
         )
         desarrollo = ensure_lines(
@@ -508,8 +634,9 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             10,
             [
                 "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
-                *preguntas_base,
+                *preguntas_planeacion,
                 "Organización: parejas.",
+                contribucion,
             ],
         )
         desarrollo = ensure_lines(
@@ -537,7 +664,8 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             [
                 "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
                 "Organización: equipos con roles.",
-                *preguntas_base,
+                *preguntas_trabajo,
+                contribucion,
             ],
         )
         desarrollo = ensure_lines(
@@ -566,6 +694,8 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
                 "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
                 "Organización: equipos.",
                 "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+                *preguntas_comunicar,
+                contribucion,
             ],
         )
         desarrollo = ensure_lines(
@@ -593,6 +723,8 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
             [
                 "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
                 "Organización: plenaria y equipos.",
+                *preguntas_reflexion,
+                contribucion,
             ],
         )
         desarrollo = ensure_lines(
@@ -683,7 +815,7 @@ def _ensure_activity_sections(activity: dict, *, tema: str, grado: str, momento:
     return activity
 
 
-def _needs_refinement(activity: dict) -> bool:
+def _needs_refinement(activity: dict, *, momento: str = "") -> bool:
     """
     Señales de que el contenido quedó genérico/corto y conviene pedir una corrección al modelo.
     """
@@ -708,6 +840,38 @@ def _needs_refinement(activity: dict) -> bool:
     if total_len < 520:
         return True
 
+    ml = _to_text(momento).lower()
+    if "punto" in ml or "partida" in ml:
+        mlab = "Punto de partida"
+    elif "plane" in ml:
+        mlab = "Planeación"
+    elif "trabaj" in ml:
+        mlab = "A trabajar"
+    elif "comun" in ml:
+        mlab = "Comunicar"
+    else:
+        mlab = "Reflexión"
+
+    # Repetición típica: observar/registrar/compartir sin cambio cognitivo (sobre todo fuera de Punto de partida).
+    body_low = (inicio + "\n" + desarrollo + "\n" + cierre).lower()
+    if mlab != "Punto de partida":
+        if ("observ" in body_low) and ("registr" in body_low) and ("compart" in body_low):
+            return True
+
+    # Requisitos por momento (asegura aumento de complejidad).
+    if mlab == "A trabajar":
+        must = ("variable", "control", "tabla", "registro")
+        if sum(1 for m in must if m in body_low) < 2:
+            return True
+    if mlab == "Planeación":
+        must = ("clasific", "cuadro", "columna", "organiza", "secuencia")
+        if sum(1 for m in must if m in body_low) < 2:
+            return True
+    if mlab == "Comunicar":
+        must = ("present", "explic", "públic", "galer", "pregunta", "ensay")
+        if sum(1 for m in must if m in body_low) < 2:
+            return True
+
     # Sin verbos/acciones claras (típico de respuestas pobres)
     verbish = sum(1 for part in (inicio, desarrollo, cierre) if any(v in part.lower() for v in _VERB_HINTS))
     if verbish <= 1:
@@ -725,6 +889,9 @@ def _refine_activity_with_llm(
     proyecto: str,
     historial: str,
     current: dict,
+    dia: int | None = None,
+    enfoque_dia: str = "",
+    producto_final: str = "",
 ) -> dict:
     """
     Segundo pase (solo cuando hace falta) para forzar detalle consistente.
@@ -734,19 +901,28 @@ Corrige y mejora la siguiente actividad para que quede MUY detallada y específi
 
 Tema: {tema}
 Grado: {grado}
+{f'Día/Sesión: {dia}.' if dia is not None else ''}
 Momento metodológico: {momento}
 Estrategia pedagógica: {estrategia}
 Proyecto educativo: {proyecto}
+{f'Producto final (debe verse y construirse): {producto_final}' if producto_final else ''}
+{f'Enfoque sugerido del día (temporalidad): {enfoque_dia}' if enfoque_dia else ''}
 Actividades anteriores (evita repetir exactamente): {historial}
 
 Actividad actual (puede estar incompleta): {current}
 
 Requisitos:
 - NO uses títulos genéricos como "Actividad". Pon un título específico.
+- Debe haber aumento de complejidad respecto a sesiones anteriores (no repetir solo: observar/registrar/compartir).
 - Escribe INICIO/DESARROLLO/CIERRE con acciones del docente y del alumnado, preguntas detonadoras, organización (individual/parejas/equipos), y tiempos por sección (sumar ~40 min).
 - Incluye evaluación formativa: qué observar y cómo registrar (evidencia).
 - `materiales` como lista (sin inventar demasiado, usa lo que haya y agrega solo lo necesario).
 - `pasos`: lista de 10–14 strings detallados (no objetos/dicts), coherentes con inicio/desarrollo/cierre.
+
+Condiciones por momento (si aplica):
+- Si es "A trabajar": define variable/control y una tabla de registro simple.
+- Si es "Planeación": incluye organizador (cuadro/tabla/secuenciación) y justificación con evidencia.
+- Si es "Comunicar": incluye ensayo, exposición, preguntas del público y retroalimentación.
 - Responde SOLO con un objeto JSON (NO lista, NO texto extra) y SOLO estas claves:
 {{
   "actividad": "",
@@ -761,14 +937,43 @@ Requisitos:
     parsed = parse_llm_json(respuesta)
     payload = _coerce_activity_payload(parsed, momento=momento)
     normalized = _normalize_activity_json(payload)
-    return _ensure_activity_sections(normalized, tema=str(tema), grado=str(grado), momento=str(momento))
+    return _ensure_activity_sections(
+        normalized,
+        tema=str(tema),
+        grado=str(grado),
+        momento=str(momento),
+        dia=dia,
+        enfoque_dia=enfoque_dia,
+        producto_final=producto_final,
+    )
 
 
-def generar_actividad_ia(tema, grado, momento, estrategia, historial, proyecto):
+def generar_actividad_ia(tema, grado, momento, estrategia, historial, proyecto, *, dia: int | None = None, total_dias: int | None = None, enfoque_dia: str = ""):
     """
     Genera una actividad individual usando la IA, devolviendo JSON limpio.
     Protege contra respuestas vacías o con formato incorrecto.
     """
+    producto_final_txt = ""
+    if isinstance(proyecto, dict):
+        producto_final_txt = _to_text(proyecto.get("producto_final"))
+
+    ml = _to_text(momento).lower()
+    if "punto" in ml or "partida" in ml:
+        demanda = "Diagnóstico y observación (nombrar, describir, explicar con evidencias simples)."
+        producto_parcial = "Registro diagnóstico + lista de hallazgos (insumos para el producto final)."
+    elif "plane" in ml:
+        demanda = "Organización de información (clasificar, secuenciar, justificar con evidencia)."
+        producto_parcial = "Organizador gráfico (cuadro/tabla) listo para integrarse al producto final."
+    elif "trabaj" in ml:
+        demanda = "Indagación/experimento (variable-control, registro en tabla y conclusión)."
+        producto_parcial = "Tabla de resultados + conclusión breve para integrar al producto final."
+    elif "comun" in ml:
+        demanda = "Comunicación (preparar mensaje, ensayar, exponer y responder preguntas)."
+        producto_parcial = "Guion breve + presentación/galería con retroalimentación."
+    else:
+        demanda = "Reflexión y mejora (metacognición, autoevaluación y acuerdos)."
+        producto_parcial = "Autoevaluación + lista de mejoras y compromisos."
+
     prompt = f"""
 Eres un docente experto en educación básica en México.
 
@@ -776,9 +981,14 @@ Diseña una actividad educativa clara, creativa y MUY detallada (evita generalid
 
 Tema: {tema}
 Grado: {grado}
+{f'Día/Sesión: {dia} de {total_dias}.' if (dia is not None and total_dias is not None) else (f'Día/Sesión: {dia}.' if dia is not None else '')}
+{f'Enfoque sugerido del día (temporalidad): {enfoque_dia}' if _to_text(enfoque_dia) else ''}
 
 Proyecto educativo:
 {proyecto}
+{f'Producto final (debe ser visible): {producto_final_txt}' if producto_final_txt else ''}
+Producto parcial esperado hoy: {producto_parcial}
+Demanda cognitiva (no repetir solo observar/registrar/compartir): {demanda}
 
 Momento metodológico: {momento}
 
@@ -805,6 +1015,7 @@ Reglas de formato (muy importante):
 - En `inicio`/`desarrollo`/`cierre` usa párrafos y/o viñetas con saltos de línea.
 - Incluye tiempos sugeridos por sección (ej. \"(5 min)\") sin exceder 40 min en total.
 - No uses títulos genéricos como "Actividad".
+- Evita repetir las mismas acciones centrales de sesiones anteriores; debe haber aumento de complejidad.
 
 Devuelve SOLO JSON con esta estructura EXACTA:
 
@@ -827,8 +1038,16 @@ Devuelve SOLO JSON con esta estructura EXACTA:
         parsed = parse_llm_json(respuesta)
         payload = _coerce_activity_payload(parsed, momento=momento)
         normalized = _normalize_activity_json(payload)
-        enriched = _ensure_activity_sections(normalized, tema=str(tema), grado=str(grado), momento=str(momento))
-        if _needs_refinement(enriched):
+        enriched = _ensure_activity_sections(
+            normalized,
+            tema=str(tema),
+            grado=str(grado),
+            momento=str(momento),
+            dia=dia,
+            enfoque_dia=enfoque_dia,
+            producto_final=producto_final_txt,
+        )
+        if _needs_refinement(enriched, momento=str(momento)):
             enriched = _refine_activity_with_llm(
                 tema=str(tema),
                 grado=str(grado),
@@ -837,6 +1056,9 @@ Devuelve SOLO JSON con esta estructura EXACTA:
                 proyecto=str(proyecto),
                 historial=str(historial),
                 current=enriched,
+                dia=dia,
+                enfoque_dia=enfoque_dia,
+                producto_final=producto_final_txt,
             )
         return enriched
     except ValueError:
@@ -876,8 +1098,16 @@ Respuesta anterior a corregir:
         parsed2 = parse_llm_json(respuesta2)
         payload2 = _coerce_activity_payload(parsed2, momento=momento)
         normalized2 = _normalize_activity_json(payload2)
-        enriched2 = _ensure_activity_sections(normalized2, tema=str(tema), grado=str(grado), momento=str(momento))
-        if _needs_refinement(enriched2):
+        enriched2 = _ensure_activity_sections(
+            normalized2,
+            tema=str(tema),
+            grado=str(grado),
+            momento=str(momento),
+            dia=dia,
+            enfoque_dia=enfoque_dia,
+            producto_final=producto_final_txt,
+        )
+        if _needs_refinement(enriched2, momento=str(momento)):
             enriched2 = _refine_activity_with_llm(
                 tema=str(tema),
                 grado=str(grado),
@@ -886,6 +1116,9 @@ Respuesta anterior a corregir:
                 proyecto=str(proyecto),
                 historial=str(historial),
                 current=enriched2,
+                dia=dia,
+                enfoque_dia=enfoque_dia,
+                producto_final=producto_final_txt,
             )
         return enriched2
 
@@ -907,14 +1140,21 @@ def generar_actividades(tema, grado, momentos, estrategia, proyecto):
     actividades = []
     historial = ""
 
+    total = len(momentos) if isinstance(momentos, list) else None
+
     for item in momentos:
+        dia = item.get("dia") if isinstance(item, dict) else None
+        enfoque_dia = _day_focus_from_project(proyecto, int(dia)) if isinstance(dia, int) else ""
         actividad_json = generar_actividad_ia(
             tema,
             grado,
             item["momento"],
             estrategia,
             historial,
-            proyecto
+            proyecto,
+            dia=int(dia) if isinstance(dia, int) else None,
+            total_dias=int(total) if isinstance(total, int) else None,
+            enfoque_dia=enfoque_dia,
         )
 
         actividades.append({
