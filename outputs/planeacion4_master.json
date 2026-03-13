@@ -1,0 +1,1246 @@
+{
+  "meta": {
+    "started_at": "2026-03-13T19:20:46.005504+00:00",
+    "finished_at": "2026-03-13T19:23:20.204147+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 25052
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 97257
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 31873
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 12
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "Viva la Primavera",
+      "problematica": "Los estudiantes del tercer grado no logran comprender el ciclo de vida de las plantas y animales en relación con las estaciones, lo que genera desconocimiento sobre la importancia de cuidar el medio ambiente.",
+      "justificacion": "El programa educativo de la Nueva Escuela Mexicana busca inculcar en los estudiantes valores como el respeto por la naturaleza y la importancia del equilibrio ecológico. El tema de la primavera y sus efectos sobre los seres vivos es relevante para el nivel escolar, ya que permite abordar conceptos científicos y reflexiones éticas de manera atractiva y comprensible.",
+      "proposito": "Fomentar en los estudiantes un mayor interés por la naturaleza y su funcionamiento, así como desarrollar habilidades para observar, describir e interpretar fenómenos naturales relacionados con las estaciones del año.",
+      "producto_final": "Un mural colectivo que refleje la relación entre la primavera y los seres vivos, incluyendo sus cambios físicos y biológicos. El mural también contendrá reflexiones personales sobre cómo cuidar el medio ambiente en relación con las estaciones del año.",
+      "temporalidad": "{\"día_1\": \"Introducción al tema: Observación de la naturaleza y registro de notas\", \"día_2\": \"Investigación sobre los cambios físicos de la primavera en plantas y animales, y su relación con las estaciones\", \"día_3\": \"Creación del mural colectivo, incluyendo ilustraciones y explicaciones sobre el tema\", \"día_4\": \"Presentación y discusión grupal del mural, compartiendo conocimientos y reflexiones\", \"día_5\": \"Revisión final y planificación de actividades para promover la conservación del medio ambiente en relación con las estaciones\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Introducción al tema: Observación de la naturaleza y registro de notas",
+          "inicio": "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+          "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel",
+            "lápiz"
+          ],
+          "pasos": [
+            "Observar y registrar cambios en la naturaleza",
+            "Preguntar a los estudiantes sobre sus observaciones",
+            "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.",
+            "¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?",
+            "¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?",
+            "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "Organización: plenaria → equipos pequeños (3–4).",
+            "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.",
+            "(10 min)",
+            "Pide a los estudiantes que registren en su papel las siguientes cosas:",
+            "Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.)."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "nombre": "Bolsas para recolección de datos",
+          "cantidad": "1 bolsa por estudiante",
+          "actividad": "Bolsas para recolección de datos",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "(5 min) Enfoque del problema:",
+            "Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.",
+            "Aclara qué se quiere averiguar o explicar hoy.",
+            "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "Organización: parejas.",
+            "(25 min) Organizamos la información:",
+            "En parejas, clasifican lo observado en: clima / plantas / animales.",
+            "Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.",
+            "Docente circula, pregunta y ayuda a precisar vocabulario.",
+            "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+            "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante."
+          ],
+          "inicio": "(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+          "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Creación del mural colectivo",
+          "inicio": "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+          "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+          "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel mural",
+            "instrumentos artísticos (lápices, colores, marcadores)",
+            "pizdas"
+          ],
+          "pasos": [
+            "Preparar el papel mural y materiales artísticos",
+            "Dividir al grupo en equipos de trabajo para abordar diferentes secciones del mural",
+            "Invertir tiempo para la presentación y discusión grupal sobre los contenidos del mural",
+            "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "1. Preparación del mural (5 min)",
+            "Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.",
+            "Haz una lista con los temas a incluir en el mural:",
+            "Ilustraciones de plantas y árboles en floración",
+            "Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "nombre: Creación del mural colectivo\nduracion: 40 minutos",
+          "inicio": "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+          "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Papel mural o cartulina para el mural",
+            "Tizas, copic, lápices, marcadores, crayones, etc.",
+            "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+          ],
+          "pasos": [
+            "Los estudiantes trabajan en equipo para diseñar e ilustrar su área asignada del mural, considerando aspectos de la primavera y su relación con los seres vivos.",
+            "Cada grupo presenta su área del mural y explica qué representa, fomentando la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente.",
+            "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+            "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)",
+            "Docente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).",
+            "Alumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).",
+            "Esta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.",
+            "Participa y argumenta con base en lo que observa/registra.",
+            "Sigue la consigna y usa materiales con cuidado.",
+            "Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión en grupo sobre la relación entre la primavera y los seres vivos",
+          "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+          "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "hojas de papel",
+            "bolígrafos"
+          ],
+          "pasos": [
+            "Reunir a los estudiantes en grupos",
+            "Distribuir hojas de papel y bolígrafos",
+            "Preguntar a cada grupo sobre sus observaciones y reflexiones",
+            "Registrar las ideas clave en una pizarra grande",
+            "Presentar las conclusiones de cada grupo a la clase",
+            "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)",
+            "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+            "Organización: plenaria y equipos.",
+            "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:",
+            "¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?",
+            "¿Cómo crees que los cambios climáticos afectan a las plantas y animales?",
+            "¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?",
+            "Los grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)",
+            "El docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados."
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+      "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.",
+      "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).",
+      "evaluacion": "- Participa y argumenta con base en lo que observa/registra.",
+      "evidencias": [
+        "registro en cuaderno/hoja de trabajo + participación oral"
+      ],
+      "materiales": [
+        "hojas de papel",
+        "bolígrafos"
+      ]
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Introducción al tema: Observación de la naturaleza y registro de notas\n\nComience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+        "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+        "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel",
+          "lápiz"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Bolsas para recolección de datos\n\n(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+        "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Creación del mural colectivo\n\nLlegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+        "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+        "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel mural",
+          "instrumentos artísticos (lápices, colores, marcadores)",
+          "pizdas"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: nombre: Creación del mural colectivo\nduracion: 40 minutos\n\nPresenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+        "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel mural o cartulina para el mural",
+          "Tizas, copic, lápices, marcadores, crayones, etc.",
+          "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Reflexión en grupo sobre la relación entre la primavera y los seres vivos\n\nMientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+        "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+        "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "hojas de papel",
+          "bolígrafos"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "Viva la Primavera",
+        "problematica": "Los estudiantes del tercer grado no logran comprender el ciclo de vida de las plantas y animales en relación con las estaciones, lo que genera desconocimiento sobre la importancia de cuidar el medio ambiente.",
+        "justificacion": "El programa educativo de la Nueva Escuela Mexicana busca inculcar en los estudiantes valores como el respeto por la naturaleza y la importancia del equilibrio ecológico. El tema de la primavera y sus efectos sobre los seres vivos es relevante para el nivel escolar, ya que permite abordar conceptos científicos y reflexiones éticas de manera atractiva y comprensible.",
+        "proposito": "Fomentar en los estudiantes un mayor interés por la naturaleza y su funcionamiento, así como desarrollar habilidades para observar, describir e interpretar fenómenos naturales relacionados con las estaciones del año.",
+        "producto_final": "Un mural colectivo que refleje la relación entre la primavera y los seres vivos, incluyendo sus cambios físicos y biológicos. El mural también contendrá reflexiones personales sobre cómo cuidar el medio ambiente en relación con las estaciones del año.",
+        "temporalidad": "{\"día_1\": \"Introducción al tema: Observación de la naturaleza y registro de notas\", \"día_2\": \"Investigación sobre los cambios físicos de la primavera en plantas y animales, y su relación con las estaciones\", \"día_3\": \"Creación del mural colectivo, incluyendo ilustraciones y explicaciones sobre el tema\", \"día_4\": \"Presentación y discusión grupal del mural, compartiendo conocimientos y reflexiones\", \"día_5\": \"Revisión final y planificación de actividades para promover la conservación del medio ambiente en relación con las estaciones\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+        "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.",
+        "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).",
+        "evaluacion": "- Participa y argumenta con base en lo que observa/registra.",
+        "evidencias": [
+          "registro en cuaderno/hoja de trabajo + participación oral"
+        ],
+        "materiales": [
+          "hojas de papel",
+          "bolígrafos"
+        ]
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Introducción al tema: Observación de la naturaleza y registro de notas",
+            "inicio": "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+            "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+            "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "papel",
+              "lápiz"
+            ],
+            "pasos": [
+              "Observar y registrar cambios en la naturaleza",
+              "Preguntar a los estudiantes sobre sus observaciones",
+              "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.",
+              "¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?",
+              "¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?",
+              "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+              "¿Qué observaste que cambió y cómo lo sabes?",
+              "¿Qué relación tiene ese cambio con el clima/estación?",
+              "¿Qué pasaría si no ocurriera ese cambio?",
+              "Organización: plenaria → equipos pequeños (3–4).",
+              "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.",
+              "(10 min)",
+              "Pide a los estudiantes que registren en su papel las siguientes cosas:",
+              "Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.)."
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "nombre": "Bolsas para recolección de datos",
+            "cantidad": "1 bolsa por estudiante",
+            "actividad": "Bolsas para recolección de datos",
+            "materiales": [
+              "Cuaderno",
+              "Lápiz",
+              "Pizarrón o papel bond",
+              "Marcadores"
+            ],
+            "pasos": [
+              "(5 min) Enfoque del problema:",
+              "Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.",
+              "Aclara qué se quiere averiguar o explicar hoy.",
+              "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+              "¿Qué observaste que cambió y cómo lo sabes?",
+              "¿Qué relación tiene ese cambio con el clima/estación?",
+              "¿Qué pasaría si no ocurriera ese cambio?",
+              "Organización: parejas.",
+              "(25 min) Organizamos la información:",
+              "En parejas, clasifican lo observado en: clima / plantas / animales.",
+              "Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.",
+              "Docente circula, pregunta y ayuda a precisar vocabulario.",
+              "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+              "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante."
+            ],
+            "inicio": "(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+            "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral."
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Creación del mural colectivo",
+            "inicio": "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+            "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+            "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "papel mural",
+              "instrumentos artísticos (lápices, colores, marcadores)",
+              "pizdas"
+            ],
+            "pasos": [
+              "Preparar el papel mural y materiales artísticos",
+              "Dividir al grupo en equipos de trabajo para abordar diferentes secciones del mural",
+              "Invertir tiempo para la presentación y discusión grupal sobre los contenidos del mural",
+              "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.",
+              "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+              "Organización: equipos con roles.",
+              "¿Qué observaste que cambió y cómo lo sabes?",
+              "¿Qué relación tiene ese cambio con el clima/estación?",
+              "¿Qué pasaría si no ocurriera ese cambio?",
+              "1. Preparación del mural (5 min)",
+              "Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.",
+              "Haz una lista con los temas a incluir en el mural:",
+              "Ilustraciones de plantas y árboles en floración",
+              "Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)"
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "nombre: Creación del mural colectivo\nduracion: 40 minutos",
+            "inicio": "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+            "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Papel mural o cartulina para el mural",
+              "Tizas, copic, lápices, marcadores, crayones, etc.",
+              "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+            ],
+            "pasos": [
+              "Los estudiantes trabajan en equipo para diseñar e ilustrar su área asignada del mural, considerando aspectos de la primavera y su relación con los seres vivos.",
+              "Cada grupo presenta su área del mural y explica qué representa, fomentando la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente.",
+              "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.",
+              "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+              "Organización: equipos.",
+              "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+              "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)",
+              "Docente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).",
+              "Alumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).",
+              "Esta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.",
+              "Participa y argumenta con base en lo que observa/registra.",
+              "Sigue la consigna y usa materiales con cuidado.",
+              "Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+              "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Reflexión en grupo sobre la relación entre la primavera y los seres vivos",
+            "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+            "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+            "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "hojas de papel",
+              "bolígrafos"
+            ],
+            "pasos": [
+              "Reunir a los estudiantes en grupos",
+              "Distribuir hojas de papel y bolígrafos",
+              "Preguntar a cada grupo sobre sus observaciones y reflexiones",
+              "Registrar las ideas clave en una pizarra grande",
+              "Presentar las conclusiones de cada grupo a la clase",
+              "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)",
+              "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+              "Organización: plenaria y equipos.",
+              "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:",
+              "¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?",
+              "¿Cómo crees que los cambios climáticos afectan a las plantas y animales?",
+              "¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?",
+              "Los grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)",
+              "El docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados."
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+            "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Introducción al tema: Observación de la naturaleza y registro de notas\n\nComience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+          "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "papel",
+            "lápiz"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Bolsas para recolección de datos\n\n(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+          "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: Creación del mural colectivo\n\nLlegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+          "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+          "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "papel mural",
+            "instrumentos artísticos (lápices, colores, marcadores)",
+            "pizdas"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: nombre: Creación del mural colectivo\nduracion: 40 minutos\n\nPresenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+          "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Papel mural o cartulina para el mural",
+            "Tizas, copic, lápices, marcadores, crayones, etc.",
+            "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Reflexión en grupo sobre la relación entre la primavera y los seres vivos\n\nMientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+          "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "hojas de papel",
+            "bolígrafos"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "Viva la Primavera",
+      "problematica": "Los estudiantes del tercer grado no logran comprender el ciclo de vida de las plantas y animales en relación con las estaciones, lo que genera desconocimiento sobre la importancia de cuidar el medio ambiente.",
+      "justificacion": "El programa educativo de la Nueva Escuela Mexicana busca inculcar en los estudiantes valores como el respeto por la naturaleza y la importancia del equilibrio ecológico. El tema de la primavera y sus efectos sobre los seres vivos es relevante para el nivel escolar, ya que permite abordar conceptos científicos y reflexiones éticas de manera atractiva y comprensible.",
+      "proposito": "Fomentar en los estudiantes un mayor interés por la naturaleza y su funcionamiento, así como desarrollar habilidades para observar, describir e interpretar fenómenos naturales relacionados con las estaciones del año.",
+      "producto_final": "Un mural colectivo que refleje la relación entre la primavera y los seres vivos, incluyendo sus cambios físicos y biológicos. El mural también contendrá reflexiones personales sobre cómo cuidar el medio ambiente en relación con las estaciones del año.",
+      "temporalidad": "{\"día_1\": \"Introducción al tema: Observación de la naturaleza y registro de notas\", \"día_2\": \"Investigación sobre los cambios físicos de la primavera en plantas y animales, y su relación con las estaciones\", \"día_3\": \"Creación del mural colectivo, incluyendo ilustraciones y explicaciones sobre el tema\", \"día_4\": \"Presentación y discusión grupal del mural, compartiendo conocimientos y reflexiones\", \"día_5\": \"Revisión final y planificación de actividades para promover la conservación del medio ambiente en relación con las estaciones\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+      "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.",
+      "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).",
+      "evaluacion": "- Participa y argumenta con base en lo que observa/registra.",
+      "evidencias": [
+        "registro en cuaderno/hoja de trabajo + participación oral"
+      ],
+      "materiales": [
+        "hojas de papel",
+        "bolígrafos"
+      ]
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Introducción al tema: Observación de la naturaleza y registro de notas",
+          "inicio": "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+          "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel",
+            "lápiz"
+          ],
+          "pasos": [
+            "Observar y registrar cambios en la naturaleza",
+            "Preguntar a los estudiantes sobre sus observaciones",
+            "Comience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.",
+            "¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?",
+            "¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?",
+            "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "Organización: plenaria → equipos pequeños (3–4).",
+            "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.",
+            "(10 min)",
+            "Pide a los estudiantes que registren en su papel las siguientes cosas:",
+            "Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.)."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "nombre": "Bolsas para recolección de datos",
+          "cantidad": "1 bolsa por estudiante",
+          "actividad": "Bolsas para recolección de datos",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "(5 min) Enfoque del problema:",
+            "Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.",
+            "Aclara qué se quiere averiguar o explicar hoy.",
+            "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "Organización: parejas.",
+            "(25 min) Organizamos la información:",
+            "En parejas, clasifican lo observado en: clima / plantas / animales.",
+            "Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.",
+            "Docente circula, pregunta y ayuda a precisar vocabulario.",
+            "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
+            "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante."
+          ],
+          "inicio": "(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+          "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Creación del mural colectivo",
+          "inicio": "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+          "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+          "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel mural",
+            "instrumentos artísticos (lápices, colores, marcadores)",
+            "pizdas"
+          ],
+          "pasos": [
+            "Preparar el papel mural y materiales artísticos",
+            "Dividir al grupo en equipos de trabajo para abordar diferentes secciones del mural",
+            "Invertir tiempo para la presentación y discusión grupal sobre los contenidos del mural",
+            "Llegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué observaste que cambió y cómo lo sabes?",
+            "¿Qué relación tiene ese cambio con el clima/estación?",
+            "¿Qué pasaría si no ocurriera ese cambio?",
+            "1. Preparación del mural (5 min)",
+            "Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.",
+            "Haz una lista con los temas a incluir en el mural:",
+            "Ilustraciones de plantas y árboles en floración",
+            "Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "nombre: Creación del mural colectivo\nduracion: 40 minutos",
+          "inicio": "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+          "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Papel mural o cartulina para el mural",
+            "Tizas, copic, lápices, marcadores, crayones, etc.",
+            "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+          ],
+          "pasos": [
+            "Los estudiantes trabajan en equipo para diseñar e ilustrar su área asignada del mural, considerando aspectos de la primavera y su relación con los seres vivos.",
+            "Cada grupo presenta su área del mural y explica qué representa, fomentando la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente.",
+            "Presenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+            "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)",
+            "Docente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).",
+            "Alumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).",
+            "Esta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.",
+            "Participa y argumenta con base en lo que observa/registra.",
+            "Sigue la consigna y usa materiales con cuidado.",
+            "Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión en grupo sobre la relación entre la primavera y los seres vivos",
+          "inicio": "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+          "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+          "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "hojas de papel",
+            "bolígrafos"
+          ],
+          "pasos": [
+            "Reunir a los estudiantes en grupos",
+            "Distribuir hojas de papel y bolígrafos",
+            "Preguntar a cada grupo sobre sus observaciones y reflexiones",
+            "Registrar las ideas clave en una pizarra grande",
+            "Presentar las conclusiones de cada grupo a la clase",
+            "Mientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)",
+            "Propósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.",
+            "Organización: plenaria y equipos.",
+            "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:",
+            "¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?",
+            "¿Cómo crees que los cambios climáticos afectan a las plantas y animales?",
+            "¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?",
+            "Los grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)",
+            "El docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados."
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": false
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Introducción al tema: Observación de la naturaleza y registro de notas\n\nComience por explicar a los estudiantes que vamos a explorar cómo cambia el mundo natural con las estaciones. Pregúnteles si saben qué es la primavera y qué cambios ocurren en la naturaleza durante esta época del año.\nPreguntas detonadoras:\n¿Qué es lo primero que viene a tu mente cuando se menciona la palabra 'primavera'?\n¿Cuáles son los cambios que notas en tu entorno cuando llega la primavera?\nPropósito: reconocer cambios de la primavera en seres vivos a partir de observación.\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: plenaria → equipos pequeños (3–4).",
+        "desarrollo": "Distribuya papel y lápiz a cada estudiante. Pida que observen su entorno inmediato, como el jardín escolar o el parque cercano. Encuéntralos mientras observan la naturaleza.\n(10 min)\nPide a los estudiantes que registren en su papel las siguientes cosas:\n- Los cambios que ven en las plantas (florecimiento, cambio de color de las hojas, etc.).\n- Los animales que están activos durante esta época del año (¿algún animal está empezando a aparecer?).\nPregúntele a los estudiantes qué se sienten cuando observan la naturaleza.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.\nEsta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+        "cierre": "Reúna el papel de cada estudiante y pregúnteles si notaron algún cambio en su entorno. Pide que compartan sus observaciones con un compañero.\nPreguntas detonadoras:\n¿Qué te llamó la atención mientras observabas la naturaleza?\n¿Cómo crees que se relaciona lo que viste con el tema de la primavera?\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel",
+          "lápiz"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Bolsas para recolección de datos\n\n(5 min) Enfoque del problema:\n- Recupera lo observado sobre La primavera y los seres vivos y plantea una pregunta guía del proyecto.\n- Aclara qué se quiere averiguar o explicar hoy.\nPropósito: organizar información (clima/plantas/animales) para explicar el fenómeno.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?\nOrganización: parejas.",
+        "desarrollo": "(25 min) Organizamos la información:\n- En parejas, clasifican lo observado en: clima / plantas / animales.\n- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n- Docente circula, pregunta y ayuda a precisar vocabulario.\nDocente: entrega organizador gráfico (3 columnas) y modela un ejemplo.\nAlumnado: completa el cuadro con 3 ejemplos y subraya el más importante.\nEsta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "(10 min) Acuerdos:\n- Cada pareja comparte 1 idea.\n- Se acuerda qué evidencia se juntará para el producto final (lista en el salón).\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Creación del mural colectivo\n\nLlegada y bienvenida (2 min). Presenta a los estudiantes con un ejemplo de una planta o árbol que esté en floración. Pregúntales si saben qué está sucediendo en la naturaleza durante esta época del año.\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué observaste que cambió y cómo lo sabes?\n- ¿Qué relación tiene ese cambio con el clima/estación?\n- ¿Qué pasaría si no ocurriera ese cambio?",
+        "desarrollo": "1. Preparación del mural (5 min)\n  Distribuye papel mural en blanco y proporciona materiales de dibujo como lápices, colores, marcadores y otros instrumentos artísticos.\n  Haz una lista con los temas a incluir en el mural:\n  • Ilustraciones de plantas y árboles en floración\n  • Animales que se relacionan con la primavera (como insectos, pájaros o pequeños mamíferos)\n  • Fenómenos naturales asociados con la estación (llovizna, calor, etc.)\n  Invierte 2-3 minutos en explicar las instrucciones y el propósito del mural.\n  \n  2. Creación colectiva del mural (15 min)\n  Divide al grupo en pequeños grupos de trabajo de 3 a 4 estudiantes cada uno. Cada grupo se enfocará en un área específica del mural. Pueden comenzar con la parte superior, donde incluirán ilustraciones y textos sobre las características físicas de los seres vivos durante la primavera.\n  En este momento, recuerda a los estudiantes que el mural debe reflejar su comprensión sobre la relación entre la estación y sus efectos en la naturaleza.\n  \n  3. Intercambio de ideas y reflexiones (10 min)\n  Después de 15 minutos de trabajo en equipo, pide a cada grupo presentar una parte del mural. Pregúntales a los estudiantes qué han incluido en su área y cómo se relaciona con el tema principal. Invierte tiempo para que ellos puedan ver lo trabajado por otros grupos.\n  \n  4. Completación del mural (8 min)\n  Una vez que todos hayan tenido la oportunidad de presentar, regresa a los estudiantes a su lugar en el salón y sugiere la incorporación de textos reflexivos personales alrededor de cómo cuidar el medio ambiente relacionado con las estaciones. Pide a cada uno que agrega una frase o dos sobre lo que han aprendido.",
+        "cierre": "Revisa brevemente el mural y haz alguna pregunta sobre los detalles incluidos en él. Asegúrate de que se haya cumplido la duración establecida. Finalmente, invita a cada estudiante a revisar su participación en el proceso de creación del mural.\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "papel mural",
+          "instrumentos artísticos (lápices, colores, marcadores)",
+          "pizdas"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: nombre: Creación del mural colectivo\nduracion: 40 minutos\n\nPresenta el objetivo de la actividad: crear un mural que refleje la relación entre la primavera y los seres vivos.; Comparte las expectativas para la creación del mural colectivo y su presentación en clase.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+        "desarrollo": "Divide a los estudiantes en grupos de 3-4 personas y asigna un área específica del mural a cada grupo (por ejemplo, una sección para plantas y otra para animales).; (5 min); Pregúntale a cada grupo: ¿Qué aspecto de la primavera crees que es más importante representar en nuestro mural?; Escríbelos en un papel o en un cuaderno, para luego compartirlos con el resto del grupo.; Anima a los estudiantes a trabajar en equipo y utilizar sus conocimientos previos sobre la primavera y su relación con los seres vivos.; (15 min); Fomenta que cada grupo comience a dibujar e ilustrar su área asignada, utilizando diferentes colores y materiales (copic, lápices, marcadores).; Al mismo tiempo, pide a cada grupo que escriba una breve descripción o explicación de lo que están representando en su área del mural.; (10 min); Circula por los grupos para ofrecer orientación y apoyo cuando sea necesario. Anima a los estudiantes a consultar sus notas y datos previos sobre la primavera y su impacto en los seres vivos.; (5 min)\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Invita a cada grupo a presentar su área del mural, explicando qué representan y cómo se relaciona con la primavera.; Pregúntale al grupo que presenta: ¿Qué nos dice esta ilustración sobre el ciclo de vida en la primavera?; Fomenta la discusión grupal y la reflexión sobre cómo cuidar el medio ambiente durante las diferentes estaciones del año.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel mural o cartulina para el mural",
+          "Tizas, copic, lápices, marcadores, crayones, etc.",
+          "Papeles y cuadernos para los estudiantes para escribir sus notas y descripciones del mural"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Reflexión en grupo sobre la relación entre la primavera y los seres vivos\n\nMientras se distribuyen hojas de papel y bolígrafos, el docente anuncia: 'Hoy vamos a reflexionar en grupos sobre lo aprendido durante las últimas clases. ¿Qué cambios notamos en la naturaleza durante la primavera? ¿Cómo afectan estos cambios a los seres vivos?' (5 min)\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.",
+        "desarrollo": "El docente divide a los estudiantes en grupos de 3-4 personas y les pide que se sienten en un círculo. Los alumnos deben reflexionar sobre las observaciones realizadas durante las clases anteriores y registrar sus ideas y preguntas en la hoja de papel. El docente circula por el salón, haciendo preguntas detonadoras como:\n• ¿Qué notas diferentes cuando caminamos por la naturaleza durante la primavera?\n• ¿Cómo crees que los cambios climáticos afectan a las plantas y animales?\n• ¿Qué podemos hacer para proteger y cuidar el medio ambiente en relación con las estaciones del año?\nLos grupos deben discutir y compartir sus ideas, haciendo énfasis en la importancia de la observación y la reflexión. (15 min)\nEl docente recuerda a los estudiantes que no hay respuestas 'correctas' o 'incorrectas', solo diferentes perspectivas para considerar. Los alumnos deben sentirse cómodos compartiendo sus opiniones y preguntas sin miedo a ser juzgados.\nDurante este tiempo, el docente registra las ideas clave de cada grupo en una pizarra grande, para que todos puedan verlas y reflexionar sobre ellas. (10 min)\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.",
+        "cierre": "Después de 20 minutos de discusión en grupo, el docente anuncia: 'Es hora de compartir nuestras reflexiones con la clase entera.' Cada grupo presenta sus ideas principales y cómo se relacionan con la primavera y los seres vivos. El docente fomenta la participación activa y responde a preguntas adicionales para asegurarse de que todos comprendan el tema. (5 min)\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "hojas de papel",
+          "bolígrafos"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

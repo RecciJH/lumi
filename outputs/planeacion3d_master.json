@@ -1,0 +1,1381 @@
+{
+  "meta": {
+    "started_at": "2026-03-13T18:25:17.943011+00:00",
+    "finished_at": "2026-03-13T18:29:34.424387+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 23601
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 209467
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 23398
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 13
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "Primavera viva: descubriendo la naturaleza",
+      "problematica": "Los estudiantes de grado 3 no comprenden la importancia de la primavera en el ciclo natural de México y sus efectos sobre los seres vivos.",
+      "justificacion": "El proyecto busca abordar la falta de conciencia ambiental y la necesidad de un enfoque integral en la educación básica que incluya la ciencia, la tecnología y la naturaleza.",
+      "proposito": "Fomentar la observación, el pensamiento crítico y el respeto por la naturaleza a través del estudio de la primavera y sus efectos sobre los seres vivos en México.",
+      "producto_final": "Un mural colectivo que represente la estación de la primavera y su impacto en diferentes ecosistemas mexicanos, así como un recorrido de aprendizaje que incluya presentaciones orales y observaciones científicas.",
+      "temporalidad": "{\"día1\": \"Introducción a la estación de la primavera. Observación y descripción de los cambios en la naturaleza\", \"día2\": \"El impacto de la lluvia en la vegetación y los ecosistemas. Actividades prácticas para observar el crecimiento de plantas.\", \"día3\": \"El mundo animal durante la primavera: migraciones, reproducción y adaptación.\", \"día4\": \"La relación entre la primavera y las actividades humanas: agricultura, turismo y conservación ambiental.\", \"día5\": \"Conclusión del proyecto. Presentación de los murales colectivos y reflexión sobre lo aprendido.\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "Punto de partida: Explorando la primavera en México": {
+            "inicio": [
+              "Llegada del docente a la clase y saludar al alumnado.",
+              "Se muestran imágenes y videos sobre la primavera en México."
+            ],
+            "desarrollo": [
+              "(5 min) Se muestra una imagen de una región durante el invierno.",
+              "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+              "(10 min) Se distribuyen hojas de registro y lápices.",
+              "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+              "(5 min) Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+            ],
+            "cierre": [
+              "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+              "Se distribuyen materiales: pizarras, marcadores, papel para dibujar."
+            ],
+            "materiales": [
+              "Imágenes y videos sobre la primavera en México",
+              "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+              "Hoja de registro y lápices para cada estudiante."
+            ],
+            "pasos": [
+              "Se muestra una imagen de una región durante el invierno.",
+              "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+              "Se distribuyen hojas de registro y lápices.",
+              "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+              "Se muestran imágenes y videos sobre las actividades humanas durante la primavera.",
+              "Preguntas detonadoras: ¿Qué relación tiene la primavera con nuestras vidas?",
+              "Se distribuyen materiales: pizarras, marcadores, papel para dibujar.",
+              "Compartir hallazgos y reflexiones en equipo o clase.",
+              "Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "planificación_de_la_primavera_y_los_seres_vivos_en_el_grado_3": {
+            "actividad": "Planificación de la Primavera y los Seres Vivos",
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras (¿Qué es la primavera?, ¿Qué ocurre en la naturaleza durante esta época?, ¿Por qué es importante la primavera?).\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos en parejas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.",
+            "materiales": [
+              "Hoja de papel",
+              "Bolígrafo"
+            ],
+            "pasos": [
+              "Introduce el tema de la primavera y su importancia en el ciclo natural de México",
+              "Presenta las preguntas detonadoras para recuperar saberes previos",
+              "Explica la consigna y los criterios de participación",
+              "Modela el procedimiento de observación y registro",
+              "Comparte hallazgos con parejas",
+              "Verifica comprensión con preguntas en desarrollo",
+              "Encuentra conexiones entre la primavera y los seres vivos",
+              "Comprende las interacciones entre los ecosistemas durante la primavera",
+              "Registra evidencia de participación y aprendizaje",
+              "Presenta resultados en plenaria"
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "La Estación de la Primavera en México: Un Recorrido por la Naturaleza",
+          "inicio": "{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+          "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+          "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+          "materiales": [
+            "Mapa conceptual de ecosistemas mexicanos",
+            "Papel y lápices"
+          ],
+          "pasos": [
+            "Presentar el propósito de la sesión.",
+            "Recuperar saberes previos con preguntas detonadoras.",
+            "Modelar el procedimiento para observar, registrar y compartir hallazgos.",
+            "Acompañar a los equipos durante las actividades prácticas.",
+            "Socializar resultados en plenaria.",
+            "Concluir con una acción de cuidado/seguimiento.",
+            "Revisar registro en cuaderno/hoja de trabajo."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Comunicación de la Adaptación de Animales durante la Primavera",
+          "inicio": "{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+          "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+          "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+          "materiales": [
+            "Imágenes o videos de animales respondiendo al cambio de estación del año",
+            "Papel o cartulina para crear paneles",
+            "Colores y materiales de arte para ilustrar los paneles",
+            "Cuadros de conceptos o papel para tomar notas"
+          ],
+          "pasos": [
+            "Presentar imágenes o videos de animales respondiendo al cambio de estación del año.",
+            "Preguntar a los estudiantes sobre ejemplos de adaptaciones de animales durante la primavera.",
+            "Brindar tiempo para que los estudiantes creen paneles explicativos sobre las adaptaciones observadas.",
+            "Pasar por los paneles creados y realizar preguntas sobre el contenido del panel.",
+            "Brindar retroalimentación constructiva a los estudiantes sobre su trabajo.",
+            "Preguntar a los estudiantes sobre lo aprendido durante la actividad.",
+            "Compartir información adicional sobre la adaptación de animales en la primavera.",
+            "Realizar un recuento de lo aprendido y brindar tiempo para que los estudiantes compartan sus paneles con el grupo.",
+            "Almacenar los paneles creados en un lugar visible para ser revisados posteriormente."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "La reflexión colectiva sobre la primavera y los seres vivos": {
+            "actividad": "La reflexión colectiva sobre la primavera y los seres vivos",
+            "inicio": {
+              "Durante los primeros 5 minutos (1:05-1:10):": {
+                "Docente": "Presenta una pregunta detonadora para iniciar la reflexión.",
+                "Alumnado": "Pone atención a las palabras y acciones de sus compañeros."
+              },
+              "Material necesario: papel mural o pizarra": []
+            },
+            "desarrollo": {
+              "Durante los siguientes 25 minutos (1:10-1:35):": {
+                "Docente": [
+                  "Modela el procedimiento y acompaña por equipos.",
+                  "Ajusta el reto según el grado y verifica comprensión con preguntas."
+                ],
+                "Alumnado": [
+                  "Observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+                  "Registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+                  "Comparte hallazgos con sus compañeros y docente."
+                ]
+              },
+              "Preguntas detonadoras para la reflexión:": [
+                "¿Qué cambios observaron en la naturaleza durante la primavera?",
+                "¿Cómo afecta la lluvia a los seres vivos de diferentes ecosistemas?"
+              ],
+              "Organización: equipos de 3-4 alumnos": []
+            },
+            "cierre": {
+              "Durante los últimos 10 minutos (1:35-1:45):": {
+                "Docente": [
+                  "Revisa la comprensión del alumnado y ajusta el reto según sea necesario.",
+                  "Agradece su participación y reflexiona con ellos sobre lo aprendido."
+                ],
+                "Alumnado": "Pone atención a las observaciones y preguntas de sus compañeros."
+              },
+              "Material necesario: lápices o marcadores de colores": []
+            },
+            "materiales": [
+              "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+              "Papel mural o pizarra",
+              "Lápices o marcadores de colores"
+            ],
+            "pasos": [
+              "Presentar la pregunta detonadora para iniciar la reflexión.",
+              "Modelar el procedimiento y acompañar por equipos.",
+              "Ajustar el reto según el grado y verificar comprensión con preguntas.",
+              "Observar las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+              "Registrar (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+              "Compartir hallazgos con sus compañeros y docente.",
+              "Revisar la comprensión del alumnado y ajustar el reto según sea necesario.",
+              "Agradecer su participación y reflexionar con ellos sobre lo aprendido."
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": [
+        "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "Durante los primeros 5 minutos (1:05-1:10):\n- Presenta una pregunta detonadora para iniciar la reflexión."
+      ],
+      "desarrollo": [
+        "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "Durante los siguientes 25 minutos (1:10-1:35):\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos, registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento, y comparte hallazgos con sus compañeros y docente.",
+        "Durante los siguientes 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+      ],
+      "cierre": [
+        "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "Durante los últimos 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+      ],
+      "evaluacion": [],
+      "evidencias": [
+        {
+          "nombre": "Papel mural o pizarra",
+          "descripcion": ""
+        },
+        {
+          "nombre": "Lápices o marcadores de colores",
+          "descripcion": ""
+        }
+      ],
+      "materiales": [
+        "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+        "Papel mural o pizarra",
+        "Lápices o marcadores de colores"
+      ]
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: La Estación de la Primavera en México: Un Recorrido por la Naturaleza\n\n{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+        "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+        "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Mapa conceptual de ecosistemas mexicanos",
+          "Papel y lápices"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicación de la Adaptación de Animales durante la Primavera\n\n{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+        "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+        "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Imágenes o videos de animales respondiendo al cambio de estación del año",
+          "Papel o cartulina para crear paneles",
+          "Colores y materiales de arte para ilustrar los paneles",
+          "Cuadros de conceptos o papel para tomar notas"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "Primavera viva: descubriendo la naturaleza",
+        "problematica": "Los estudiantes de grado 3 no comprenden la importancia de la primavera en el ciclo natural de México y sus efectos sobre los seres vivos.",
+        "justificacion": "El proyecto busca abordar la falta de conciencia ambiental y la necesidad de un enfoque integral en la educación básica que incluya la ciencia, la tecnología y la naturaleza.",
+        "proposito": "Fomentar la observación, el pensamiento crítico y el respeto por la naturaleza a través del estudio de la primavera y sus efectos sobre los seres vivos en México.",
+        "producto_final": "Un mural colectivo que represente la estación de la primavera y su impacto en diferentes ecosistemas mexicanos, así como un recorrido de aprendizaje que incluya presentaciones orales y observaciones científicas.",
+        "temporalidad": "{\"día1\": \"Introducción a la estación de la primavera. Observación y descripción de los cambios en la naturaleza\", \"día2\": \"El impacto de la lluvia en la vegetación y los ecosistemas. Actividades prácticas para observar el crecimiento de plantas.\", \"día3\": \"El mundo animal durante la primavera: migraciones, reproducción y adaptación.\", \"día4\": \"La relación entre la primavera y las actividades humanas: agricultura, turismo y conservación ambiental.\", \"día5\": \"Conclusión del proyecto. Presentación de los murales colectivos y reflexión sobre lo aprendido.\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "inicio": [
+          "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "Durante los primeros 5 minutos (1:05-1:10):\n- Presenta una pregunta detonadora para iniciar la reflexión."
+        ],
+        "desarrollo": [
+          "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "Durante los siguientes 25 minutos (1:10-1:35):\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos, registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento, y comparte hallazgos con sus compañeros y docente.",
+          "Durante los siguientes 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+        ],
+        "cierre": [
+          "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+          "Durante los últimos 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+        ],
+        "evaluacion": [],
+        "evidencias": [
+          {
+            "nombre": "Papel mural o pizarra",
+            "descripcion": ""
+          },
+          {
+            "nombre": "Lápices o marcadores de colores",
+            "descripcion": ""
+          }
+        ],
+        "materiales": [
+          "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+          "Papel mural o pizarra",
+          "Lápices o marcadores de colores"
+        ]
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "Punto de partida: Explorando la primavera en México": {
+              "inicio": [
+                "Llegada del docente a la clase y saludar al alumnado.",
+                "Se muestran imágenes y videos sobre la primavera en México."
+              ],
+              "desarrollo": [
+                "(5 min) Se muestra una imagen de una región durante el invierno.",
+                "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+                "(10 min) Se distribuyen hojas de registro y lápices.",
+                "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+                "(5 min) Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+              ],
+              "cierre": [
+                "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+                "Se distribuyen materiales: pizarras, marcadores, papel para dibujar."
+              ],
+              "materiales": [
+                "Imágenes y videos sobre la primavera en México",
+                "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+                "Hoja de registro y lápices para cada estudiante."
+              ],
+              "pasos": [
+                "Se muestra una imagen de una región durante el invierno.",
+                "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+                "Se distribuyen hojas de registro y lápices.",
+                "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+                "Se muestran imágenes y videos sobre las actividades humanas durante la primavera.",
+                "Preguntas detonadoras: ¿Qué relación tiene la primavera con nuestras vidas?",
+                "Se distribuyen materiales: pizarras, marcadores, papel para dibujar.",
+                "Compartir hallazgos y reflexiones en equipo o clase.",
+                "Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+              ]
+            },
+            "actividad": "Actividad",
+            "materiales": [],
+            "pasos": [],
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "planificación_de_la_primavera_y_los_seres_vivos_en_el_grado_3": {
+              "actividad": "Planificación de la Primavera y los Seres Vivos",
+              "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras (¿Qué es la primavera?, ¿Qué ocurre en la naturaleza durante esta época?, ¿Por qué es importante la primavera?).\n- Explica consigna y criterios de participación.",
+              "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos en parejas.",
+              "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.",
+              "materiales": [
+                "Hoja de papel",
+                "Bolígrafo"
+              ],
+              "pasos": [
+                "Introduce el tema de la primavera y su importancia en el ciclo natural de México",
+                "Presenta las preguntas detonadoras para recuperar saberes previos",
+                "Explica la consigna y los criterios de participación",
+                "Modela el procedimiento de observación y registro",
+                "Comparte hallazgos con parejas",
+                "Verifica comprensión con preguntas en desarrollo",
+                "Encuentra conexiones entre la primavera y los seres vivos",
+                "Comprende las interacciones entre los ecosistemas durante la primavera",
+                "Registra evidencia de participación y aprendizaje",
+                "Presenta resultados en plenaria"
+              ]
+            },
+            "actividad": "Actividad",
+            "materiales": [],
+            "pasos": [],
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "La Estación de la Primavera en México: Un Recorrido por la Naturaleza",
+            "inicio": "{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+            "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+            "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+            "materiales": [
+              "Mapa conceptual de ecosistemas mexicanos",
+              "Papel y lápices"
+            ],
+            "pasos": [
+              "Presentar el propósito de la sesión.",
+              "Recuperar saberes previos con preguntas detonadoras.",
+              "Modelar el procedimiento para observar, registrar y compartir hallazgos.",
+              "Acompañar a los equipos durante las actividades prácticas.",
+              "Socializar resultados en plenaria.",
+              "Concluir con una acción de cuidado/seguimiento.",
+              "Revisar registro en cuaderno/hoja de trabajo."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Comunicación de la Adaptación de Animales durante la Primavera",
+            "inicio": "{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+            "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+            "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+            "materiales": [
+              "Imágenes o videos de animales respondiendo al cambio de estación del año",
+              "Papel o cartulina para crear paneles",
+              "Colores y materiales de arte para ilustrar los paneles",
+              "Cuadros de conceptos o papel para tomar notas"
+            ],
+            "pasos": [
+              "Presentar imágenes o videos de animales respondiendo al cambio de estación del año.",
+              "Preguntar a los estudiantes sobre ejemplos de adaptaciones de animales durante la primavera.",
+              "Brindar tiempo para que los estudiantes creen paneles explicativos sobre las adaptaciones observadas.",
+              "Pasar por los paneles creados y realizar preguntas sobre el contenido del panel.",
+              "Brindar retroalimentación constructiva a los estudiantes sobre su trabajo.",
+              "Preguntar a los estudiantes sobre lo aprendido durante la actividad.",
+              "Compartir información adicional sobre la adaptación de animales en la primavera.",
+              "Realizar un recuento de lo aprendido y brindar tiempo para que los estudiantes compartan sus paneles con el grupo.",
+              "Almacenar los paneles creados en un lugar visible para ser revisados posteriormente."
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "La reflexión colectiva sobre la primavera y los seres vivos": {
+              "actividad": "La reflexión colectiva sobre la primavera y los seres vivos",
+              "inicio": {
+                "Durante los primeros 5 minutos (1:05-1:10):": {
+                  "Docente": "Presenta una pregunta detonadora para iniciar la reflexión.",
+                  "Alumnado": "Pone atención a las palabras y acciones de sus compañeros."
+                },
+                "Material necesario: papel mural o pizarra": []
+              },
+              "desarrollo": {
+                "Durante los siguientes 25 minutos (1:10-1:35):": {
+                  "Docente": [
+                    "Modela el procedimiento y acompaña por equipos.",
+                    "Ajusta el reto según el grado y verifica comprensión con preguntas."
+                  ],
+                  "Alumnado": [
+                    "Observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+                    "Registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+                    "Comparte hallazgos con sus compañeros y docente."
+                  ]
+                },
+                "Preguntas detonadoras para la reflexión:": [
+                  "¿Qué cambios observaron en la naturaleza durante la primavera?",
+                  "¿Cómo afecta la lluvia a los seres vivos de diferentes ecosistemas?"
+                ],
+                "Organización: equipos de 3-4 alumnos": []
+              },
+              "cierre": {
+                "Durante los últimos 10 minutos (1:35-1:45):": {
+                  "Docente": [
+                    "Revisa la comprensión del alumnado y ajusta el reto según sea necesario.",
+                    "Agradece su participación y reflexiona con ellos sobre lo aprendido."
+                  ],
+                  "Alumnado": "Pone atención a las observaciones y preguntas de sus compañeros."
+                },
+                "Material necesario: lápices o marcadores de colores": []
+              },
+              "materiales": [
+                "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+                "Papel mural o pizarra",
+                "Lápices o marcadores de colores"
+              ],
+              "pasos": [
+                "Presentar la pregunta detonadora para iniciar la reflexión.",
+                "Modelar el procedimiento y acompañar por equipos.",
+                "Ajustar el reto según el grado y verificar comprensión con preguntas.",
+                "Observar las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+                "Registrar (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+                "Compartir hallazgos con sus compañeros y docente.",
+                "Revisar la comprensión del alumnado y ajustar el reto según sea necesario.",
+                "Agradecer su participación y reflexionar con ellos sobre lo aprendido."
+              ]
+            },
+            "actividad": "Actividad",
+            "materiales": [],
+            "pasos": [],
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+            "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: La Estación de la Primavera en México: Un Recorrido por la Naturaleza\n\n{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+          "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+          "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Mapa conceptual de ecosistemas mexicanos",
+            "Papel y lápices"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: Comunicación de la Adaptación de Animales durante la Primavera\n\n{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+          "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+          "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Imágenes o videos de animales respondiendo al cambio de estación del año",
+            "Papel o cartulina para crear paneles",
+            "Colores y materiales de arte para ilustrar los paneles",
+            "Cuadros de conceptos o papel para tomar notas"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "Primavera viva: descubriendo la naturaleza",
+      "problematica": "Los estudiantes de grado 3 no comprenden la importancia de la primavera en el ciclo natural de México y sus efectos sobre los seres vivos.",
+      "justificacion": "El proyecto busca abordar la falta de conciencia ambiental y la necesidad de un enfoque integral en la educación básica que incluya la ciencia, la tecnología y la naturaleza.",
+      "proposito": "Fomentar la observación, el pensamiento crítico y el respeto por la naturaleza a través del estudio de la primavera y sus efectos sobre los seres vivos en México.",
+      "producto_final": "Un mural colectivo que represente la estación de la primavera y su impacto en diferentes ecosistemas mexicanos, así como un recorrido de aprendizaje que incluya presentaciones orales y observaciones científicas.",
+      "temporalidad": "{\"día1\": \"Introducción a la estación de la primavera. Observación y descripción de los cambios en la naturaleza\", \"día2\": \"El impacto de la lluvia en la vegetación y los ecosistemas. Actividades prácticas para observar el crecimiento de plantas.\", \"día3\": \"El mundo animal durante la primavera: migraciones, reproducción y adaptación.\", \"día4\": \"La relación entre la primavera y las actividades humanas: agricultura, turismo y conservación ambiental.\", \"día5\": \"Conclusión del proyecto. Presentación de los murales colectivos y reflexión sobre lo aprendido.\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "inicio": [
+        "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "Durante los primeros 5 minutos (1:05-1:10):\n- Presenta una pregunta detonadora para iniciar la reflexión."
+      ],
+      "desarrollo": [
+        "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "Durante los siguientes 25 minutos (1:10-1:35):\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos, registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento, y comparte hallazgos con sus compañeros y docente.",
+        "Durante los siguientes 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+      ],
+      "cierre": [
+        "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "Durante los últimos 10 minutos (1:35-1:45):\n- Docente revisa la comprensión del alumnado y ajusta el reto según sea necesario, agradece su participación y reflexiona con ellos sobre lo aprendido."
+      ],
+      "evaluacion": [],
+      "evidencias": [
+        {
+          "nombre": "Papel mural o pizarra",
+          "descripcion": ""
+        },
+        {
+          "nombre": "Lápices o marcadores de colores",
+          "descripcion": ""
+        }
+      ],
+      "materiales": [
+        "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+        "Papel mural o pizarra",
+        "Lápices o marcadores de colores"
+      ]
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "Punto de partida: Explorando la primavera en México": {
+            "inicio": [
+              "Llegada del docente a la clase y saludar al alumnado.",
+              "Se muestran imágenes y videos sobre la primavera en México."
+            ],
+            "desarrollo": [
+              "(5 min) Se muestra una imagen de una región durante el invierno.",
+              "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+              "(10 min) Se distribuyen hojas de registro y lápices.",
+              "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+              "(5 min) Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+            ],
+            "cierre": [
+              "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+              "Se distribuyen materiales: pizarras, marcadores, papel para dibujar."
+            ],
+            "materiales": [
+              "Imágenes y videos sobre la primavera en México",
+              "Documentos con información sobre los efectos de la lluvia, las migraciones y reproducción de animales y relación entre la primavera y actividades humanas.",
+              "Hoja de registro y lápices para cada estudiante."
+            ],
+            "pasos": [
+              "Se muestra una imagen de una región durante el invierno.",
+              "Preguntas detonadoras: ¿Qué cambios se pueden observar en la naturaleza?",
+              "Se distribuyen hojas de registro y lápices.",
+              "Observación guiada: Alumnado registra los cambios que han ocurrido en su entorno durante el invierno a la primavera. Preguntas para fomentar la observación.",
+              "Se muestran imágenes y videos sobre las actividades humanas durante la primavera.",
+              "Preguntas detonadoras: ¿Qué relación tiene la primavera con nuestras vidas?",
+              "Se distribuyen materiales: pizarras, marcadores, papel para dibujar.",
+              "Compartir hallazgos y reflexiones en equipo o clase.",
+              "Docente recorre el salón, observando las hojas de registro y ayudando cuando sea necesario."
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "planificación_de_la_primavera_y_los_seres_vivos_en_el_grado_3": {
+            "actividad": "Planificación de la Primavera y los Seres Vivos",
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras (¿Qué es la primavera?, ¿Qué ocurre en la naturaleza durante esta época?, ¿Por qué es importante la primavera?).\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos en parejas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.",
+            "materiales": [
+              "Hoja de papel",
+              "Bolígrafo"
+            ],
+            "pasos": [
+              "Introduce el tema de la primavera y su importancia en el ciclo natural de México",
+              "Presenta las preguntas detonadoras para recuperar saberes previos",
+              "Explica la consigna y los criterios de participación",
+              "Modela el procedimiento de observación y registro",
+              "Comparte hallazgos con parejas",
+              "Verifica comprensión con preguntas en desarrollo",
+              "Encuentra conexiones entre la primavera y los seres vivos",
+              "Comprende las interacciones entre los ecosistemas durante la primavera",
+              "Registra evidencia de participación y aprendizaje",
+              "Presenta resultados en plenaria"
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "La Estación de la Primavera en México: Un Recorrido por la Naturaleza",
+          "inicio": "{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+          "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+          "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+          "materiales": [
+            "Mapa conceptual de ecosistemas mexicanos",
+            "Papel y lápices"
+          ],
+          "pasos": [
+            "Presentar el propósito de la sesión.",
+            "Recuperar saberes previos con preguntas detonadoras.",
+            "Modelar el procedimiento para observar, registrar y compartir hallazgos.",
+            "Acompañar a los equipos durante las actividades prácticas.",
+            "Socializar resultados en plenaria.",
+            "Concluir con una acción de cuidado/seguimiento.",
+            "Revisar registro en cuaderno/hoja de trabajo."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Comunicación de la Adaptación de Animales durante la Primavera",
+          "inicio": "{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+          "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+          "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+          "materiales": [
+            "Imágenes o videos de animales respondiendo al cambio de estación del año",
+            "Papel o cartulina para crear paneles",
+            "Colores y materiales de arte para ilustrar los paneles",
+            "Cuadros de conceptos o papel para tomar notas"
+          ],
+          "pasos": [
+            "Presentar imágenes o videos de animales respondiendo al cambio de estación del año.",
+            "Preguntar a los estudiantes sobre ejemplos de adaptaciones de animales durante la primavera.",
+            "Brindar tiempo para que los estudiantes creen paneles explicativos sobre las adaptaciones observadas.",
+            "Pasar por los paneles creados y realizar preguntas sobre el contenido del panel.",
+            "Brindar retroalimentación constructiva a los estudiantes sobre su trabajo.",
+            "Preguntar a los estudiantes sobre lo aprendido durante la actividad.",
+            "Compartir información adicional sobre la adaptación de animales en la primavera.",
+            "Realizar un recuento de lo aprendido y brindar tiempo para que los estudiantes compartan sus paneles con el grupo.",
+            "Almacenar los paneles creados en un lugar visible para ser revisados posteriormente."
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "La reflexión colectiva sobre la primavera y los seres vivos": {
+            "actividad": "La reflexión colectiva sobre la primavera y los seres vivos",
+            "inicio": {
+              "Durante los primeros 5 minutos (1:05-1:10):": {
+                "Docente": "Presenta una pregunta detonadora para iniciar la reflexión.",
+                "Alumnado": "Pone atención a las palabras y acciones de sus compañeros."
+              },
+              "Material necesario: papel mural o pizarra": []
+            },
+            "desarrollo": {
+              "Durante los siguientes 25 minutos (1:10-1:35):": {
+                "Docente": [
+                  "Modela el procedimiento y acompaña por equipos.",
+                  "Ajusta el reto según el grado y verifica comprensión con preguntas."
+                ],
+                "Alumnado": [
+                  "Observa las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+                  "Registra (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+                  "Comparte hallazgos con sus compañeros y docente."
+                ]
+              },
+              "Preguntas detonadoras para la reflexión:": [
+                "¿Qué cambios observaron en la naturaleza durante la primavera?",
+                "¿Cómo afecta la lluvia a los seres vivos de diferentes ecosistemas?"
+              ],
+              "Organización: equipos de 3-4 alumnos": []
+            },
+            "cierre": {
+              "Durante los últimos 10 minutos (1:35-1:45):": {
+                "Docente": [
+                  "Revisa la comprensión del alumnado y ajusta el reto según sea necesario.",
+                  "Agradece su participación y reflexiona con ellos sobre lo aprendido."
+                ],
+                "Alumnado": "Pone atención a las observaciones y preguntas de sus compañeros."
+              },
+              "Material necesario: lápices o marcadores de colores": []
+            },
+            "materiales": [
+              "Imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+              "Papel mural o pizarra",
+              "Lápices o marcadores de colores"
+            ],
+            "pasos": [
+              "Presentar la pregunta detonadora para iniciar la reflexión.",
+              "Modelar el procedimiento y acompañar por equipos.",
+              "Ajustar el reto según el grado y verificar comprensión con preguntas.",
+              "Observar las imágenes y descripciones de la primavera y sus efectos en los seres vivos.",
+              "Registrar (dibujo/palabras) su pensamiento crítico sobre lo aprendido hasta el momento.",
+              "Compartir hallazgos con sus compañeros y docente.",
+              "Revisar la comprensión del alumnado y ajustar el reto según sea necesario.",
+              "Agradecer su participación y reflexionar con ellos sobre lo aprendido."
+            ]
+          },
+          "actividad": "Actividad",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": false
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: La Estación de la Primavera en México: Un Recorrido por la Naturaleza\n\n{'docente': ['(5 min) Presenta el propósito de la sesión sobre La primavera y los seres vivos.', 'Recupera saberes previos con las preguntas detonadoras:', \"- ¿Qué es lo primero que se viene a la mente al escuchar la palabra 'primavera'?\", '- ¿Qué cambios ocurren en la naturaleza durante esta estación?', '- ¿Por qué es importante el estudio de la primavera?'], 'alumno': ['Escucha atentamente la presentación del propósito de la sesión.', 'Pensa y reflexiona sobre las preguntas detonadoras.', 'Comparte sus ideas y pensamientos con su compañero/a.']}",
+        "desarrollo": "{'docente': ['(10 min) Presenta un mapa conceptual que muestre los diferentes ecosistemas de México y cómo se ven afectados por la primavera.', 'Modela el procedimiento para que los estudiantes observen, registren y compartan sus hallazgos.', 'Acompaña a los equipos mientras realizan las actividades prácticas.'], 'alumno': ['Observa y registra (dibujo/palabras) la descripción de los ecosistemas mexicanos y cómo se ven afectados por la primavera.', 'Comparte sus hallazgos con su equipo y ajusta el reto según sea necesario.', 'Pensa críticamente sobre lo que ha aprendido y cómo puede aplicarlo en su vida diaria.']}",
+        "cierre": "{'docente': ['(10 min) Socializa los resultados de las actividades prácticas en plenaria (2-3 participaciones).', 'Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.', 'Evidencia el registro en cuaderno/hoja de trabajo.'], 'alumno': ['Escucha atentamente la socialización de los resultados y reflexiona sobre lo que ha aprendido.', 'Participa en la conclusión colectiva y sugiere una acción de cuidado/seguimiento.', 'Revisa su registro en cuaderno/hoja de trabajo para asegurarse de que tenga todo lo necesario.']}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Mapa conceptual de ecosistemas mexicanos",
+          "Papel y lápices"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicación de la Adaptación de Animales durante la Primavera\n\n{'acción_docente': 'Presentar imágenes o videos de animales respondiendo al cambio de estación del año.', 'preguntas_detonadoras': ['¿Qué cambios observamos en la naturaleza durante la primavera?', '¿Cómo se adapta el medio ambiente a los cambios estacionales?'], 'organización': 'Individual', 'tiempo': '~15 min'}",
+        "desarrollo": "{'acción_docente': 'Preguntar sobre ejemplos de adaptaciones de animales durante la primavera y brindar tiempo para que los estudiantes creen paneles explicativos.', 'preguntas_detonadoras': ['¿Qué tipo de adaptación es esta?', '¿Por qué es importante esta adaptación?'], 'organización': 'Individual', 'tiempo': '~20 min'}",
+        "cierre": "{'acción_docente': 'Preguntar a los estudiantes sobre lo aprendido y brindar tiempo para que compartan sus paneles.', 'preguntas_detonadoras': ['¿Qué fue lo más interesante de lo que aprendiste hoy?', '¿Cómo puedes aplicar lo aprendido en tu vida diaria?'], 'organización': 'Individual', 'tiempo': '~5 min'}",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Imágenes o videos de animales respondiendo al cambio de estación del año",
+          "Papel o cartulina para crear paneles",
+          "Colores y materiales de arte para ilustrar los paneles",
+          "Cuadros de conceptos o papel para tomar notas"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

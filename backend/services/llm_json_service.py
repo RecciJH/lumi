@@ -3,6 +3,55 @@ import re
 from typing import Any
 
 
+def _escape_newlines_in_json_strings(text: str) -> str:
+    """
+    Convierte saltos de lÃ­nea literales dentro de strings JSON en \\n para tolerar
+    salidas "casi JSON" del modelo.
+    """
+    out: list[str] = []
+    in_string = False
+    escaped = False
+    for ch in text:
+        if escaped:
+            out.append(ch)
+            escaped = False
+            continue
+        if ch == "\\":
+            out.append(ch)
+            escaped = True
+            continue
+        if ch == '"':
+            out.append(ch)
+            in_string = not in_string
+            continue
+        if in_string and ch in ("\n", "\r"):
+            out.append("\\n")
+            continue
+        out.append(ch)
+    return "".join(out)
+
+
+def _try_json_loads(text: str) -> Any:
+    # Reparaciones conservadoras para salidas comunes del modelo.
+    variants = [
+        text,
+        text.replace("\u201c", '"').replace("\u201d", '"'),
+    ]
+
+    last_exc: Exception | None = None
+    for s in variants:
+        # trailing commas
+        s2 = re.sub(r",\s*([}\]])", r"\1", s)
+        # newlines inside strings
+        s2 = _escape_newlines_in_json_strings(s2)
+        try:
+            return json.loads(s2)
+        except json.JSONDecodeError as e:
+            last_exc = e
+
+    raise last_exc or json.JSONDecodeError("Invalid JSON", text, 0)
+
+
 def _strip_code_fences(text: str) -> str:
     text = re.sub(r"^\s*```[a-zA-Z0-9_-]*\s*", "", text)
     text = re.sub(r"\s*```\s*$", "", text)
@@ -33,19 +82,19 @@ def parse_llm_json(text: str) -> Any:
     cleaned = _strip_code_fences(str(text))
 
     try:
-        return json.loads(cleaned)
+        return _try_json_loads(cleaned)
     except json.JSONDecodeError:
         pass
 
     for candidate in _balanced_json_substring(cleaned, "{", "}"):
         try:
-            return json.loads(candidate)
+            return _try_json_loads(candidate)
         except json.JSONDecodeError:
             continue
 
     for candidate in _balanced_json_substring(cleaned, "[", "]"):
         try:
-            return json.loads(candidate)
+            return _try_json_loads(candidate)
         except json.JSONDecodeError:
             continue
 
@@ -58,7 +107,11 @@ def parse_llm_json(text: str) -> Any:
 
 def parse_llm_json_object(text: str) -> dict:
     parsed = parse_llm_json(text)
+    # A veces el modelo devuelve una lista con un solo objeto.
+    if isinstance(parsed, list):
+        for item in parsed:
+            if isinstance(item, dict):
+                return item
     if not isinstance(parsed, dict):
         raise ValueError(f"Se esperaba un objeto JSON, pero llegó: {type(parsed).__name__}.")
     return parsed
-

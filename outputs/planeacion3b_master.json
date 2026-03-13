@@ -1,0 +1,976 @@
+{
+  "meta": {
+    "started_at": "2026-03-13T17:39:54.909614+00:00",
+    "finished_at": "2026-03-13T17:42:32.662254+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 33369
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 96107
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 28261
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 12
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera Viva",
+      "problematica": "Los estudiantes de tercer grado no comprenden completamente las transformaciones que ocurren en la naturaleza durante la estación de la primavera, afectando su percepción y aprecio por el medio ambiente.",
+      "justificacion": "Basado en los principios de la Nueva Escuela Mexicana, este proyecto busca fomentar la observación, la experimentación y la reflexión sobre el cambio de las estaciones, con énfasis en la primavera. Se pretende que los estudiantes comprendan cómo esta transformación afecta a los seres vivos y su hábitat.",
+      "proposito": "Fomentar la curiosidad científica y el respeto por el medio ambiente, mediante la exploración y experimentación sobre la estación de la primavera, sus características y cómo los seres vivos se adaptan a estos cambios.",
+      "producto_final": "Un cuaderno personal donde los estudiantes documenten sus observaciones, experiencias y reflexiones sobre la primavera en su comunidad y el impacto que tiene en los ecosistemas locales.",
+      "temporalidad": "5 días"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Actividad (Punto de partida)",
+          "inicio": "Cuadernos personales\nPapel",
+          "desarrollo": "Lápices o bolígrafos",
+          "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+          "materiales": [],
+          "pasos": [
+            "Cuadernos personales",
+            "Papel",
+            "Lápices o bolígrafos",
+            "Imágenes o videos de la naturaleza",
+            "Observaciones previas en papel"
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "material": "Papel",
+          "cantidad": "5 hojas",
+          "actividad": "Actividad",
+          "materiales": [
+            "Papel"
+          ],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Actividad (A trabajar)",
+          "inicio": "Mapa de la comunidad escolar o local",
+          "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+          "cierre": "Hojas de papel para anotaciones adicionales",
+          "materiales": [],
+          "pasos": [
+            "Mapa de la comunidad escolar o local",
+            "Ejemplo de cuaderno personal para registro y reflexión",
+            "Hojas de papel para anotaciones adicionales"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Actividad (Comunicar)",
+          "inicio": "plantas con flores y hojas",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "imágenes o videos de adaptación de animales en primavera",
+          "materiales": [],
+          "pasos": [
+            "plantas con flores y hojas",
+            "imágenes o videos de adaptación de animales en primavera"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Actividad (Reflexión)",
+          "inicio": "imagen de ecosistema",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "papeles para investigación",
+          "materiales": [],
+          "pasos": [
+            "imagen de ecosistema",
+            "papeles para investigación"
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "dia": 1,
+      "momento": "Punto de partida",
+      "actividad": {
+        "actividad": "Actividad (Punto de partida)",
+        "inicio": "Cuadernos personales\nPapel",
+        "desarrollo": "Lápices o bolígrafos",
+        "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel"
+      },
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": "",
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": []
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Punto de partida)\n\nCuadernos personales\nPapel",
+        "desarrollo": "Lápices o bolígrafos",
+        "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (A trabajar)\n\nMapa de la comunidad escolar o local",
+        "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+        "cierre": "Hojas de papel para anotaciones adicionales",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Comunicar)\n\nplantas con flores y hojas",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "imágenes o videos de adaptación de animales en primavera",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Reflexión)\n\nimagen de ecosistema",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "papeles para investigación",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La Primavera Viva",
+        "problematica": "Los estudiantes de tercer grado no comprenden completamente las transformaciones que ocurren en la naturaleza durante la estación de la primavera, afectando su percepción y aprecio por el medio ambiente.",
+        "justificacion": "Basado en los principios de la Nueva Escuela Mexicana, este proyecto busca fomentar la observación, la experimentación y la reflexión sobre el cambio de las estaciones, con énfasis en la primavera. Se pretende que los estudiantes comprendan cómo esta transformación afecta a los seres vivos y su hábitat.",
+        "proposito": "Fomentar la curiosidad científica y el respeto por el medio ambiente, mediante la exploración y experimentación sobre la estación de la primavera, sus características y cómo los seres vivos se adaptan a estos cambios.",
+        "producto_final": "Un cuaderno personal donde los estudiantes documenten sus observaciones, experiencias y reflexiones sobre la primavera en su comunidad y el impacto que tiene en los ecosistemas locales.",
+        "temporalidad": "5 días"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Actividad (Punto de partida)",
+          "inicio": "Cuadernos personales\nPapel",
+          "desarrollo": "Lápices o bolígrafos",
+          "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel"
+        },
+        "inicio": "",
+        "desarrollo": "",
+        "cierre": "",
+        "evaluacion": "",
+        "evidencias": [],
+        "materiales": []
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Actividad (Punto de partida)",
+            "inicio": "Cuadernos personales\nPapel",
+            "desarrollo": "Lápices o bolígrafos",
+            "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+            "materiales": [],
+            "pasos": [
+              "Cuadernos personales",
+              "Papel",
+              "Lápices o bolígrafos",
+              "Imágenes o videos de la naturaleza",
+              "Observaciones previas en papel"
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "material": "Papel",
+            "cantidad": "5 hojas",
+            "actividad": "Actividad",
+            "materiales": [
+              "Papel"
+            ],
+            "pasos": [],
+            "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Actividad (A trabajar)",
+            "inicio": "Mapa de la comunidad escolar o local",
+            "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+            "cierre": "Hojas de papel para anotaciones adicionales",
+            "materiales": [],
+            "pasos": [
+              "Mapa de la comunidad escolar o local",
+              "Ejemplo de cuaderno personal para registro y reflexión",
+              "Hojas de papel para anotaciones adicionales"
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Actividad (Comunicar)",
+            "inicio": "plantas con flores y hojas",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "imágenes o videos de adaptación de animales en primavera",
+            "materiales": [],
+            "pasos": [
+              "plantas con flores y hojas",
+              "imágenes o videos de adaptación de animales en primavera"
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Actividad (Reflexión)",
+            "inicio": "imagen de ecosistema",
+            "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+            "cierre": "papeles para investigación",
+            "materiales": [],
+            "pasos": [
+              "imagen de ecosistema",
+              "papeles para investigación"
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+            "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Actividad (Punto de partida)\n\nCuadernos personales\nPapel",
+          "desarrollo": "Lápices o bolígrafos",
+          "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Papel"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: Actividad (A trabajar)\n\nMapa de la comunidad escolar o local",
+          "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+          "cierre": "Hojas de papel para anotaciones adicionales",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: Actividad (Comunicar)\n\nplantas con flores y hojas",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "imágenes o videos de adaptación de animales en primavera",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Actividad (Reflexión)\n\nimagen de ecosistema",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "papeles para investigación",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La Primavera Viva",
+      "problematica": "Los estudiantes de tercer grado no comprenden completamente las transformaciones que ocurren en la naturaleza durante la estación de la primavera, afectando su percepción y aprecio por el medio ambiente.",
+      "justificacion": "Basado en los principios de la Nueva Escuela Mexicana, este proyecto busca fomentar la observación, la experimentación y la reflexión sobre el cambio de las estaciones, con énfasis en la primavera. Se pretende que los estudiantes comprendan cómo esta transformación afecta a los seres vivos y su hábitat.",
+      "proposito": "Fomentar la curiosidad científica y el respeto por el medio ambiente, mediante la exploración y experimentación sobre la estación de la primavera, sus características y cómo los seres vivos se adaptan a estos cambios.",
+      "producto_final": "Un cuaderno personal donde los estudiantes documenten sus observaciones, experiencias y reflexiones sobre la primavera en su comunidad y el impacto que tiene en los ecosistemas locales.",
+      "temporalidad": "5 días"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "dia": 1,
+      "momento": "Punto de partida",
+      "actividad": {
+        "actividad": "Actividad (Punto de partida)",
+        "inicio": "Cuadernos personales\nPapel",
+        "desarrollo": "Lápices o bolígrafos",
+        "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel"
+      },
+      "inicio": "",
+      "desarrollo": "",
+      "cierre": "",
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": []
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Actividad (Punto de partida)",
+          "inicio": "Cuadernos personales\nPapel",
+          "desarrollo": "Lápices o bolígrafos",
+          "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+          "materiales": [],
+          "pasos": [
+            "Cuadernos personales",
+            "Papel",
+            "Lápices o bolígrafos",
+            "Imágenes o videos de la naturaleza",
+            "Observaciones previas en papel"
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "material": "Papel",
+          "cantidad": "5 hojas",
+          "actividad": "Actividad",
+          "materiales": [
+            "Papel"
+          ],
+          "pasos": [],
+          "inicio": "(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo."
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Actividad (A trabajar)",
+          "inicio": "Mapa de la comunidad escolar o local",
+          "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+          "cierre": "Hojas de papel para anotaciones adicionales",
+          "materiales": [],
+          "pasos": [
+            "Mapa de la comunidad escolar o local",
+            "Ejemplo de cuaderno personal para registro y reflexión",
+            "Hojas de papel para anotaciones adicionales"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Actividad (Comunicar)",
+          "inicio": "plantas con flores y hojas",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "imágenes o videos de adaptación de animales en primavera",
+          "materiales": [],
+          "pasos": [
+            "plantas con flores y hojas",
+            "imágenes o videos de adaptación de animales en primavera"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Actividad (Reflexión)",
+          "inicio": "imagen de ecosistema",
+          "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+          "cierre": "papeles para investigación",
+          "materiales": [],
+          "pasos": [
+            "imagen de ecosistema",
+            "papeles para investigación"
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": false
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Punto de partida)\n\nCuadernos personales\nPapel",
+        "desarrollo": "Lápices o bolígrafos",
+        "cierre": "Imágenes o videos de la naturaleza\nObservaciones previas en papel",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Actividad\n\n(5 min) Activación y encuadre:\n- Presenta el propósito de la sesión sobre: La primavera y los seres vivos.\n- Recupera saberes previos con 3 preguntas detonadoras.\n- Explica consigna y criterios de participación.",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "(10 min) Cierre y metacognición:\n- Socializa resultados en plenaria (2–3 participaciones).\n- Cierra con una conclusión colectiva y una acción de cuidado/seguimiento.\n- Evidencia: registro en cuaderno/hoja de trabajo.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Papel"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (A trabajar)\n\nMapa de la comunidad escolar o local",
+        "desarrollo": "Ejemplo de cuaderno personal para registro y reflexión",
+        "cierre": "Hojas de papel para anotaciones adicionales",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Comunicar)\n\nplantas con flores y hojas",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "imágenes o videos de adaptación de animales en primavera",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Actividad (Reflexión)\n\nimagen de ecosistema",
+        "desarrollo": "(25 min) Desarrollo guiado:\n- Docente: modela el procedimiento y acompaña por equipos.\n- Alumnado: observa, registra (dibujo/palabras) y comparte hallazgos.\n- Ajusta el reto según el grado y verifica comprensión con preguntas.",
+        "cierre": "papeles para investigación",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

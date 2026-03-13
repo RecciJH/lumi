@@ -1,0 +1,1369 @@
+{
+  "meta": {
+    "started_at": "2026-03-13T18:31:38.914908+00:00",
+    "finished_at": "2026-03-13T18:34:42.302406+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 16852
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 119943
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 46577
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 15
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "skipped",
+        "reason": "skip_steps"
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Profe Rene",
+    "escuela": "Primaria Ejemplo",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La primavera y los seres vivos",
+    "pda": "Convive con su entorno natural",
+    "duracion_dias": 5,
+    "metodologia": "ABP",
+    "skip_steps": [
+      "evaluation_agent"
+    ]
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La primavera y los seres vivos mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "Despertando a la Primavera",
+      "problematica": "Los estudiantes no entienden los cambios climáticos que se producen en la naturaleza, especialmente durante la transición de invierno a primavera. Esto se traduce en una falta de conciencia sobre cómo afectan estos cambios a los seres vivos.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de que los estudiantes aprendan mediante la observación directa y la participación activa. A través del estudio de la primavera, los niños pueden comprender cómo se relacionan los cambios climáticos con el crecimiento y la supervivencia de las plantas y animales.",
+      "proposito": "Que los estudiantes comprendan los efectos de la transición a la primavera sobre los seres vivos en México, reconociendo los cambios climáticos y su impacto en la naturaleza.",
+      "producto_final": "Un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+      "temporalidad": "{\"día_1\": \"Introducción a la Nueva Escuela Mexicana y definición del tema. Observación de la naturaleza para registrar cambios en las plantas y animales.\", \"día_2\": \"Análisis de cómo cambian los seres vivos con el regreso del calor. Discusión sobre la importancia de la lluvia y sus efectos directos en la flora y fauna.\", \"día_3\": \"Diseño de experimentos para demostrar cómo el cambio climático afecta a diferentes especies. Observación de los resultados y discusión sobre las conclusiones.\", \"día_4\": \"Investigación acerca de cómo los seres humanos interactúan con la naturaleza durante esta época del año (cultivo, migración animal, festividades relacionadas).\", \"día_5\": \"Presentación final. Cada estudiante mostrará su cuaderno ilustrado y explicará sus hallazgos en una clase o al consejo escolar.\"}"
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Punto de partida: La primavera y los seres vivos",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+          "materiales": [
+            "Cuadernos para cada estudiante",
+            "Lápices o bolígrafos",
+            "Fotografías o videos de la primavera"
+          ],
+          "pasos": []
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Día 2: Explorando la Primavera en México",
+          "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+          "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+          "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+          "materiales": [
+            "Cuaderno ilustrado",
+            "Goma de borrar",
+            "Lápices",
+            "Marcadores"
+          ],
+          "pasos": [
+            "Observar y registrar cambios en la naturaleza.",
+            "Analizar cómo los seres vivos cambian con el regreso del calor.",
+            "Discutir la importancia de la lluvia durante la primavera."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Investigación de la primavera en la comunidad",
+          "inicio": "Comienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+          "desea": "Preguntas detonadoras:\n\n* ¿Qué plantas o árboles se ven afectados por el cambio climático durante la primavera?\n* ¿Qué animales migran a nuestra región durante este período del año?",
+          "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+          "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+          "materiales": [
+            "Cuadernos de investigación",
+            "Lápices"
+          ],
+          "pasos": [
+            "Investiga en grupo",
+            "Haz tu recorrido por la comunidad",
+            "Anótalo todo en tu cuaderno"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "Despertando la Primavera en el Cuaderno": {
+            "inicio": {
+              "docente": [
+                "Bienvenida a la actividad. Recuerden que su tarea es crear un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+                "Expliquen el objetivo del proyecto: comprender los efectos de la transición a la primavera sobre los seres vivos en México."
+              ],
+              "alumnado": [
+                "Escuchen atentamente la explicación del docente",
+                "Hagan una pregunta si no entienden algo"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué cambios climáticos ocurren durante la transición de invierno a primavera?"
+              ]
+            },
+            "desarrollo": {
+              "docente": [
+                "Muestren algunos ejemplos de cuadernos ilustrados para inspirar a los estudiantes",
+                "Expliquen el proceso de observación y registro en la naturaleza"
+              ],
+              "alumnado": [
+                "Salgan al patio o un lugar cercano donde puedan observar plantas y animales en los primeros días de primavera",
+                "Registren en sus cuadernos qué plantas y animales ven, qué estadios crecimientos tienen"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué especies de plantas y animales se encuentran en este momento en la naturaleza?",
+                "¿Cómo pueden identificar los cambios climáticos que ocurren durante la primavera?"
+              ]
+            },
+            "cierre": {
+              "docente": [
+                "Pregunten si hay alguna duda o inquietud",
+                "Recuerden que el cuaderno debe ser claro, conciso y con ilustraciones de alta calidad"
+              ],
+              "alumnado": [
+                "Revisen sus observaciones e identifiquen qué especies están en estadio de crecimiento más rápido",
+                "Cada uno elija una planta o animal que haya observado y resueltre cómo la transición a primavera afecta su crecimiento, reproducción o supervivencia"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué se puede concluir sobre los efectos de la primavera en diferentes especies?",
+                "¿Por qué es importante registrar y analizar nuestros hallazgos?"
+              ]
+            },
+            "materiales": [
+              "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+            ],
+            "pasos": [
+              "Revisar el cuaderno y asegurarse de que cumple con todos los requisitos antes de terminar",
+              "Incluir una sección para resumir los hallazgos importantes sobre la primavera en México y su impacto en diferentes especies",
+              "Utilizar colores y texturas adecuadas para representar las características de la primavera",
+              "Ilustrar y describir los efectos de la primavera sobre las especies que elegieron",
+              "Investigar cómo la transición a primavera afecta el crecimiento, reproducción o supervivencia de diferentes especies"
+            ]
+          },
+          "actividad": "Comunicar: La primavera y los seres vivos",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+          "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+          "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral."
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión: La primavera y los cambios climáticos",
+          "inicio": "• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+          "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+          "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+          "materiales": [
+            "Cuadernos ilustrados",
+            "Papel para notas",
+            "Lápices o bolígrafos"
+          ],
+          "pasos": [
+            "1. Revisa el cuaderno ilustrado y busca información relevante sobre cambios climáticos.",
+            "2. Identifica cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.",
+            "3. Comparte tus observaciones y reflexiones con la clase y explícalas de forma clara."
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Punto de partida: La primavera y los seres vivos",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+          "materiales": [
+            "Cuadernos para cada estudiante",
+            "Lápices o bolígrafos",
+            "Fotografías o videos de la primavera"
+          ],
+          "pasos": []
+        }
+      },
+      "desarrollo": [
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Día 2: Explorando la Primavera en México",
+            "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza.",
+            "desarrollo": "**Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.**",
+            "cierre": "",
+            "materiales": [],
+            "pasos": []
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Comunicar: La primavera y los seres vivos",
+            "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+            "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+            "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+            "materiales": [
+              "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+            ],
+            "pasos": []
+          }
+        }
+      ],
+      "cierre": {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión: La primavera y los cambios climáticos",
+          "inicio": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?",
+          "desarrollo": "**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?",
+          "cierre": "**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+          "materiales": [
+            "Cuadernos ilustrados",
+            "Papel para notas",
+            "Lápices o bolígrafos"
+          ],
+          "pasos": []
+        }
+      },
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": [
+        "Cuadernos",
+        "Lápices",
+        "Bolígrafos",
+        "Marcadores",
+        "Papel adhesivo o pegamento"
+      ]
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "campos_seleccionados": [
+        "Saberes y pensamiento científico",
+        "Ética, naturaleza y sociedades"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Punto de partida: La primavera y los seres vivos\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+        "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+        "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos para cada estudiante",
+          "Lápices o bolígrafos",
+          "Fotografías o videos de la primavera"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Día 2: Explorando la Primavera en México\n\n**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+        "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+        "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno ilustrado",
+          "Goma de borrar",
+          "Lápices",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Investigación de la primavera en la comunidad\n\nComienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+        "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+        "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos de investigación",
+          "Lápices"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicar: La primavera y los seres vivos\n\n(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+        "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+        "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Reflexión: La primavera y los cambios climáticos\n\n• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+        "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+        "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos ilustrados",
+          "Papel para notas",
+          "Lápices o bolígrafos"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Profe Rene",
+        "escuela": "Primaria Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La primavera y los seres vivos"
+      },
+      "curriculum": {
+        "campo_formativo": "Ética, naturaleza y sociedades",
+        "eje": "Vida saludable",
+        "pda": "Convive con su entorno natural"
+      },
+      "proyecto": {
+        "nombre_proyecto": "Despertando a la Primavera",
+        "problematica": "Los estudiantes no entienden los cambios climáticos que se producen en la naturaleza, especialmente durante la transición de invierno a primavera. Esto se traduce en una falta de conciencia sobre cómo afectan estos cambios a los seres vivos.",
+        "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de que los estudiantes aprendan mediante la observación directa y la participación activa. A través del estudio de la primavera, los niños pueden comprender cómo se relacionan los cambios climáticos con el crecimiento y la supervivencia de las plantas y animales.",
+        "proposito": "Que los estudiantes comprendan los efectos de la transición a la primavera sobre los seres vivos en México, reconociendo los cambios climáticos y su impacto en la naturaleza.",
+        "producto_final": "Un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+        "temporalidad": "{\"día_1\": \"Introducción a la Nueva Escuela Mexicana y definición del tema. Observación de la naturaleza para registrar cambios en las plantas y animales.\", \"día_2\": \"Análisis de cómo cambian los seres vivos con el regreso del calor. Discusión sobre la importancia de la lluvia y sus efectos directos en la flora y fauna.\", \"día_3\": \"Diseño de experimentos para demostrar cómo el cambio climático afecta a diferentes especies. Observación de los resultados y discusión sobre las conclusiones.\", \"día_4\": \"Investigación acerca de cómo los seres humanos interactúan con la naturaleza durante esta época del año (cultivo, migración animal, festividades relacionadas).\", \"día_5\": \"Presentación final. Cada estudiante mostrará su cuaderno ilustrado y explicará sus hallazgos en una clase o al consejo escolar.\"}"
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [],
+        "indicadores": []
+      },
+      "secuencia_didactica": {
+        "inicio": {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Punto de partida: La primavera y los seres vivos",
+            "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+            "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+            "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+            "materiales": [
+              "Cuadernos para cada estudiante",
+              "Lápices o bolígrafos",
+              "Fotografías o videos de la primavera"
+            ],
+            "pasos": []
+          }
+        },
+        "desarrollo": [
+          {
+            "dia": 2,
+            "momento": "Planeación",
+            "actividad": {
+              "actividad": "Día 2: Explorando la Primavera en México",
+              "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza.",
+              "desarrollo": "**Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.**",
+              "cierre": "",
+              "materiales": [],
+              "pasos": []
+            }
+          },
+          {
+            "dia": 4,
+            "momento": "Comunicar",
+            "actividad": {
+              "actividad": "Comunicar: La primavera y los seres vivos",
+              "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+              "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+              "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+              "materiales": [
+                "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+              ],
+              "pasos": []
+            }
+          }
+        ],
+        "cierre": {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Reflexión: La primavera y los cambios climáticos",
+            "inicio": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?",
+            "desarrollo": "**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?",
+            "cierre": "**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+            "materiales": [
+              "Cuadernos ilustrados",
+              "Papel para notas",
+              "Lápices o bolígrafos"
+            ],
+            "pasos": []
+          }
+        },
+        "evaluacion": "",
+        "evidencias": [],
+        "materiales": [
+          "Cuadernos",
+          "Lápices",
+          "Bolígrafos",
+          "Marcadores",
+          "Papel adhesivo o pegamento"
+        ]
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Punto de partida: La primavera y los seres vivos",
+            "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+            "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+            "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+            "materiales": [
+              "Cuadernos para cada estudiante",
+              "Lápices o bolígrafos",
+              "Fotografías o videos de la primavera"
+            ],
+            "pasos": []
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Día 2: Explorando la Primavera en México",
+            "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+            "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+            "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+            "materiales": [
+              "Cuaderno ilustrado",
+              "Goma de borrar",
+              "Lápices",
+              "Marcadores"
+            ],
+            "pasos": [
+              "Observar y registrar cambios en la naturaleza.",
+              "Analizar cómo los seres vivos cambian con el regreso del calor.",
+              "Discutir la importancia de la lluvia durante la primavera."
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "Investigación de la primavera en la comunidad",
+            "inicio": "Comienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+            "desea": "Preguntas detonadoras:\n\n* ¿Qué plantas o árboles se ven afectados por el cambio climático durante la primavera?\n* ¿Qué animales migran a nuestra región durante este período del año?",
+            "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+            "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+            "materiales": [
+              "Cuadernos de investigación",
+              "Lápices"
+            ],
+            "pasos": [
+              "Investiga en grupo",
+              "Haz tu recorrido por la comunidad",
+              "Anótalo todo en tu cuaderno"
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "Despertando la Primavera en el Cuaderno": {
+              "inicio": {
+                "docente": [
+                  "Bienvenida a la actividad. Recuerden que su tarea es crear un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+                  "Expliquen el objetivo del proyecto: comprender los efectos de la transición a la primavera sobre los seres vivos en México."
+                ],
+                "alumnado": [
+                  "Escuchen atentamente la explicación del docente",
+                  "Hagan una pregunta si no entienden algo"
+                ],
+                "preguntas detonadoras": [
+                  "¿Qué cambios climáticos ocurren durante la transición de invierno a primavera?"
+                ]
+              },
+              "desarrollo": {
+                "docente": [
+                  "Muestren algunos ejemplos de cuadernos ilustrados para inspirar a los estudiantes",
+                  "Expliquen el proceso de observación y registro en la naturaleza"
+                ],
+                "alumnado": [
+                  "Salgan al patio o un lugar cercano donde puedan observar plantas y animales en los primeros días de primavera",
+                  "Registren en sus cuadernos qué plantas y animales ven, qué estadios crecimientos tienen"
+                ],
+                "preguntas detonadoras": [
+                  "¿Qué especies de plantas y animales se encuentran en este momento en la naturaleza?",
+                  "¿Cómo pueden identificar los cambios climáticos que ocurren durante la primavera?"
+                ]
+              },
+              "cierre": {
+                "docente": [
+                  "Pregunten si hay alguna duda o inquietud",
+                  "Recuerden que el cuaderno debe ser claro, conciso y con ilustraciones de alta calidad"
+                ],
+                "alumnado": [
+                  "Revisen sus observaciones e identifiquen qué especies están en estadio de crecimiento más rápido",
+                  "Cada uno elija una planta o animal que haya observado y resueltre cómo la transición a primavera afecta su crecimiento, reproducción o supervivencia"
+                ],
+                "preguntas detonadoras": [
+                  "¿Qué se puede concluir sobre los efectos de la primavera en diferentes especies?",
+                  "¿Por qué es importante registrar y analizar nuestros hallazgos?"
+                ]
+              },
+              "materiales": [
+                "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+              ],
+              "pasos": [
+                "Revisar el cuaderno y asegurarse de que cumple con todos los requisitos antes de terminar",
+                "Incluir una sección para resumir los hallazgos importantes sobre la primavera en México y su impacto en diferentes especies",
+                "Utilizar colores y texturas adecuadas para representar las características de la primavera",
+                "Ilustrar y describir los efectos de la primavera sobre las especies que elegieron",
+                "Investigar cómo la transición a primavera afecta el crecimiento, reproducción o supervivencia de diferentes especies"
+              ]
+            },
+            "actividad": "Comunicar: La primavera y los seres vivos",
+            "materiales": [],
+            "pasos": [],
+            "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+            "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+            "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral."
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Reflexión: La primavera y los cambios climáticos",
+            "inicio": "• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+            "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+            "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+            "materiales": [
+              "Cuadernos ilustrados",
+              "Papel para notas",
+              "Lápices o bolígrafos"
+            ],
+            "pasos": [
+              "1. Revisa el cuaderno ilustrado y busca información relevante sobre cambios climáticos.",
+              "2. Identifica cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.",
+              "3. Comparte tus observaciones y reflexiones con la clase y explícalas de forma clara."
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": true
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": false
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+            "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Punto de partida: La primavera y los seres vivos\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuadernos para cada estudiante",
+            "Lápices o bolígrafos",
+            "Fotografías o videos de la primavera"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Día 2: Explorando la Primavera en México\n\n**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+          "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+          "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuaderno ilustrado",
+            "Goma de borrar",
+            "Lápices",
+            "Marcadores"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: Investigación de la primavera en la comunidad\n\nComienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+          "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+          "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuadernos de investigación",
+            "Lápices"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: Comunicar: La primavera y los seres vivos\n\n(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+          "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+          "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Reflexión: La primavera y los cambios climáticos\n\n• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+          "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+          "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+          "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+          "recursos": [
+            "Cuadernos ilustrados",
+            "Papel para notas",
+            "Lápices o bolígrafos"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Profe Rene",
+      "escuela": "Primaria Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La primavera y los seres vivos"
+    },
+    "curriculum": {
+      "campo_formativo": "Ética, naturaleza y sociedades",
+      "eje": "Vida saludable",
+      "pda": "Convive con su entorno natural"
+    },
+    "proyecto": {
+      "nombre_proyecto": "Despertando a la Primavera",
+      "problematica": "Los estudiantes no entienden los cambios climáticos que se producen en la naturaleza, especialmente durante la transición de invierno a primavera. Esto se traduce en una falta de conciencia sobre cómo afectan estos cambios a los seres vivos.",
+      "justificacion": "La Nueva Escuela Mexicana enfatiza la importancia de que los estudiantes aprendan mediante la observación directa y la participación activa. A través del estudio de la primavera, los niños pueden comprender cómo se relacionan los cambios climáticos con el crecimiento y la supervivencia de las plantas y animales.",
+      "proposito": "Que los estudiantes comprendan los efectos de la transición a la primavera sobre los seres vivos en México, reconociendo los cambios climáticos y su impacto en la naturaleza.",
+      "producto_final": "Un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+      "temporalidad": "{\"día_1\": \"Introducción a la Nueva Escuela Mexicana y definición del tema. Observación de la naturaleza para registrar cambios en las plantas y animales.\", \"día_2\": \"Análisis de cómo cambian los seres vivos con el regreso del calor. Discusión sobre la importancia de la lluvia y sus efectos directos en la flora y fauna.\", \"día_3\": \"Diseño de experimentos para demostrar cómo el cambio climático afecta a diferentes especies. Observación de los resultados y discusión sobre las conclusiones.\", \"día_4\": \"Investigación acerca de cómo los seres humanos interactúan con la naturaleza durante esta época del año (cultivo, migración animal, festividades relacionadas).\", \"día_5\": \"Presentación final. Cada estudiante mostrará su cuaderno ilustrado y explicará sus hallazgos en una clase o al consejo escolar.\"}"
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [],
+      "indicadores": []
+    },
+    "secuencia_didactica": {
+      "inicio": {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Punto de partida: La primavera y los seres vivos",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+          "materiales": [
+            "Cuadernos para cada estudiante",
+            "Lápices o bolígrafos",
+            "Fotografías o videos de la primavera"
+          ],
+          "pasos": []
+        }
+      },
+      "desarrollo": [
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Día 2: Explorando la Primavera en México",
+            "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza.",
+            "desarrollo": "**Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.**",
+            "cierre": "",
+            "materiales": [],
+            "pasos": []
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Comunicar: La primavera y los seres vivos",
+            "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+            "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+            "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+            "materiales": [
+              "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+            ],
+            "pasos": []
+          }
+        }
+      ],
+      "cierre": {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión: La primavera y los cambios climáticos",
+          "inicio": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?",
+          "desarrollo": "**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?",
+          "cierre": "**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+          "materiales": [
+            "Cuadernos ilustrados",
+            "Papel para notas",
+            "Lápices o bolígrafos"
+          ],
+          "pasos": []
+        }
+      },
+      "evaluacion": "",
+      "evidencias": [],
+      "materiales": [
+        "Cuadernos",
+        "Lápices",
+        "Bolígrafos",
+        "Marcadores",
+        "Papel adhesivo o pegamento"
+      ]
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Punto de partida: La primavera y los seres vivos",
+          "inicio": "(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+          "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+          "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+          "materiales": [
+            "Cuadernos para cada estudiante",
+            "Lápices o bolígrafos",
+            "Fotografías o videos de la primavera"
+          ],
+          "pasos": []
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Día 2: Explorando la Primavera en México",
+          "inicio": "**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+          "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+          "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+          "materiales": [
+            "Cuaderno ilustrado",
+            "Goma de borrar",
+            "Lápices",
+            "Marcadores"
+          ],
+          "pasos": [
+            "Observar y registrar cambios en la naturaleza.",
+            "Analizar cómo los seres vivos cambian con el regreso del calor.",
+            "Discutir la importancia de la lluvia durante la primavera."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "Investigación de la primavera en la comunidad",
+          "inicio": "Comienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+          "desea": "Preguntas detonadoras:\n\n* ¿Qué plantas o árboles se ven afectados por el cambio climático durante la primavera?\n* ¿Qué animales migran a nuestra región durante este período del año?",
+          "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+          "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+          "materiales": [
+            "Cuadernos de investigación",
+            "Lápices"
+          ],
+          "pasos": [
+            "Investiga en grupo",
+            "Haz tu recorrido por la comunidad",
+            "Anótalo todo en tu cuaderno"
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "Despertando la Primavera en el Cuaderno": {
+            "inicio": {
+              "docente": [
+                "Bienvenida a la actividad. Recuerden que su tarea es crear un cuaderno ilustrado que describa las características de la primavera en México y cómo afecta a diferentes especies animales y plantas.",
+                "Expliquen el objetivo del proyecto: comprender los efectos de la transición a la primavera sobre los seres vivos en México."
+              ],
+              "alumnado": [
+                "Escuchen atentamente la explicación del docente",
+                "Hagan una pregunta si no entienden algo"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué cambios climáticos ocurren durante la transición de invierno a primavera?"
+              ]
+            },
+            "desarrollo": {
+              "docente": [
+                "Muestren algunos ejemplos de cuadernos ilustrados para inspirar a los estudiantes",
+                "Expliquen el proceso de observación y registro en la naturaleza"
+              ],
+              "alumnado": [
+                "Salgan al patio o un lugar cercano donde puedan observar plantas y animales en los primeros días de primavera",
+                "Registren en sus cuadernos qué plantas y animales ven, qué estadios crecimientos tienen"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué especies de plantas y animales se encuentran en este momento en la naturaleza?",
+                "¿Cómo pueden identificar los cambios climáticos que ocurren durante la primavera?"
+              ]
+            },
+            "cierre": {
+              "docente": [
+                "Pregunten si hay alguna duda o inquietud",
+                "Recuerden que el cuaderno debe ser claro, conciso y con ilustraciones de alta calidad"
+              ],
+              "alumnado": [
+                "Revisen sus observaciones e identifiquen qué especies están en estadio de crecimiento más rápido",
+                "Cada uno elija una planta o animal que haya observado y resueltre cómo la transición a primavera afecta su crecimiento, reproducción o supervivencia"
+              ],
+              "preguntas detonadoras": [
+                "¿Qué se puede concluir sobre los efectos de la primavera en diferentes especies?",
+                "¿Por qué es importante registrar y analizar nuestros hallazgos?"
+              ]
+            },
+            "materiales": [
+              "Cuadernos, lápices, bolígrafos, marcadores, papel adhesivo o pegamento"
+            ],
+            "pasos": [
+              "Revisar el cuaderno y asegurarse de que cumple con todos los requisitos antes de terminar",
+              "Incluir una sección para resumir los hallazgos importantes sobre la primavera en México y su impacto en diferentes especies",
+              "Utilizar colores y texturas adecuadas para representar las características de la primavera",
+              "Ilustrar y describir los efectos de la primavera sobre las especies que elegieron",
+              "Investigar cómo la transición a primavera afecta el crecimiento, reproducción o supervivencia de diferentes especies"
+            ]
+          },
+          "actividad": "Comunicar: La primavera y los seres vivos",
+          "materiales": [],
+          "pasos": [],
+          "inicio": "(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+          "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+          "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral."
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Reflexión: La primavera y los cambios climáticos",
+          "inicio": "• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+          "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+          "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+          "materiales": [
+            "Cuadernos ilustrados",
+            "Papel para notas",
+            "Lápices o bolígrafos"
+          ],
+          "pasos": [
+            "1. Revisa el cuaderno ilustrado y busca información relevante sobre cambios climáticos.",
+            "2. Identifica cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.",
+            "3. Comparte tus observaciones y reflexiones con la clase y explícalas de forma clara."
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": true
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": false
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Los seres vivos: elementos, procesos y fenómenos naturales que ofrece oportunidades para entender y explicar hechos cotidianos, desde distintas perspectivas.",
+          "pda": "3° Explica con sus palabras y en su lengua materna, la importancia del aire, el agua, el suelo y el Sol para todos los seres vivos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Aprecia la diversidad de características de los seres vivos y no vivos que hay en la naturaleza y sugiere formas de cuidarlos y preservarlos.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Punto de partida: La primavera y los seres vivos\n\n(5 min) Activación y saberes previos:\n- Muestra 3 imágenes (o un video corto) sobre: La primavera y los seres vivos.\n- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n- Registra ideas en el pizarrón/papel bond.",
+        "desarrollo": "(25 min) Observación guiada:\n- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n- En equipos, comparan registros y eligen 1 hallazgo para compartir.",
+        "cierre": "(10 min) Cierre:\n- Puesta en común (2–3 equipos) y conclusión colectiva.\n- Evidencia: registro en cuaderno/hoja + participación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos para cada estudiante",
+          "Lápices o bolígrafos",
+          "Fotografías o videos de la primavera"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Día 2: Explorando la Primavera en México\n\n**Objetivo del día:** Analizar cómo cambian los seres vivos con el regreso del calor y discutir la importancia de la lluvia durante la primavera.\n\n**Tiempo sugerido:** 40 minutos\n\n**Recuerda:** Los estudiantes han observado cambios en la naturaleza en el día anterior. Hoy, profundizarán en ese conocimiento.",
+        "desarrollo": "1.  **Presentación del tema**: (5 min)\n    ¿Qué cambios climáticos se producen durante la primavera en México? (Ejemplo: calores más suaves, crecimiento de vegetación).\n\n2.  **Observaciones y preguntas**:\n    *   Los estudiantes observarán cómo los seres vivos cambian con el regreso del calor, como las hojas de los árboles comienzan a brotar o los animales se vuelven más activos.\n    *   ¿Qué cambios puedes ver en la naturaleza ahora que la primavera ha llegado?\n\n3.  **Discussión**: (15 min)\n    Los estudiantes discutirán cómo cambian los seres vivos con el regreso del calor, mencionando ejemplos específicos de plantas y animales.\n    ¿Por qué es importante la lluvia durante la primavera para el crecimiento de las plantas?\n\n4.  **Actividad escrita**:\n    Los estudiantes escribirán en su cuaderno ilustrado sobre los cambios observados en la naturaleza y cómo afectan a diferentes especies.",
+        "cierre": "**Revisión**:\n\n*   ¿Qué aprendimos hoy sobre cómo cambian los seres vivos durante la primavera?\n*   ¿Cómo crees que esta estación influye en el entorno natural?\n\n**Preparativos para el día siguiente**: Los estudiantes deben continuar observando y registrando cambios en la naturaleza, incluyendo el impacto de la lluvia.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuaderno ilustrado",
+          "Goma de borrar",
+          "Lápices",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: Investigación de la primavera en la comunidad\n\nComienza con una introducción (5 min) y anuncia que hoy se investigará cómo afecta la primavera a los seres vivos en nuestra comunidad. Pregúntale al alumno si sabe alguna planta o animal que cambia durante esta época del año.\n\n• Anima a los estudiantes a compartir ejemplos de plantas y animales que ya han observado cambiar con el regreso del calor.\n• Haz una lista en la pizarra para revisarla más adelante.",
+        "desarrollo": "Haz un recorrido por la comunidad con los estudiantes (15 min). Pregúntale al alumno que observe cambios en las plantas y animales que se ven afectados por el cambio climático. Haz que anoten sus observaciones en su cuaderno de investigación.\n\n• Se pueden ver las flores comenzando a brotar.\n• Algunos árboles pierden sus hojas.\n• Los pájaros comienzan a llegar a la región para reproducirse.",
+        "cierre": "Revisa el cuaderno de cada alumno y ayuda a los que necesiten. Haz una discusión en grupo (10 min) sobre las observaciones realizadas durante el recorrido.\n\n• Pregúntale al alumno si cree que estos cambios climáticos son importantes para la supervivencia de los seres vivos.\n• Comparte su cuaderno con un compañero y pide que compartan sus pensamientos sobre las observaciones.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos de investigación",
+          "Lápices"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicar: La primavera y los seres vivos\n\n(5 min) Preparación para comunicar:\n- Define formato: cartel/infografía mini/maqueta simple.\n- Revisa criterios: título, 3 ideas clave, evidencia visual.",
+        "desarrollo": "(25 min) Elaboración del producto:\n- En equipos, transforman sus registros en un material para explicar {tema}.\n- Incluyen al menos 1 dibujo y 1 texto breve por integrante.\n- Docente apoya con preguntas: ¿qué quieres que el público entienda?",
+        "cierre": "(10 min) Galería:\n- Exponen (1 min por equipo) y reciben 1 pregunta del grupo.\n- Evidencia: cartel/producto + explicación oral.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Reflexión: La primavera y los cambios climáticos\n\n• Inicia presentándote al inicio del día, explicando que hoy se enfocará en la reflexión sobre lo aprendido hasta ahora. Recuerda a los estudiantes que han estado explorando cómo cambia la naturaleza durante la transición de invierno a primavera.\n• Pregúntales si tienen alguna pregunta o duda sobre el tema. Si hay alguna, detente unos minutos para abordarla.",
+        "desarrollo": "**Exploración de conocimientos previos (5 min)**\n\n• Pide a los estudiantes que revisen sus cuadernos ilustrados y busquen páginas relacionadas con cambios climáticos. \n• Solicita que compartan algo que encontraron en su investigación hasta ahora sobre cómo la primavera afecta a diferentes especies de plantas y animales.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué cambios observaste en las flores durante la transición de invierno a primavera?\n  ¿Cómo crees que se ven afectados los animales con el regreso del calor?\n\n**Análisis de observaciones (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones realizadas durante la exploración en el campo. \n• Solicita que identifiquen cómo cambian los seres vivos con el regreso del calor y qué cambios climáticos son más relevantes para su supervivencia.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de animales crees que se ven afectadas directamente por la lluvia durante la primavera?\n  ¿Cómo crees que la sequía podría afectar a los ecosistemas del país durante la primavera?\n\n**Conclusión y planificación (10 min)**\n\n• Pide a los estudiantes que revisen sus observaciones y reflexiones de los días anteriores. \n• Solicita que compartan cómo han crecido en su comprensión sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Registra las respuestas y haz preguntas detonadoras para profundizar en el conocimiento, como:\n  ¿Qué especies de plantas y animales crees que se beneficiarían más con un clima estable durante la primavera?",
+        "cierre": "• Inicia la actividad final del día explicando a los estudiantes cómo trabajarán juntos para crear un cuaderno ilustrado. \n• Recuerda a los estudiantes que deben incluir sus hallazgos y conclusiones sobre la relación entre el cambio climático y los seres vivos durante la transición de invierno a primavera.\n• Pide a los estudiantes que revisen su trabajo hasta ahora y que comiencen a pensar en cómo lo organizan para una presentación clara y efectiva.",
+        "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+        "recursos": [
+          "Cuadernos ilustrados",
+          "Papel para notas",
+          "Lápices o bolígrafos"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

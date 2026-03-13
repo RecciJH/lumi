@@ -378,6 +378,37 @@ def _step_sesiones(state: dict) -> list[dict]:
     for item in actividades:
         if not isinstance(item, dict):
             continue
+
+        def _step_text(value: Any) -> str:
+            if value is None:
+                return ""
+            if isinstance(value, str):
+                return value.strip()
+            if isinstance(value, dict):
+                titulo = value.get("titulo") or value.get("título") or value.get("title")
+                contenido = (
+                    value.get("contenido")
+                    or value.get("content")
+                    or value.get("descripcion")
+                    or value.get("descripción")
+                    or value.get("description")
+                )
+                if titulo and contenido:
+                    return f"{_step_text(titulo)}: {_step_text(contenido)}".strip()
+                if contenido:
+                    return _step_text(contenido)
+                if titulo:
+                    return _step_text(titulo)
+                for key in ("texto", "detalle", "descripcion", "descripción", "content", "contenido"):
+                    if key in value:
+                        return _step_text(value.get(key))
+                return str(value).strip()
+            if isinstance(value, list):
+                parts = [_step_text(v) for v in value]
+                parts = [p for p in parts if p]
+                return "; ".join(parts).strip()
+            return str(value).strip()
+
         dia = item.get("dia")
         momento = str(item.get("momento") or "")
         mom_lower = momento.lower()
@@ -391,17 +422,50 @@ def _step_sesiones(state: dict) -> list[dict]:
             etapa = "Aplicación en el contexto / Comunicación"
         else:
             etapa = "Participación activa y reflexión"
+
         act = item.get("actividad") or {}
-        pasos = act.get("pasos") if isinstance(act, dict) else None
-        materiales = act.get("materiales") if isinstance(act, dict) else None
+        if not isinstance(act, dict):
+            act = {"actividad": _step_text(act)}
+
+        pasos = act.get("pasos")
         if not isinstance(pasos, list):
             pasos = []
+        materiales = act.get("materiales")
         if not isinstance(materiales, list):
             materiales = []
 
-        inicio = str(pasos[0]) if len(pasos) >= 1 else ""
-        cierre = str(pasos[-1]) if len(pasos) >= 2 else ""
-        desarrollo = "\n".join([str(p) for p in pasos[1:-1]]) if len(pasos) > 2 else ""
+        actividad_titulo = _step_text(act.get("actividad"))
+
+        # Preferimos secciones ricas (si el activity_agent las generó). Si no, derivamos de `pasos`.
+        inicio = _step_text(act.get("inicio"))
+        desarrollo = _step_text(act.get("desarrollo"))
+        cierre = _step_text(act.get("cierre"))
+
+        if not (inicio or desarrollo or cierre):
+            paso_texts = [_step_text(p) for p in pasos]
+            paso_texts = [p for p in paso_texts if p]
+
+            if len(paso_texts) >= 5:
+                inicio = "\n".join(paso_texts[:2])
+                desarrollo = "\n".join(paso_texts[2:-2])
+                cierre = "\n".join(paso_texts[-2:])
+            elif len(paso_texts) == 4:
+                inicio = paso_texts[0]
+                desarrollo = "\n".join(paso_texts[1:3])
+                cierre = paso_texts[3]
+            elif len(paso_texts) == 3:
+                inicio, desarrollo, cierre = paso_texts
+            elif len(paso_texts) == 2:
+                inicio, cierre = paso_texts
+            elif len(paso_texts) == 1:
+                desarrollo = paso_texts[0]
+
+        if actividad_titulo:
+            if inicio:
+                if not inicio.lower().startswith("actividad:"):
+                    inicio = f"Actividad: {actividad_titulo}\n\n{inicio}"
+            else:
+                inicio = f"Actividad: {actividad_titulo}"
 
         # Indicadores simples por momento
         inds = []
@@ -425,7 +489,7 @@ def _step_sesiones(state: dict) -> list[dict]:
                 "desarrollo": desarrollo,
                 "cierre": cierre,
                 "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
-                "recursos": [str(x) for x in materiales if str(x).strip()],
+                "recursos": [_step_text(x) for x in materiales if _step_text(x)],
                 "indicadores": inds,
             }
         )
