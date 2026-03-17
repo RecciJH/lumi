@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Entornos
+.env
+venv/
+
+# Archivos generados
+*.pdf
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
