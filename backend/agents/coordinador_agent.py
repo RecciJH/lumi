@@ -480,6 +480,18 @@ def _step_sesiones(state: dict) -> list[dict]:
         else:
             inds = ["Reflexiona sobre lo aprendido", "Identifica mejoras", "Relaciona con su contexto"]
 
+        # Pausa activa: usar la que venga en la actividad o una por defecto por etapa (estilo SEP).
+        pausa_activa = _step_text(act.get("pausa_activa"))
+        if not pausa_activa:
+            _PAUSAS_POR_ETAPA = {
+                "Lectura de la realidad (Saberes previos)": "Reproducir la canción SOY UNA SERPIENTE (o similar) y ejecutar movimientos de acuerdo a lo que indica la canción.",
+                "Identificación de la problemática": "Reproducir la canción CONGELADOS y ejecutar movimientos de acuerdo a lo que indica la canción.",
+                "Organización y desarrollo": "Reproducir la canción LA VACA LOLA y ejecutar movimientos de acuerdo a lo que indica la canción.",
+                "Aplicación en el contexto / Comunicación": "Reproducir la canción UNA MANO y ejecutar movimientos de acuerdo a lo que indica la canción.",
+                "Participación activa y reflexión": "Reproducir la canción EL VIEJO McDONALD y ejecutar movimientos de acuerdo a lo que indica la canción.",
+            }
+            pausa_activa = _PAUSAS_POR_ETAPA.get(etapa) or "Pausa activa: estiramientos y respiración (2 min)."
+
         sesiones.append(
             {
                 "etapa": etapa,
@@ -488,7 +500,7 @@ def _step_sesiones(state: dict) -> list[dict]:
                 "inicio": inicio,
                 "desarrollo": desarrollo,
                 "cierre": cierre,
-                "pausa_activa": "Pausa activa: estiramientos y respiración (2 min).",
+                "pausa_activa": pausa_activa,
                 "recursos": [_step_text(x) for x in materiales if _step_text(x)],
                 "indicadores": inds,
             }
