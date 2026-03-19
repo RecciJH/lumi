@@ -1,0 +1,1428 @@
+{
+  "meta": {
+    "started_at": "2026-03-18T21:29:25.341464+00:00",
+    "finished_at": "2026-03-18T21:38:55.851645+00:00",
+    "pipeline_steps": [
+      {
+        "name": "curriculum_agent",
+        "output_key": "curriculum",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "pedagogy_agent",
+        "output_key": "estrategia_pedagogica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "project_agent",
+        "output_key": "proyecto",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 27379
+      },
+      {
+        "name": "methodology_agent",
+        "output_key": "momentos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "activity_agent",
+        "output_key": "actividades",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 340896
+      },
+      {
+        "name": "didactic_sequence_agent",
+        "output_key": "secuencia_didactica",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 146030
+      },
+      {
+        "name": "ejes_campos_builder",
+        "output_key": "ejes_campos",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 1
+      },
+      {
+        "name": "contenidos_pda_agent",
+        "output_key": "contenidos_pda",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 13
+      },
+      {
+        "name": "sesiones_builder",
+        "output_key": "sesiones",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      },
+      {
+        "name": "evaluation_agent",
+        "output_key": "evaluacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 56185
+      },
+      {
+        "name": "planning_agent",
+        "output_key": "planeacion",
+        "status": "ok",
+        "attempts": 1,
+        "duration_ms": 0
+      }
+    ],
+    "version": "coordinador_agent_v1"
+  },
+  "input": {
+    "docente": "Nombre de la educadora",
+    "escuela": "Jardín de Niños Ejemplo",
+    "cct": "CCT0000",
+    "grado": "3",
+    "grupo": "A",
+    "tema": "La contaminación",
+    "duracion_dias": 5
+  },
+  "results": {
+    "curriculum": {
+      "campo_formativo": "Lenguajes",
+      "eje": "Pensamiento crítico",
+      "pda": "Expresa ideas mediante lenguaje"
+    },
+    "estrategia_pedagogica": {
+      "enfoque": "aprendizaje basado en proyectos",
+      "objetivo_general": "Que los estudiantes comprendan el tema La contaminación mediante exploración, investigación y creación.",
+      "habilidades": [
+        "observación",
+        "investigación",
+        "expresión oral",
+        "creatividad",
+        "reflexión"
+      ],
+      "progresion": [
+        "explorar conocimientos previos",
+        "observar y analizar",
+        "investigar",
+        "crear productos",
+        "comunicar aprendizajes",
+        "reflexionar"
+      ]
+    },
+    "proyecto": {
+      "nombre_proyecto": "La comunidad en acción: protegiendo nuestro entorno",
+      "problematica": "En nuestra comunidad, los ríos están cada vez más sucios debido al desecho de plásticos y residuos. Los vecinos tienen que recoger basura en la orilla del río todos los fines de semana. Esto nos hace dudar sobre el futuro de nuestro entorno.",
+      "justificacion": "Este proyecto es relevante porque afecta directamente a las niñas y los niños, quienes juegan al lado del río y ven cómo sus padres se preocupan por la situación. Al abordar este tema, aprenderán sobre la importancia de cuidar el medio ambiente y podrán relacionarse con las acciones que realizan sus familias.",
+      "proposito": "Las niñas y los niños comprenderán las causas y efectos de la contaminación del río y reconocerán la importancia de involucrarse en la protección ambiental a través de acciones sencillas en su comunidad.",
+      "producto_final": "Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado del entorno. Las niñas y los niños colaborarán con sus familias para recopilar materiales y aplicarlos en la creación del mural.",
+      "temporalidad": "Día 1: Inicio del proyecto, presentación del tema y reflexión colectiva. Día 2: Recolección de información sobre la contaminación y su impacto en la comunidad. Día 3: Creación del mural con el apoyo de las familias. Día 4: Finalización del mural y reflexión colectiva. Día 5: Presentación del mural en la comunidad, donde se harán preguntas y se plantearán soluciones conjuntas."
+    },
+    "momentos": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida"
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación"
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar"
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar"
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión"
+      }
+    ],
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Diagnóstico y reflexión sobre la contaminación del río",
+          "inicio": "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+          "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "un cuaderno para cada niña o niño",
+            "unos lápices"
+          ],
+          "pasos": [
+            "La docente guía al grupo hacia el área cercana al río.",
+            "Se pregunta a las niñas y los niños sobre la contaminación del río y sus posibles efectos.",
+            "Se organiza un recorrido para buscar información sobre el ciclo del agua y la contaminación en fuentes como libros o internet.",
+            "Las niñas y los niños observan detenidamente los efectos de la contaminación en el río.",
+            "La docente solicita ideas a las niñas y los niños sobre qué pueden hacer para ayudar a cuidar el río.",
+            "Se resumen las ideas y observaciones del grupo.",
+            "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.",
+            "(5 min)",
+            "La docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.",
+            "La docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.",
+            "Propósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.",
+            "¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?",
+            "¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+            "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Organización gráfica de la información sobre contaminación del río",
+          "inicio": "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel cuadriculado",
+            "lapiceros",
+            "marcadores"
+          ],
+          "pasos": [
+            "La docente guía presenta el tema y reflejan juntos sobre las imágenes.",
+            "Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+            "Comparten sus observaciones y pensamientos en grupo.",
+            "Organizan la información en un cuadro gráfico dividido en secciones.",
+            "Recuerdan el propósito del proyecto y su contribución al mural comunitario.",
+            "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+            "Propósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.",
+            "¿Qué ideas se parecen y cuáles son diferentes?",
+            "¿Qué ejemplos nos ayudan a explicar mejor este tema?",
+            "¿Qué información nos hace falta para entenderlo mejor?",
+            "Organización: parejas.",
+            "Contribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.",
+            "Docente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "A trabajar: La contaminación",
+          "inicio": "¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "¿Qué queremos investigar sobre la contaminación del río?",
+            "¿Cómo podemos observar que está sucediendo en nuestro entorno?",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?",
+            "¿Qué observamos que cambia o se nota durante la experiencia?",
+            "¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?",
+            "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).",
+            "Registran lo que observan mediante dibujos, marcas o palabras sencillas.",
+            "La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.",
+            "Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.",
+            "Docente: da tiempos por fase (preparación, ejecución, registro, revisión).",
+            "Alumnado: registra resultados en tabla o pictogramas y compara con otro equipo."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Comunicando el mensaje sobre la contaminación del río",
+          "inicio": "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+          "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papelitos",
+            "marcadores",
+            "colores"
+          ],
+          "pasos": [
+            "Las niñas y los niños escriben sus ideas sobre la contaminación del río en papelitos.",
+            "La docente organiza los papelitos en un guion breve representando el mensaje colectivo del grupo.",
+            "Las niñas y los niños diseñan su presentación para comunicar su mensaje al público, pensando en colores y símbolos que llamen la atención.",
+            "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve.",
+            "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.",
+            "¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?",
+            "Las niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+            "¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?",
+            "¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?",
+            "¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+            "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno",
+          "inicio": "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+          "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Pizarra",
+            "Marcadores",
+            "Mural comunitario en construcción"
+          ],
+          "pasos": [
+            "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto",
+            "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo",
+            "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario",
+            "¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo?",
+            "Las niñas y los niños comparten sus pensamientos y se miran entre sí",
+            "La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario",
+            "¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?",
+            "Las niñas y los niños reflexionan sobre las sugerencias de mejoras y compromisos",
+            "La docente recopila las ideas y las clasifica en categorías (problemas, soluciones, compromisos)",
+            "La docente presenta las conclusiones del proyecto y se compromete a trabajar con las niñas y los niños para implementar cambios reales"
+          ]
+        }
+      }
+    ],
+    "secuencia_didactica": {
+      "inicio": "Las niñas y los niños se sientan en un círculo para reflexionar sobre lo aprendido durante el proyecto.",
+      "desarrollo": "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+      "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+      "evaluacion": "Participa y argumenta con base en lo que observa/registra. Sigue la consigna y usa materiales con cuidado. Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+      "evidencias": [
+        "registro en cuaderno/hoja de trabajo",
+        "participación oral"
+      ],
+      "materiales": [
+        "Pizarra",
+        "Marcadores",
+        "Mural comunitario en construcción"
+      ]
+    },
+    "ejes_campos": {
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": false
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "campos_seleccionados": [
+        "Lenguajes",
+        "De lo humano y lo comunitario"
+      ]
+    },
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Saberes familiares y comunitarios que resuelven situaciones y necesidades en el hogar y la comunidad.",
+          "pda": "3° Propone algunos saberes familiares y comunitarios, para resolver necesidades y situaciones en su hogar, escuela y comunidad.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Promueve actitudes y acciones de cuidado hacia la naturaleza e involucra a las personas de su escuela y comunidad para colaborar en ellas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Diagnóstico y reflexión sobre la contaminación del río\n\nLa docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+        "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción SOY UNA SERPIENTE (o similar) y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "un cuaderno para cada niña o niño",
+          "unos lápices"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Organización gráfica de la información sobre contaminación del río\n\nLa docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción CONGELADOS y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "papel cuadriculado",
+          "lapiceros",
+          "marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: A trabajar: La contaminación\n\n¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción LA VACA LOLA y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicando el mensaje sobre la contaminación del río\n\nLas niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+        "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+        "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción UNA MANO y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "papelitos",
+          "marcadores",
+          "colores"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno\n\nLas niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+        "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción EL VIEJO McDONALD y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "Pizarra",
+          "Marcadores",
+          "Mural comunitario en construcción"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ],
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprensión del tema",
+          "indicadores": [
+            "Las niñas y los niños demuestran comprender el concepto de ciclo del agua y los efectos de la contaminación.",
+            "Los niños pueden identificar las fuentes de contaminación en el entorno."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No demuestra comprensión del tema. No puede identificar las fuentes de contaminación.",
+            "Básico": "Demuestra un conocimiento básico del ciclo del agua y los efectos de la contaminación, pero no puede aplicarlo en situaciones reales.",
+            "Satisfactorio": "Demuestra una comprensión clara del tema y puede identificar las fuentes de contaminación en el entorno. Presenta su mensaje de manera clara y concisa.",
+            "Destacado": "Demuestra un dominio profundo del tema y puede aplicarlo en situaciones reales. Su presentación es convincente, clara y precisa."
+          }
+        },
+        {
+          "criterio": "Trabajo en equipo",
+          "indicadores": [
+            "Las niñas y los niños trabajan juntos de manera efectiva para completar las actividades.",
+            "El grupo puede resolver conflictos de manera pacífica."
+          ],
+          "evidencia": "Observación directa, informes de equipo",
+          "niveles": {
+            "Insuficiente": "No trabaja en equipo. No colabora con los demás.",
+            "Básico": "Trabaja en equipo, pero de manera minimalista y no contribuye significativamente a la tarea.",
+            "Satisfactorio": "Trabaja en equipo de manera efectiva y contribuye significativamente a la tarea. Presenta un producto final que refleja su trabajo en equipo.",
+            "Destacado": "Demuestra un alto nivel de colaboración y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        },
+        {
+          "criterio": "Comunicación",
+          "indicadores": [
+            "Las niñas y los niños pueden comunicar claramente su mensaje sobre el cuidado del entorno.",
+            "Su presentación es atractiva y fácil de seguir."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No puede comunicar su mensaje de manera clara. Su presentación es confusa y difícil de seguir.",
+            "Básico": "Puede comunicar su mensaje básicamente, pero no de manera efectiva. Su presentación es simple y no atractiva.",
+            "Satisfactorio": "Comunica su mensaje de manera clara y concisa. Presenta un producto final que refleja su trabajo en equipo.",
+            "Destacado": "Demuestra un alto nivel de comunicación y habilidades para presentar su mensaje. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        },
+        {
+          "criterio": "Compromiso con el proyecto",
+          "indicadores": [
+            "Las niñas y los niños están comprometidos con el proyecto y trabajan hacia un objetivo común.",
+            "Su compromiso es evidente en su trabajo y presentación."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No está comprometido con el proyecto. No contribuye significativamente al producto final.",
+            "Básico": "Está comprometido en un grado básico, pero no de manera profunda. Su trabajo es minimalista y no contribuye significativamente al producto final.",
+            "Satisfactorio": "Está comprometido con el proyecto y trabaja hacia un objetivo común. Presenta un producto final que refleja su compromiso.",
+            "Destacado": "Demuestra un alto nivel de compromiso y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        }
+      ],
+      "indicadores": [
+        "comprensión del tema",
+        "trabajo en equipo",
+        "comunicación",
+        "compromiso con el proyecto"
+      ]
+    },
+    "planeacion": {
+      "datos_generales": {
+        "docente": "Nombre de la educadora",
+        "escuela": "Jardín de Niños Ejemplo",
+        "grado": "3",
+        "grupo": "A",
+        "tema": "La contaminación"
+      },
+      "curriculum": {
+        "campo_formativo": "Lenguajes",
+        "eje": "Pensamiento crítico",
+        "pda": "Expresa ideas mediante lenguaje"
+      },
+      "proyecto": {
+        "nombre_proyecto": "La comunidad en acción: protegiendo nuestro entorno",
+        "problematica": "En nuestra comunidad, los ríos están cada vez más sucios debido al desecho de plásticos y residuos. Los vecinos tienen que recoger basura en la orilla del río todos los fines de semana. Esto nos hace dudar sobre el futuro de nuestro entorno.",
+        "justificacion": "Este proyecto es relevante porque afecta directamente a las niñas y los niños, quienes juegan al lado del río y ven cómo sus padres se preocupan por la situación. Al abordar este tema, aprenderán sobre la importancia de cuidar el medio ambiente y podrán relacionarse con las acciones que realizan sus familias.",
+        "proposito": "Las niñas y los niños comprenderán las causas y efectos de la contaminación del río y reconocerán la importancia de involucrarse en la protección ambiental a través de acciones sencillas en su comunidad.",
+        "producto_final": "Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado del entorno. Las niñas y los niños colaborarán con sus familias para recopilar materiales y aplicarlos en la creación del mural.",
+        "temporalidad": "Día 1: Inicio del proyecto, presentación del tema y reflexión colectiva. Día 2: Recolección de información sobre la contaminación y su impacto en la comunidad. Día 3: Creación del mural con el apoyo de las familias. Día 4: Finalización del mural y reflexión colectiva. Día 5: Presentación del mural en la comunidad, donde se harán preguntas y se plantearán soluciones conjuntas."
+      },
+      "evaluacion": {
+        "instrumento": "rubrica",
+        "criterios": [
+          {
+            "criterio": "Comprensión del tema",
+            "indicadores": [
+              "Las niñas y los niños demuestran comprender el concepto de ciclo del agua y los efectos de la contaminación.",
+              "Los niños pueden identificar las fuentes de contaminación en el entorno."
+            ],
+            "evidencia": "Presentación final, bitácora de clase",
+            "niveles": {
+              "Insuficiente": "No demuestra comprensión del tema. No puede identificar las fuentes de contaminación.",
+              "Básico": "Demuestra un conocimiento básico del ciclo del agua y los efectos de la contaminación, pero no puede aplicarlo en situaciones reales.",
+              "Satisfactorio": "Demuestra una comprensión clara del tema y puede identificar las fuentes de contaminación en el entorno. Presenta su mensaje de manera clara y concisa.",
+              "Destacado": "Demuestra un dominio profundo del tema y puede aplicarlo en situaciones reales. Su presentación es convincente, clara y precisa."
+            }
+          },
+          {
+            "criterio": "Trabajo en equipo",
+            "indicadores": [
+              "Las niñas y los niños trabajan juntos de manera efectiva para completar las actividades.",
+              "El grupo puede resolver conflictos de manera pacífica."
+            ],
+            "evidencia": "Observación directa, informes de equipo",
+            "niveles": {
+              "Insuficiente": "No trabaja en equipo. No colabora con los demás.",
+              "Básico": "Trabaja en equipo, pero de manera minimalista y no contribuye significativamente a la tarea.",
+              "Satisfactorio": "Trabaja en equipo de manera efectiva y contribuye significativamente a la tarea. Presenta un producto final que refleja su trabajo en equipo.",
+              "Destacado": "Demuestra un alto nivel de colaboración y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+            }
+          },
+          {
+            "criterio": "Comunicación",
+            "indicadores": [
+              "Las niñas y los niños pueden comunicar claramente su mensaje sobre el cuidado del entorno.",
+              "Su presentación es atractiva y fácil de seguir."
+            ],
+            "evidencia": "Presentación final, bitácora de clase",
+            "niveles": {
+              "Insuficiente": "No puede comunicar su mensaje de manera clara. Su presentación es confusa y difícil de seguir.",
+              "Básico": "Puede comunicar su mensaje básicamente, pero no de manera efectiva. Su presentación es simple y no atractiva.",
+              "Satisfactorio": "Comunica su mensaje de manera clara y concisa. Presenta un producto final que refleja su trabajo en equipo.",
+              "Destacado": "Demuestra un alto nivel de comunicación y habilidades para presentar su mensaje. Su trabajo es innovador y contribuye significativamente al producto final."
+            }
+          },
+          {
+            "criterio": "Compromiso con el proyecto",
+            "indicadores": [
+              "Las niñas y los niños están comprometidos con el proyecto y trabajan hacia un objetivo común.",
+              "Su compromiso es evidente en su trabajo y presentación."
+            ],
+            "evidencia": "Presentación final, bitácora de clase",
+            "niveles": {
+              "Insuficiente": "No está comprometido con el proyecto. No contribuye significativamente al producto final.",
+              "Básico": "Está comprometido en un grado básico, pero no de manera profunda. Su trabajo es minimalista y no contribuye significativamente al producto final.",
+              "Satisfactorio": "Está comprometido con el proyecto y trabaja hacia un objetivo común. Presenta un producto final que refleja su compromiso.",
+              "Destacado": "Demuestra un alto nivel de compromiso y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+            }
+          }
+        ],
+        "indicadores": [
+          "comprensión del tema",
+          "trabajo en equipo",
+          "comunicación",
+          "compromiso con el proyecto"
+        ]
+      },
+      "secuencia_didactica": {
+        "inicio": "Las niñas y los niños se sientan en un círculo para reflexionar sobre lo aprendido durante el proyecto.",
+        "desarrollo": "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+        "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+        "evaluacion": "Participa y argumenta con base en lo que observa/registra. Sigue la consigna y usa materiales con cuidado. Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "evidencias": [
+          "registro en cuaderno/hoja de trabajo",
+          "participación oral"
+        ],
+        "materiales": [
+          "Pizarra",
+          "Marcadores",
+          "Mural comunitario en construcción"
+        ]
+      },
+      "actividades": [
+        {
+          "dia": 1,
+          "momento": "Punto de partida",
+          "actividad": {
+            "actividad": "Diagnóstico y reflexión sobre la contaminación del río",
+            "inicio": "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+            "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "un cuaderno para cada niña o niño",
+              "unos lápices"
+            ],
+            "pasos": [
+              "La docente guía al grupo hacia el área cercana al río.",
+              "Se pregunta a las niñas y los niños sobre la contaminación del río y sus posibles efectos.",
+              "Se organiza un recorrido para buscar información sobre el ciclo del agua y la contaminación en fuentes como libros o internet.",
+              "Las niñas y los niños observan detenidamente los efectos de la contaminación en el río.",
+              "La docente solicita ideas a las niñas y los niños sobre qué pueden hacer para ayudar a cuidar el río.",
+              "Se resumen las ideas y observaciones del grupo.",
+              "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.",
+              "(5 min)",
+              "La docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.",
+              "La docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.",
+              "Propósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.",
+              "¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?",
+              "¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+              "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río."
+            ]
+          }
+        },
+        {
+          "dia": 2,
+          "momento": "Planeación",
+          "actividad": {
+            "actividad": "Organización gráfica de la información sobre contaminación del río",
+            "inicio": "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "papel cuadriculado",
+              "lapiceros",
+              "marcadores"
+            ],
+            "pasos": [
+              "La docente guía presenta el tema y reflejan juntos sobre las imágenes.",
+              "Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+              "Comparten sus observaciones y pensamientos en grupo.",
+              "Organizan la información en un cuadro gráfico dividido en secciones.",
+              "Recuerdan el propósito del proyecto y su contribución al mural comunitario.",
+              "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+              "Propósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.",
+              "¿Qué ideas se parecen y cuáles son diferentes?",
+              "¿Qué ejemplos nos ayudan a explicar mejor este tema?",
+              "¿Qué información nos hace falta para entenderlo mejor?",
+              "Organización: parejas.",
+              "Contribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+              "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.",
+              "Docente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas."
+            ]
+          }
+        },
+        {
+          "dia": 3,
+          "momento": "A trabajar",
+          "actividad": {
+            "actividad": "A trabajar: La contaminación",
+            "inicio": "¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+            "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Cuaderno",
+              "Lápiz",
+              "Pizarrón o papel bond",
+              "Marcadores"
+            ],
+            "pasos": [
+              "¿Qué queremos investigar sobre la contaminación del río?",
+              "¿Cómo podemos observar que está sucediendo en nuestro entorno?",
+              "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+              "Organización: equipos con roles.",
+              "¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?",
+              "¿Qué observamos que cambia o se nota durante la experiencia?",
+              "¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?",
+              "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+              "Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).",
+              "Registran lo que observan mediante dibujos, marcas o palabras sencillas.",
+              "La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.",
+              "Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.",
+              "Docente: da tiempos por fase (preparación, ejecución, registro, revisión).",
+              "Alumnado: registra resultados en tabla o pictogramas y compara con otro equipo."
+            ]
+          }
+        },
+        {
+          "dia": 4,
+          "momento": "Comunicar",
+          "actividad": {
+            "actividad": "Comunicando el mensaje sobre la contaminación del río",
+            "inicio": "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+            "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+            "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "papelitos",
+              "marcadores",
+              "colores"
+            ],
+            "pasos": [
+              "Las niñas y los niños escriben sus ideas sobre la contaminación del río en papelitos.",
+              "La docente organiza los papelitos en un guion breve representando el mensaje colectivo del grupo.",
+              "Las niñas y los niños diseñan su presentación para comunicar su mensaje al público, pensando en colores y símbolos que llamen la atención.",
+              "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve.",
+              "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.",
+              "¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?",
+              "Las niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.",
+              "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+              "Organización: equipos.",
+              "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+              "¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?",
+              "¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?",
+              "¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+              "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:"
+            ]
+          }
+        },
+        {
+          "dia": 5,
+          "momento": "Reflexión",
+          "actividad": {
+            "actividad": "Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno",
+            "inicio": "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+            "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+            "materiales": [
+              "Pizarra",
+              "Marcadores",
+              "Mural comunitario en construcción"
+            ],
+            "pasos": [
+              "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto",
+              "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo",
+              "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario",
+              "¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo?",
+              "Las niñas y los niños comparten sus pensamientos y se miran entre sí",
+              "La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario",
+              "¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?",
+              "Las niñas y los niños reflexionan sobre las sugerencias de mejoras y compromisos",
+              "La docente recopila las ideas y las clasifica en categorías (problemas, soluciones, compromisos)",
+              "La docente presenta las conclusiones del proyecto y se compromete a trabajar con las niñas y los niños para implementar cambios reales"
+            ]
+          }
+        }
+      ],
+      "ejes_articuladores": [
+        {
+          "nombre": "Inclusión",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Pensamiento Crítico",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Interculturalidad Crítica",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Igualdad de Género",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Vida Saludable",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Apropiación cultural a través de la lectura y escritura",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Artes y experiencias estéticas",
+          "seleccionado": false
+        }
+      ],
+      "campos_formativos": [
+        {
+          "nombre": "Lenguajes",
+          "seleccionado": true
+        },
+        {
+          "nombre": "Saberes y pensamiento científico",
+          "seleccionado": false
+        },
+        {
+          "nombre": "Ética, naturaleza y sociedades",
+          "seleccionado": false
+        },
+        {
+          "nombre": "De lo humano y lo comunitario",
+          "seleccionado": true
+        }
+      ],
+      "contenidos_pda": {
+        "grado": "3",
+        "campos": [
+          {
+            "campo_formativo": "Lenguajes",
+            "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+            "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+          },
+          {
+            "campo_formativo": "Saberes y pensamiento científico",
+            "contenido": "Saberes familiares y comunitarios que resuelven situaciones y necesidades en el hogar y la comunidad.",
+            "pda": "3° Propone algunos saberes familiares y comunitarios, para resolver necesidades y situaciones en su hogar, escuela y comunidad.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+          },
+          {
+            "campo_formativo": "Ética, naturaleza y sociedades",
+            "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+            "pda": "2º Promueve actitudes y acciones de cuidado hacia la naturaleza e involucra a las personas de su escuela y comunidad para colaborar en ellas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+          },
+          {
+            "campo_formativo": "De lo humano y lo comunitario",
+            "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+            "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+            "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+          }
+        ]
+      },
+      "sesiones": [
+        {
+          "etapa": "Lectura de la realidad (Saberes previos)",
+          "sesion": 1,
+          "fecha": "",
+          "inicio": "Actividad: Diagnóstico y reflexión sobre la contaminación del río\n\nLa docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+          "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Reproducir la canción SOY UNA SERPIENTE (o similar) y ejecutar movimientos de acuerdo a lo que indica la canción.",
+          "recursos": [
+            "un cuaderno para cada niña o niño",
+            "unos lápices"
+          ],
+          "indicadores": [
+            "Expresa saberes previos",
+            "Participa en el diálogo",
+            "Representa ideas de forma oral o gráfica"
+          ]
+        },
+        {
+          "etapa": "Identificación de la problemática",
+          "sesion": 2,
+          "fecha": "",
+          "inicio": "Actividad: Organización gráfica de la información sobre contaminación del río\n\nLa docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Reproducir la canción CONGELADOS y ejecutar movimientos de acuerdo a lo que indica la canción.",
+          "recursos": [
+            "papel cuadriculado",
+            "lapiceros",
+            "marcadores"
+          ],
+          "indicadores": [
+            "Propone ideas y preguntas",
+            "Organiza información básica",
+            "Colabora con el grupo"
+          ]
+        },
+        {
+          "etapa": "Organización y desarrollo",
+          "sesion": 3,
+          "fecha": "",
+          "inicio": "Actividad: A trabajar: La contaminación\n\n¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Reproducir la canción LA VACA LOLA y ejecutar movimientos de acuerdo a lo que indica la canción.",
+          "recursos": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "indicadores": [
+            "Sigue instrucciones",
+            "Registra y comunica hallazgos",
+            "Usa materiales de forma responsable"
+          ]
+        },
+        {
+          "etapa": "Aplicación en el contexto / Comunicación",
+          "sesion": 4,
+          "fecha": "",
+          "inicio": "Actividad: Comunicando el mensaje sobre la contaminación del río\n\nLas niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+          "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Reproducir la canción UNA MANO y ejecutar movimientos de acuerdo a lo que indica la canción.",
+          "recursos": [
+            "papelitos",
+            "marcadores",
+            "colores"
+          ],
+          "indicadores": [
+            "Explica su proceso",
+            "Comparte resultados",
+            "Escucha y respeta turnos"
+          ]
+        },
+        {
+          "etapa": "Participación activa y reflexión",
+          "sesion": 5,
+          "fecha": "",
+          "inicio": "Actividad: Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno\n\nLas niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+          "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "pausa_activa": "Reproducir la canción EL VIEJO McDONALD y ejecutar movimientos de acuerdo a lo que indica la canción.",
+          "recursos": [
+            "Pizarra",
+            "Marcadores",
+            "Mural comunitario en construcción"
+          ],
+          "indicadores": [
+            "Reflexiona sobre lo aprendido",
+            "Identifica mejoras",
+            "Relaciona con su contexto"
+          ]
+        }
+      ]
+    }
+  },
+  "planeacion": {
+    "datos_generales": {
+      "docente": "Nombre de la educadora",
+      "escuela": "Jardín de Niños Ejemplo",
+      "grado": "3",
+      "grupo": "A",
+      "tema": "La contaminación"
+    },
+    "curriculum": {
+      "campo_formativo": "Lenguajes",
+      "eje": "Pensamiento crítico",
+      "pda": "Expresa ideas mediante lenguaje"
+    },
+    "proyecto": {
+      "nombre_proyecto": "La comunidad en acción: protegiendo nuestro entorno",
+      "problematica": "En nuestra comunidad, los ríos están cada vez más sucios debido al desecho de plásticos y residuos. Los vecinos tienen que recoger basura en la orilla del río todos los fines de semana. Esto nos hace dudar sobre el futuro de nuestro entorno.",
+      "justificacion": "Este proyecto es relevante porque afecta directamente a las niñas y los niños, quienes juegan al lado del río y ven cómo sus padres se preocupan por la situación. Al abordar este tema, aprenderán sobre la importancia de cuidar el medio ambiente y podrán relacionarse con las acciones que realizan sus familias.",
+      "proposito": "Las niñas y los niños comprenderán las causas y efectos de la contaminación del río y reconocerán la importancia de involucrarse en la protección ambiental a través de acciones sencillas en su comunidad.",
+      "producto_final": "Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado del entorno. Las niñas y los niños colaborarán con sus familias para recopilar materiales y aplicarlos en la creación del mural.",
+      "temporalidad": "Día 1: Inicio del proyecto, presentación del tema y reflexión colectiva. Día 2: Recolección de información sobre la contaminación y su impacto en la comunidad. Día 3: Creación del mural con el apoyo de las familias. Día 4: Finalización del mural y reflexión colectiva. Día 5: Presentación del mural en la comunidad, donde se harán preguntas y se plantearán soluciones conjuntas."
+    },
+    "evaluacion": {
+      "instrumento": "rubrica",
+      "criterios": [
+        {
+          "criterio": "Comprensión del tema",
+          "indicadores": [
+            "Las niñas y los niños demuestran comprender el concepto de ciclo del agua y los efectos de la contaminación.",
+            "Los niños pueden identificar las fuentes de contaminación en el entorno."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No demuestra comprensión del tema. No puede identificar las fuentes de contaminación.",
+            "Básico": "Demuestra un conocimiento básico del ciclo del agua y los efectos de la contaminación, pero no puede aplicarlo en situaciones reales.",
+            "Satisfactorio": "Demuestra una comprensión clara del tema y puede identificar las fuentes de contaminación en el entorno. Presenta su mensaje de manera clara y concisa.",
+            "Destacado": "Demuestra un dominio profundo del tema y puede aplicarlo en situaciones reales. Su presentación es convincente, clara y precisa."
+          }
+        },
+        {
+          "criterio": "Trabajo en equipo",
+          "indicadores": [
+            "Las niñas y los niños trabajan juntos de manera efectiva para completar las actividades.",
+            "El grupo puede resolver conflictos de manera pacífica."
+          ],
+          "evidencia": "Observación directa, informes de equipo",
+          "niveles": {
+            "Insuficiente": "No trabaja en equipo. No colabora con los demás.",
+            "Básico": "Trabaja en equipo, pero de manera minimalista y no contribuye significativamente a la tarea.",
+            "Satisfactorio": "Trabaja en equipo de manera efectiva y contribuye significativamente a la tarea. Presenta un producto final que refleja su trabajo en equipo.",
+            "Destacado": "Demuestra un alto nivel de colaboración y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        },
+        {
+          "criterio": "Comunicación",
+          "indicadores": [
+            "Las niñas y los niños pueden comunicar claramente su mensaje sobre el cuidado del entorno.",
+            "Su presentación es atractiva y fácil de seguir."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No puede comunicar su mensaje de manera clara. Su presentación es confusa y difícil de seguir.",
+            "Básico": "Puede comunicar su mensaje básicamente, pero no de manera efectiva. Su presentación es simple y no atractiva.",
+            "Satisfactorio": "Comunica su mensaje de manera clara y concisa. Presenta un producto final que refleja su trabajo en equipo.",
+            "Destacado": "Demuestra un alto nivel de comunicación y habilidades para presentar su mensaje. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        },
+        {
+          "criterio": "Compromiso con el proyecto",
+          "indicadores": [
+            "Las niñas y los niños están comprometidos con el proyecto y trabajan hacia un objetivo común.",
+            "Su compromiso es evidente en su trabajo y presentación."
+          ],
+          "evidencia": "Presentación final, bitácora de clase",
+          "niveles": {
+            "Insuficiente": "No está comprometido con el proyecto. No contribuye significativamente al producto final.",
+            "Básico": "Está comprometido en un grado básico, pero no de manera profunda. Su trabajo es minimalista y no contribuye significativamente al producto final.",
+            "Satisfactorio": "Está comprometido con el proyecto y trabaja hacia un objetivo común. Presenta un producto final que refleja su compromiso.",
+            "Destacado": "Demuestra un alto nivel de compromiso y trabajo en equipo. Su trabajo es innovador y contribuye significativamente al producto final."
+          }
+        }
+      ],
+      "indicadores": [
+        "comprensión del tema",
+        "trabajo en equipo",
+        "comunicación",
+        "compromiso con el proyecto"
+      ]
+    },
+    "secuencia_didactica": {
+      "inicio": "Las niñas y los niños se sientan en un círculo para reflexionar sobre lo aprendido durante el proyecto.",
+      "desarrollo": "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+      "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.",
+      "evaluacion": "Participa y argumenta con base en lo que observa/registra. Sigue la consigna y usa materiales con cuidado. Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+      "evidencias": [
+        "registro en cuaderno/hoja de trabajo",
+        "participación oral"
+      ],
+      "materiales": [
+        "Pizarra",
+        "Marcadores",
+        "Mural comunitario en construcción"
+      ]
+    },
+    "actividades": [
+      {
+        "dia": 1,
+        "momento": "Punto de partida",
+        "actividad": {
+          "actividad": "Diagnóstico y reflexión sobre la contaminación del río",
+          "inicio": "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+          "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "un cuaderno para cada niña o niño",
+            "unos lápices"
+          ],
+          "pasos": [
+            "La docente guía al grupo hacia el área cercana al río.",
+            "Se pregunta a las niñas y los niños sobre la contaminación del río y sus posibles efectos.",
+            "Se organiza un recorrido para buscar información sobre el ciclo del agua y la contaminación en fuentes como libros o internet.",
+            "Las niñas y los niños observan detenidamente los efectos de la contaminación en el río.",
+            "La docente solicita ideas a las niñas y los niños sobre qué pueden hacer para ayudar a cuidar el río.",
+            "Se resumen las ideas y observaciones del grupo.",
+            "La docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.",
+            "(5 min)",
+            "La docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.",
+            "La docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.",
+            "Propósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.",
+            "¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?",
+            "¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+            "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río."
+          ]
+        }
+      },
+      {
+        "dia": 2,
+        "momento": "Planeación",
+        "actividad": {
+          "actividad": "Organización gráfica de la información sobre contaminación del río",
+          "inicio": "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papel cuadriculado",
+            "lapiceros",
+            "marcadores"
+          ],
+          "pasos": [
+            "La docente guía presenta el tema y reflejan juntos sobre las imágenes.",
+            "Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+            "Comparten sus observaciones y pensamientos en grupo.",
+            "Organizan la información en un cuadro gráfico dividido en secciones.",
+            "Recuerdan el propósito del proyecto y su contribución al mural comunitario.",
+            "La docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.",
+            "Propósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.",
+            "¿Qué ideas se parecen y cuáles son diferentes?",
+            "¿Qué ejemplos nos ayudan a explicar mejor este tema?",
+            "¿Qué información nos hace falta para entenderlo mejor?",
+            "Organización: parejas.",
+            "Contribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.",
+            "Docente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas."
+          ]
+        }
+      },
+      {
+        "dia": 3,
+        "momento": "A trabajar",
+        "actividad": {
+          "actividad": "A trabajar: La contaminación",
+          "inicio": "¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+          "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Cuaderno",
+            "Lápiz",
+            "Pizarrón o papel bond",
+            "Marcadores"
+          ],
+          "pasos": [
+            "¿Qué queremos investigar sobre la contaminación del río?",
+            "¿Cómo podemos observar que está sucediendo en nuestro entorno?",
+            "Propósito: realizar una actividad práctica para comprobar/explicar un cambio observado.",
+            "Organización: equipos con roles.",
+            "¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?",
+            "¿Qué observamos que cambia o se nota durante la experiencia?",
+            "¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?",
+            "Contribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+            "Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).",
+            "Registran lo que observan mediante dibujos, marcas o palabras sencillas.",
+            "La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.",
+            "Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.",
+            "Docente: da tiempos por fase (preparación, ejecución, registro, revisión).",
+            "Alumnado: registra resultados en tabla o pictogramas y compara con otro equipo."
+          ]
+        }
+      },
+      {
+        "dia": 4,
+        "momento": "Comunicar",
+        "actividad": {
+          "actividad": "Comunicando el mensaje sobre la contaminación del río",
+          "inicio": "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+          "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+          "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "papelitos",
+            "marcadores",
+            "colores"
+          ],
+          "pasos": [
+            "Las niñas y los niños escriben sus ideas sobre la contaminación del río en papelitos.",
+            "La docente organiza los papelitos en un guion breve representando el mensaje colectivo del grupo.",
+            "Las niñas y los niños diseñan su presentación para comunicar su mensaje al público, pensando en colores y símbolos que llamen la atención.",
+            "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve.",
+            "Las niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.",
+            "¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?",
+            "Las niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.",
+            "Propósito: comunicar hallazgos de forma clara para un público (grupo/escuela).",
+            "Organización: equipos.",
+            "Criterios: título, 3 ideas clave, evidencia visual, explicación oral breve.",
+            "¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?",
+            "¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?",
+            "¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+            "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:"
+          ]
+        }
+      },
+      {
+        "dia": 5,
+        "momento": "Reflexión",
+        "actividad": {
+          "actividad": "Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno",
+          "inicio": "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+          "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+          "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+          "materiales": [
+            "Pizarra",
+            "Marcadores",
+            "Mural comunitario en construcción"
+          ],
+          "pasos": [
+            "Las niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto",
+            "La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo",
+            "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario",
+            "¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo?",
+            "Las niñas y los niños comparten sus pensamientos y se miran entre sí",
+            "La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario",
+            "¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?",
+            "Las niñas y los niños reflexionan sobre las sugerencias de mejoras y compromisos",
+            "La docente recopila las ideas y las clasifica en categorías (problemas, soluciones, compromisos)",
+            "La docente presenta las conclusiones del proyecto y se compromete a trabajar con las niñas y los niños para implementar cambios reales"
+          ]
+        }
+      }
+    ],
+    "ejes_articuladores": [
+      {
+        "nombre": "Inclusión",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Pensamiento Crítico",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Interculturalidad Crítica",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Igualdad de Género",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Vida Saludable",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Apropiación cultural a través de la lectura y escritura",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Artes y experiencias estéticas",
+        "seleccionado": false
+      }
+    ],
+    "campos_formativos": [
+      {
+        "nombre": "Lenguajes",
+        "seleccionado": true
+      },
+      {
+        "nombre": "Saberes y pensamiento científico",
+        "seleccionado": false
+      },
+      {
+        "nombre": "Ética, naturaleza y sociedades",
+        "seleccionado": false
+      },
+      {
+        "nombre": "De lo humano y lo comunitario",
+        "seleccionado": true
+      }
+    ],
+    "contenidos_pda": {
+      "grado": "3",
+      "campos": [
+        {
+          "campo_formativo": "Lenguajes",
+          "contenido": "Reconocimiento de ideas o emociones en la interacción con manifestaciones culturales y artísticas y con la naturaleza, a través de diversos lenguajes",
+          "pda": "3° Relaciona en algunas manifestaciones artísticas y culturales, sucesos personales o familiares, así como lo que pasa en su comunidad",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\lenguajes.txt"
+        },
+        {
+          "campo_formativo": "Saberes y pensamiento científico",
+          "contenido": "Saberes familiares y comunitarios que resuelven situaciones y necesidades en el hogar y la comunidad.",
+          "pda": "3° Propone algunos saberes familiares y comunitarios, para resolver necesidades y situaciones en su hogar, escuela y comunidad.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\Saberes.txt"
+        },
+        {
+          "campo_formativo": "Ética, naturaleza y sociedades",
+          "contenido": "Interacción, cuidado, conservación y regeneración de la naturaleza, que favorece la construcción de una conciencia socioambiental",
+          "pda": "2º Promueve actitudes y acciones de cuidado hacia la naturaleza e involucra a las personas de su escuela y comunidad para colaborar en ellas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\etica.txt"
+        },
+        {
+          "campo_formativo": "De lo humano y lo comunitario",
+          "contenido": "Cuidado de la salud personal y colectiva, al llevar a cabo acciones de higiene, limpieza, y actividad física, desde los saberes prácticos de la comunidad y la información científica",
+          "pda": "3º Propone acciones que contribuyen a mantener su salud y bienestar, relacionadas con higiene personal, limpieza y actividad física, considerando los saberes prácticos de la comunidad y las aportaciones científicas.",
+          "fuente": "C:\\Users\\ReneJ\\Desktop\\lumi\\backend\\utils\\preescolar\\humano.txt"
+        }
+      ]
+    },
+    "sesiones": [
+      {
+        "etapa": "Lectura de la realidad (Saberes previos)",
+        "sesion": 1,
+        "fecha": "",
+        "inicio": "Actividad: Diagnóstico y reflexión sobre la contaminación del río\n\nLa docente guía al grupo hacia un área cercana al río, donde se encuentra una zona de basura. Se pregunta a las niñas y los niños: '¿Qué ven aquí?' y '¿Cómo se sienten al ver esto?'. Algunas de ellas expresan su disgusto y preocupación por la situación del río.\n(5 min)\nLa docente continúa: 'Sabemos que el río es importante para nuestra comunidad. ¿Qué creen que podría pasar si no lo cuidamos?' Las niñas y los niños comienzan a pensar en voz alta sobre los posibles efectos de la contaminación del río.\n(5 min)\nLa docente sugiere: 'Vayamos a recopilar información sobre el ciclo del agua y cómo se relaciona con la contaminación. ¿Dónde creen que podríamos encontrar esa información?' Las niñas y los niños proponen diferentes fuentes, como libros o internet.\n(5 min)\nPropósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.\nPreguntas detonadoras:\n- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con La contaminación?\n- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+        "desarrollo": "La docente organiza al grupo para buscar en las fuentes propuestas información sobre el ciclo del agua. Mientras lo hacen, la docente pide a algunas niñas y niños que observen detenidamente los efectos de la contaminación en el río.\n(10 min)\nAlgunas niñas y niños mencionan la presencia de plásticos y residuos en el río. La docente les pregunta: '¿Qué creen que podríamos hacer para ayudar a cuidar el río?' Las niñas y los niños comienzan a plantear ideas como reciclar, no tirar basura al río, etc.\n(10 min)\nDocente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).\nAlumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.\nEsta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "La docente resumen las ideas y observaciones del grupo: 'Vemos que la contaminación del río es un problema importante. Queremos hacer algo para ayudar a cuidarlo'. Las niñas y los niños asienten en acuerdo.\n(5 min)\nSe les pregunta al grupo: '¿Qué podemos hacer hoy mismo para contribuir a cuidar el río?' Las niñas y los niños piensan un momento y luego proponen realizar una limpieza en la orilla del río, recoger basura y llevarla a su lugar de pertenencia.\n(5 min)\nCierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción SOY UNA SERPIENTE (o similar) y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "un cuaderno para cada niña o niño",
+          "unos lápices"
+        ],
+        "indicadores": [
+          "Expresa saberes previos",
+          "Participa en el diálogo",
+          "Representa ideas de forma oral o gráfica"
+        ]
+      },
+      {
+        "etapa": "Identificación de la problemática",
+        "sesion": 2,
+        "fecha": "",
+        "inicio": "Actividad: Organización gráfica de la información sobre contaminación del río\n\nLa docente guía presenta el tema de la contaminación y muestra imágenes y documentos recopilados en clase anterior. Las niñas y los niños se sientan cómodos para reflexionar juntos.\nPropósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.\nPreguntas detonadoras:\n- ¿Qué ideas se parecen y cuáles son diferentes?\n- ¿Qué ejemplos nos ayudan a explicar mejor este tema?\n- ¿Qué información nos hace falta para entenderlo mejor?\nOrganización: parejas.\nContribución al producto final: organizador de ideas y ejemplos sobre La contaminación que alimenta Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "Comparten sus observaciones y pensamientos sobre las imágenes, ¿Qué vemos en estas imágenes? ¿Qué podemos decir sobre lo que está sucediendo con nuestros ríos?. La docente guía divide el cuadro gráfico en secciones: qué es contaminación, fuentes de contaminación y formas para ayudar. Las niñas y los niños comienzan a organizar la información en el cuadro.\nDocente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.\nAlumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.\nEsta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "Las niñas y los niños concluyen su cuadro gráfico y reflexionan sobre lo que aprendieron. La docente guía les pregunta: ¿Qué es lo más importante que aprendimos hoy?. Se recuerda que su trabajo será utilizado para el mural comunitario.\nCierre: acuerdos del grupo sobre qué evidencia se usará en el producto final.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción CONGELADOS y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "papel cuadriculado",
+          "lapiceros",
+          "marcadores"
+        ],
+        "indicadores": [
+          "Propone ideas y preguntas",
+          "Organiza información básica",
+          "Colabora con el grupo"
+        ]
+      },
+      {
+        "etapa": "Organización y desarrollo",
+        "sesion": 3,
+        "fecha": "",
+        "inicio": "Actividad: A trabajar: La contaminación\n\n¿Qué queremos investigar sobre la contaminación del río?\nPropósito: realizar una actividad práctica para comprobar/explicar un cambio observado.\nOrganización: equipos con roles.\nPreguntas detonadoras:\n- ¿Qué queremos hacer con los materiales para explorar el tema: La contaminación?\n- ¿Qué observamos que cambia o se nota durante la experiencia?\n- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?\nContribución al producto final: tabla de resultados y conclusión breve para integrar en Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "(25 min) Trabajo práctico:\n- Las niñas y los niños realizan una experiencia concreta relacionada con La contaminación (exploración, juego o pequeña indagación).\n- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final.\nDocente: da tiempos por fase (preparación, ejecución, registro, revisión).\nAlumnado: registra resultados en tabla o pictogramas y compara con otro equipo.\nEsta actividad permitirá: experimentar, registrar datos simples y explicar con evidencia.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).",
+        "cierre": "¿Cómo podemos observar que está sucediendo en nuestro entorno?\nCierre: retroalimentación breve (1 fortaleza + 1 mejora por equipo).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción LA VACA LOLA y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "Cuaderno",
+          "Lápiz",
+          "Pizarrón o papel bond",
+          "Marcadores"
+        ],
+        "indicadores": [
+          "Sigue instrucciones",
+          "Registra y comunica hallazgos",
+          "Usa materiales de forma responsable"
+        ]
+      },
+      {
+        "etapa": "Aplicación en el contexto / Comunicación",
+        "sesion": 4,
+        "fecha": "",
+        "inicio": "Actividad: Comunicando el mensaje sobre la contaminación del río\n\nLas niñas y los níos se sientan en un semicírculo frente a la pared para crear el mural comunitario. La docente les recuerda que hoy es el momento de comunicar su mensaje sobre la contaminación del río.\n¿Qué queremos decir con nuestro mural? ¿Cómo podemos transmitir la importancia de cuidar el medio ambiente?\nLas niñas y los niños comienzan a hablar entre sí, a recordar lo que han aprendido en las sesiones anteriores. Se sientan cómodos y se miran unos a otros mientras comparten sus ideas.\nPropósito: comunicar hallazgos de forma clara para un público (grupo/escuela).\nOrganización: equipos.\nCriterios: título, 3 ideas clave, evidencia visual, explicación oral breve.\nPreguntas detonadoras:\n- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?\n- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?\n- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
+        "desarrollo": "La docente guía el grupo para crear un guion breve sobre la contaminación del río. Las niñas y los niños escriben en papelitos las frases que quieren incluir en su mensaje:\n- El río es importante porque nos da agua para beber.\n- Los plásticos y basura pueden matar a las plantas y animales.\n- Podemos reciclar y evitar usar bolsas de plástico.\nLa docente organiza los papelitos en una secuencia lógica, creando un guion breve que represente el mensaje colectivo del grupo. Las niñas y los niños observan cómo sus palabras se convierten en un discurso colectivo.\nA continuación, la docente les pide a las niñas y los niños que piensen en cómo presentarán su mensaje al público. ¿Cómo pueden hacerlo más atractivo y llamativo? ¿Qué colores y símbolos podrían incluir?\nDocente: circula y hace preguntas para precisar (¿qué evidencia lo muestra?).\nAlumnado: integra dibujo + texto breve y ensaya explicación (30–60 s).\nEsta actividad permitirá: comunicar procesos, escuchar preguntas y mejorar el producto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.",
+        "cierre": "Las niñas y los niños se levantan y representan su mensaje ante la clase con baile, canto y papelitos con el guion breve. El grupo comienza a aplaudir y se divierte observando las presentaciones de cada uno.\nLa docente siente orgullo al ver cómo las niñas y los niños han crecido en su capacidad para comunicarse sobre un tema tan importante.\nCierre: galería con 1 pregunta del público y 1 ajuste al producto.\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción UNA MANO y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "papelitos",
+          "marcadores",
+          "colores"
+        ],
+        "indicadores": [
+          "Explica su proceso",
+          "Comparte resultados",
+          "Escucha y respeta turnos"
+        ]
+      },
+      {
+        "etapa": "Participación activa y reflexión",
+        "sesion": 5,
+        "fecha": "",
+        "inicio": "Actividad: Revisión y mejora del mural comunitario: compromiso con el cuidado del entorno\n\nLas niñas y los niños se sienten en un círculo para reflexionar sobre lo aprendido durante el proyecto. La docente les recuerda la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nPropósito: reflexionar sobre lo aprendido y acordar mejoras para el producto final.\nOrganización: plenaria y equipos.\nPreguntas detonadoras:\n- ¿Qué aprendí y qué evidencia tengo de ello?\n- ¿Qué fue difícil y cómo lo resolví o lo resolvería?\n- ¿Qué mejoraría para que el producto final sea más claro?\nContribución al producto final: mejoras y reflexiones finales para Un mural comunitario que represente las fases del ciclo del agua, destacando los efectos de la contaminación y sugerencias para el cuidado….",
+        "desarrollo": "La docente pide a las niñas y los niños que compartan sus ideas sobre cómo puede mejorar el mural comunitario. ¿Qué cosas hacen que el río esté sucio? ¿Cómo podemos ayudar a limpiarlo? Las niñas y los niños comparten sus pensamientos y se miran entre sí. La docente anota en una pizarra las sugerencias de mejoras para el mural comunitario y las clasifica en categorías (problemas, soluciones, compromisos). ¿Qué compromisos podemos tomar como equipo para cuidar nuestro entorno? ¿Qué acciones concretas podemos hacer en nuestras vidas diarias para ayudar a proteger el medio ambiente?\nDocente: guía autoevaluación (semáforo) y recupera evidencias del grupo.\nAlumnado: propone 2 mejoras y explica por qué.\nEsta actividad permitirá: metacognición, mejora continua y compromiso con el proyecto.\nEvaluación formativa (observables):\n- Participa y argumenta con base en lo que observa/registra.\n- Sigue la consigna y usa materiales con cuidado.\n- Comunica un hallazgo con evidencia (dibujo, marcas, palabras).\nAdecuaciones:\n- Apoyo visual (imágenes/pictogramas) y consignas por pasos.\n- Opciones de respuesta: señalar/dibujar/decir en lugar de escribir.\n- Trabajo en pareja tutor/a para acompañamiento.",
+        "cierre": "¡Hemos llegado al final de nuestro proyecto! Quiero felicitar a cada una de las niñas y los niños por su participación y esfuerzo. Nuestro mural comunitario es un recordatorio de la importancia de cuidar nuestro entorno y trabajar juntos para lograrlo.\nCierre: compromiso individual + acuerdo grupal (qué haremos la próxima sesión).\nEvidencia: registro en cuaderno/hoja de trabajo + participación oral.",
+        "pausa_activa": "Reproducir la canción EL VIEJO McDONALD y ejecutar movimientos de acuerdo a lo que indica la canción.",
+        "recursos": [
+          "Pizarra",
+          "Marcadores",
+          "Mural comunitario en construcción"
+        ],
+        "indicadores": [
+          "Reflexiona sobre lo aprendido",
+          "Identifica mejoras",
+          "Relaciona con su contexto"
+        ]
+      }
+    ]
+  }
+}

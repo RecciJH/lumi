@@ -1,10 +1,9 @@
 {
-  "docente": "Profe Rene",
-  "escuela": "Primaria Ejemplo",
+  "docente": "Nombre de la educadora",
+  "escuela": "Jardín de Niños Ejemplo",
+  "cct": "CCT0000",
   "grado": "3",
   "grupo": "A",
-  "tema": "La primavera y los seres vivos",
-  "pda": "Convive con su entorno natural",
-  "duracion_dias": 5,
-  "metodologia": "ABP"
+  "tema": "La contaminación",
+  "duracion_dias": 5
 }

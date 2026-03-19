@@ -205,7 +205,16 @@ def _step_proyecto(state: dict) -> dict:
 
 
 def _step_momentos(state: dict) -> list[dict]:
-    return dividir_momentos(int(state["duracion_dias"]), state["metodologia"])
+    """
+    Construye la lista de momentos metodológicos.
+
+    Si no se proporciona explícitamente una metodología en el input,
+    se asume un valor por defecto (por ejemplo, "ABP") para no bloquear
+    el pipeline. Actualmente `dividir_momentos` no depende del nombre de
+    la metodología, pero dejamos el campo listo para futuras extensiones.
+    """
+    metodologia = state.get("metodologia") or "ABP"
+    return dividir_momentos(int(state["duracion_dias"]), metodologia)
 
 
 def _step_actividades(state: dict) -> list[dict]:
@@ -536,7 +545,9 @@ DEFAULT_PIPELINE: Tuple[PipelineStep, ...] = (
     PipelineStep(
         name="methodology_agent",
         output_key="momentos",
-        requires=("duracion_dias", "metodologia"),
+        # Solo requiere la duración; la metodología se vuelve opcional
+        # y se completa con un valor por defecto en `_step_momentos`.
+        requires=("duracion_dias",),
         fn=_step_momentos,
         validator=_validate_momentos,
     ),

@@ -427,9 +427,9 @@ def _ensure_activity_sections(
         if mlab == "Punto de partida":
             inicio = inicio or (
                 "(5 min) Activación y saberes previos:\n"
-                f"- Muestra 3 imágenes (o un video corto) sobre: {tema}.\n"
-                "- Preguntas detonadoras: ¿Qué cambia? ¿Qué seres vivos observas? ¿Cómo lo sabes?\n"
-                "- Registra ideas en el pizarrón/papel bond."
+                f"- Muestra 2 o 3 imágenes, objetos o situaciones relacionadas con el tema: {tema}.\n"
+                "- Recupera lo que las niñas y los niños ya han vivido o escuchado sobre este tema.\n"
+                "- Registra ideas en el pizarrón/papel bond usando palabras sencillas."
             )
             desarrollo = desarrollo or (
                 "(25 min) Observación guiada:\n"
@@ -445,14 +445,14 @@ def _ensure_activity_sections(
         elif mlab == "Planeación":
             inicio = inicio or (
                 "(5 min) Enfoque del problema:\n"
-                f"- Recupera lo observado sobre {tema} y plantea una pregunta guía del proyecto.\n"
-                "- Aclara qué se quiere averiguar o explicar hoy."
+                f"- Recupera lo observado o comentado sobre {tema} y plantea una pregunta guía del proyecto.\n"
+                "- Aclara de manera sencilla qué se quiere averiguar o explicar hoy."
             )
             desarrollo = desarrollo or (
                 "(25 min) Organizamos la información:\n"
-                "- En parejas, clasifican lo observado en: clima / plantas / animales.\n"
-                "- Elaboran un cuadro simple (3 columnas) y escriben 1 ejemplo por columna.\n"
-                "- Docente circula, pregunta y ayuda a precisar vocabulario."
+                "- En parejas o equipos pequeños, agrupan sus ideas o dibujos en categorías que tengan sentido para el tema.\n"
+                "- Elaboran un cuadro simple y escriben o dibujan 1 ejemplo por categoría.\n"
+                "- La docente circula, pregunta y ayuda a precisar el lenguaje que usan."
             )
             cierre = cierre or (
                 "(10 min) Acuerdos:\n"
@@ -462,16 +462,15 @@ def _ensure_activity_sections(
         elif mlab == "A trabajar":
             inicio = inicio or (
                 "(5 min) Consigna y roles:\n"
-                "- Explica el reto del día y asigna roles (observador/a, registrador/a, portavoz).\n"
-                "- Reglas de uso de materiales y cuidado del entorno."
+                "- Explica el reto del día y asigna roles (quien observa, quien registra, quien comparte al grupo).\n"
+                "- Acuerda reglas de uso de materiales y de convivencia durante la actividad."
             )
             desarrollo = desarrollo or (
                 "(25 min) Trabajo práctico:\n"
-                f"- Microexperimento: germinación de frijol (o lenteja) en algodón con/sin luz para relacionar {tema}.\n"
-                "- Variable: luz (con/sin). Control: misma cantidad de agua y recipiente.\n"
-                "- Registro: tabla simple (Día / con luz / sin luz) con dibujo y marca de crecimiento.\n"
-                "- Registran resultados con una tabla simple o pictogramas.\n"
-                "- Docente modela cómo describir con evidencia (\"veo…\", \"cambió…\")."
+                f"- Las niñas y los niños realizan una experiencia concreta relacionada con {tema} (exploración, juego o pequeña indagación).\n"
+                "- Registran lo que observan mediante dibujos, marcas o palabras sencillas.\n"
+                "- La docente pregunta qué notan y les ayuda a relacionarlo con lo que ya habían comentado sobre el tema.\n"
+                "- Se prepara un registro sencillo (tabla, cartel o colección de dibujos) que después alimentará el producto final."
             )
             cierre = cierre or (
                 "(10 min) Socialización:\n"
@@ -544,27 +543,27 @@ def _ensure_activity_sections(
 
     preguntas_punto_partida = [
         "Preguntas detonadoras:",
-        "- ¿Qué cambios notas hoy en tu entorno y por qué crees que pasan?",
-        "- ¿Qué seres vivos aparecen o se mueven más en esta temporada?",
-        "- ¿Qué pistas (olor, color, temperatura) te ayudan a decir que es primavera?",
+        f"- ¿Qué te viene a la mente cuando escuchas o ves algo relacionado con {tema}?",
+        "- ¿Qué has vivido, visto o escuchado sobre este tema en tu casa o en tu comunidad?",
+        "- ¿Por qué crees que es importante hablar de esto en el jardín de niñas y niños?",
     ]
     preguntas_planeacion = [
         "Preguntas detonadoras:",
-        "- ¿Qué cambio pertenece al clima, cuál a plantas y cuál a animales?",
-        "- ¿Qué evidencia tenemos para cada idea (lo que vimos/registramos)?",
-        "- ¿Qué nos falta observar para explicarlo mejor?",
+        "- ¿Qué ideas se parecen y cuáles son diferentes?",
+        "- ¿Qué ejemplos nos ayudan a explicar mejor este tema?",
+        "- ¿Qué información nos hace falta para entenderlo mejor?",
     ]
     preguntas_trabajo = [
         "Preguntas detonadoras:",
-        "- ¿Qué variable vamos a cambiar y cuál vamos a mantener igual?",
-        "- ¿Qué esperamos que pase y por qué?",
-        "- ¿Cómo registraremos el resultado para compararlo?",
+        f"- ¿Qué queremos hacer con los materiales para explorar el tema: {tema}?",
+        "- ¿Qué observamos que cambia o se nota durante la experiencia?",
+        "- ¿Cómo lo registramos con un dibujo, una marca o palabras sencillas?",
     ]
     preguntas_comunicar = [
         "Preguntas detonadoras:",
-        "- ¿Qué queremos que el público entienda en 1 minuto?",
-        "- ¿Qué evidencia vamos a mostrar (dibujo/tabla/foto) para sostener la idea?",
-        "- ¿Qué pregunta podría hacernos alguien y cómo responderíamos?",
+        "- ¿Qué queremos que las demás niñas y niños comprendan con nuestra explicación breve?",
+        "- ¿Qué evidencia vamos a mostrar (dibujo, registro, foto o muestra) para sostener la idea?",
+        "- ¿Qué pregunta podría hacernos alguien y cómo responderíamos con lo que vimos?",
     ]
     preguntas_reflexion = [
         "Preguntas detonadoras:",
@@ -591,7 +590,7 @@ def _ensure_activity_sections(
         if mlab == "Punto de partida":
             contribucion = f"Contribución al producto final: insumos (dibujos/observaciones) para {producto_final_short or producto_final_txt}."
         elif mlab == "Planeación":
-            contribucion = f"Contribución al producto final: organizador (clima/plantas/animales) que alimenta {producto_final_short or producto_final_txt}."
+            contribucion = f"Contribución al producto final: organizador de ideas y ejemplos sobre {tema} que alimenta {producto_final_short or producto_final_txt}."
         elif mlab == "A trabajar":
             contribucion = f"Contribución al producto final: tabla de resultados y conclusión breve para integrar en {producto_final_short or producto_final_txt}."
         elif mlab == "Comunicar":
@@ -604,7 +603,7 @@ def _ensure_activity_sections(
             inicio,
             10,
             [
-                "Propósito: reconocer cambios de la primavera en seres vivos a partir de observación.",
+                "Propósito: reconocer ideas y ejemplos sobre el tema a partir de lo que viven, observan o escuchan en su comunidad.",
                 *preguntas_punto_partida,
                 "Organización: plenaria → equipos pequeños (3–4).",
                 contribucion,
@@ -615,8 +614,8 @@ def _ensure_activity_sections(
             12,
             [
                 "Docente: recuerda reglas del recorrido y asigna roles (observador/a, registrador/a, portavoz).",
-                "Alumnado: registra 3 hallazgos (1 planta, 1 animal, 1 clima) con dibujo + palabras clave.",
-                "Esta actividad permitirá: fortalecer observación, vocabulario y explicación con evidencia.",
+                "Alumnado: registra 2 o 3 ejemplos o situaciones relacionadas con el tema en su vida cotidiana (por ejemplo: lo que ven en casa o en el barrio) con dibujo y palabras clave.",
+                "Esta actividad permitirá: poner en palabras lo que observan, escuchar otras ideas y preparar insumos para el producto final.",
                 *evaluacion_base,
             ],
         )
@@ -624,7 +623,7 @@ def _ensure_activity_sections(
             cierre,
             10,
             [
-                "Cierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos investigar después?",
+                "Cierre con 2 preguntas: ¿qué aprendimos hoy? ¿qué queremos hacer con lo que descubrimos para el producto final?",
                 *evidencia_base,
             ],
         )
@@ -633,7 +632,7 @@ def _ensure_activity_sections(
             inicio,
             10,
             [
-                "Propósito: organizar información (clima/plantas/animales) para explicar el fenómeno.",
+                "Propósito: organizar ideas y ejemplos sobre el tema para explicar con mayor claridad lo que ocurre en su entorno.",
                 *preguntas_planeacion,
                 "Organización: parejas.",
                 contribucion,
@@ -643,9 +642,9 @@ def _ensure_activity_sections(
             desarrollo,
             12,
             [
-                "Docente: entrega organizador gráfico (3 columnas) y modela un ejemplo.",
-                "Alumnado: completa el cuadro con 3 ejemplos y subraya el más importante.",
-                "Esta actividad permitirá: ordenar ideas, comparar y construir una explicación simple.",
+                "Docente: guía para elegir una idea central y organizar sus dibujos o recortes en una hoja con 2 o 3 espacios, donde las niñas y los niños proponen categorías sencillas.",
+                "Alumnado: coloca sus ejemplos donde corresponde y dialoga sobre cuál ayuda más a explicar el tema.",
+                "Esta actividad permitirá: construir acuerdos con base en evidencias cercanas y preparar el material para el producto final.",
                 *evaluacion_base,
             ],
         )
@@ -894,36 +893,58 @@ def _refine_activity_with_llm(
     producto_final: str = "",
 ) -> dict:
     """
-    Segundo pase (solo cuando hace falta) para forzar detalle consistente.
+    Segundo pase (solo cuando hace falta) para forzar detalle consistente,
+    alineado con el Plan de Estudio 2022 (NEM) y con redacción narrativa.
     """
     prompt = f"""
-Corrige y mejora la siguiente actividad para que quede MUY detallada y específica, tipo planeación SEP.
+Corrige y mejora la siguiente actividad para que quede MUY detallada, situada en el contexto y coherente con la Nueva Escuela Mexicana, privilegiando la coherencia pedagógica interna.
 
 Tema: {tema}
 Grado: {grado}
 {f'Día/Sesión: {dia}.' if dia is not None else ''}
 Momento metodológico: {momento}
 Estrategia pedagógica: {estrategia}
-Proyecto educativo: {proyecto}
-{f'Producto final (debe verse y construirse): {producto_final}' if producto_final else ''}
+Proyecto educativo (incluye problemática y propósito): {proyecto}
+{f'Producto final (debe verse y construirse progresivamente): {producto_final}' if producto_final else ''}
 {f'Enfoque sugerido del día (temporalidad): {enfoque_dia}' if enfoque_dia else ''}
 Actividades anteriores (evita repetir exactamente): {historial}
 
 Actividad actual (puede estar incompleta): {current}
 
-Requisitos:
-- NO uses títulos genéricos como "Actividad". Pon un título específico.
-- Debe haber aumento de complejidad respecto a sesiones anteriores (no repetir solo: observar/registrar/compartir).
-- Escribe INICIO/DESARROLLO/CIERRE con acciones del docente y del alumnado, preguntas detonadoras, organización (individual/parejas/equipos), y tiempos por sección (sumar ~40 min).
-- Incluye evaluación formativa: qué observar y cómo registrar (evidencia).
-- `materiales` como lista (sin inventar demasiado, usa lo que haya y agrega solo lo necesario).
-- `pasos`: lista de 10–14 strings detallados (no objetos/dicts), coherentes con inicio/desarrollo/cierre.
+CRITERIOS PEDAGÓGICOS OBLIGATORIOS (Plan 2022, NEM):
+- Enfoque: aprendizaje situado y significativo, vinculado al entorno de las niñas y los niños (hogar, comunidad, clima, costumbres, uso de recursos).
+- Lenguaje: usa expresiones como "la docente guía", "las niñas y los niños exploran, comentan, acuerdan", "el grupo dialoga", etc.
+- Evita lenguaje conductista (premios, castigos, obediencia ciega) y evita instrucciones mecánicas.
+- NO redactes la actividad como lista de "Paso 1, Paso 2, Paso 3". Usa párrafos narrativos que describan la intervención docente y la participación del alumnado.
+- Garantiza coherencia con la problemática, el propósito del proyecto y el producto final (la actividad aporta algo visible al producto).
+
+COHERENCIA INTERNA DE LA ACTIVIDAD (OBLIGATORIA):
+- Define una sola intención didáctica dominante para esta actividad (por ejemplo: observación, exploración, experimentación, representación o reflexión) y manténla durante todo el INICIO, DESARROLLO y CIERRE.
+- Todas las acciones dentro de la actividad deben corresponder al MISMO tipo de experiencia. No mezcles dinámicas incompatibles (por ejemplo: video + recorrido largo + experimento en la misma secuencia).
+- Evita arrastrar fragmentos de otras planeaciones: no introduzcas temas ajenos al proyecto actual (como clima, estaciones del año, plantas, etc.) si no forman parte explícita del tema y del proyecto proporcionado.
+- Mantén el mismo contexto durante toda la actividad (misma situación, mismo lugar o secuencia lógica), sin cambios bruscos de escenario que confundan.
+- La actividad debe poder entenderse de principio a fin como una experiencia completa, lógica y comprensible por sí misma.
+
+NIVEL PREESCOLAR OBLIGATORIO (sin excepción):
+- Usa experiencias concretas y cercanas (cuento, conversación, observación breve, juego con objetos, dibujo/recorte para representar).
+- Prohibido: mapas, imágenes aéreas, diagramas técnicos o recursos que requieran abstracción de niveles superiores.
+- Si el proyecto menciona infraestructura o conceptos técnicos (por ejemplo: “sistema”, “drenaje”, “alcantarillado”), la actividad debe traducirlo a lenguaje cotidiano y accesible (por ejemplo: “lugares por donde corre el agua”).
+- Prohibido: lenguaje de “variable/control” o comparaciones con diseño experimental propio de primaria; cuando se hable de experiencias, que sea una exploración sencilla sin controles formales.
+
+REQUISITOS DE FORMATO DE LA ACTIVIDAD:
+- NO uses títulos genéricos como "Actividad". Pon un título específico con sentido para el grupo.
+- Escribe INICIO/DESARROLLO/CIERRE en formato narrativo: describe qué hace la docente y qué hacen las niñas y los niños, incluye preguntas detonadoras y organización (individual, parejas, equipos, plenaria), e integra tiempos por sección (suma ~40 min).
+- Incluye evaluación formativa: qué observar en las niñas y los niños y qué se tomará como evidencia (dibujos, comentarios, registros, acuerdos).
+- `materiales` debe ser una lista de recursos realistas, vinculados al contexto (por ejemplo: hojas recicladas, recipientes que las familias puedan llevar, imágenes de la comunidad, etc.).
+- `pasos`: lista de 10–14 strings detallados, pero cada elemento puede ser una pequeña escena narrativa (NO digas "Paso 1", "Paso 2" ni uses solo frases telegráficas).
 
 Condiciones por momento (si aplica):
-- Si es "A trabajar": define variable/control y una tabla de registro simple.
-- Si es "Planeación": incluye organizador (cuadro/tabla/secuenciación) y justificación con evidencia.
-- Si es "Comunicar": incluye ensayo, exposición, preguntas del público y retroalimentación.
-- Responde SOLO con un objeto JSON (NO lista, NO texto extra) y SOLO estas claves:
+- Si es "A trabajar": incluye indagación o experimentación sencilla con registro (tabla, dibujo comparativo) y conversación sobre lo observado.
+- Si es "Planeación": organiza información (clasificar, secuenciar, decidir cómo avanzar hacia el producto final) con justificación basada en lo que han vivido.
+- Si es "Comunicar": incluye ensayo, presentación ante grupo o familias, preguntas del público y acuerdos de mejora.
+- Si es de cierre/reflexión: propicia que las niñas y los niños hablen de lo que comprendieron y cómo lo relacionan con su vida diaria.
+
+Responde SOLO con un objeto JSON (NO lista, NO texto extra) y SOLO estas claves:
 {{
   "actividad": "",
   "inicio": "",
@@ -950,7 +971,8 @@ Condiciones por momento (si aplica):
 
 def generar_actividad_ia(tema, grado, momento, estrategia, historial, proyecto, *, dia: int | None = None, total_dias: int | None = None, enfoque_dia: str = ""):
     """
-    Genera una actividad individual usando la IA, devolviendo JSON limpio.
+    Genera una actividad individual usando la IA, devolviendo JSON limpio,
+    alineada con el Plan de Estudio 2022 (NEM) y con redacción narrativa.
     Protege contra respuestas vacías o con formato incorrecto.
     """
     producto_final_txt = ""
@@ -975,47 +997,65 @@ def generar_actividad_ia(tema, grado, momento, estrategia, historial, proyecto, 
         producto_parcial = "Autoevaluación + lista de mejoras y compromisos."
 
     prompt = f"""
-Eres un docente experto en educación básica en México.
+Eres una docente experta en educación preescolar en México, trabajando con el Plan de Estudio 2022 (Nueva Escuela Mexicana).
 
-Diseña una actividad educativa clara, creativa y MUY detallada (evita generalidades).
+Diseña una actividad educativa clara, creativa y MUY detallada, situada en la realidad de las niñas y los niños y coherente con el proyecto, con una intención didáctica única y bien definida.
 
 Tema: {tema}
 Grado: {grado}
 {f'Día/Sesión: {dia} de {total_dias}.' if (dia is not None and total_dias is not None) else (f'Día/Sesión: {dia}.' if dia is not None else '')}
 {f'Enfoque sugerido del día (temporalidad): {enfoque_dia}' if _to_text(enfoque_dia) else ''}
 
-Proyecto educativo:
+Proyecto educativo (incluye problemática, justificación, propósito y producto final):
 {proyecto}
-{f'Producto final (debe ser visible): {producto_final_txt}' if producto_final_txt else ''}
-Producto parcial esperado hoy: {producto_parcial}
+{f'Producto final (debe ser visible y construirse progresivamente): {producto_final_txt}' if producto_final_txt else ''}
+Producto parcial esperado hoy (aporte concreto al producto final): {producto_parcial}
 Demanda cognitiva (no repetir solo observar/registrar/compartir): {demanda}
 
 Momento metodológico: {momento}
-
 Estrategia pedagógica:
 {estrategia}
 
 Actividades anteriores:
 {historial}
 
+CRITERIOS PEDAGÓGICOS NEM (OBLIGATORIOS):
+- Aprendizaje situado y significativo: vincula la actividad con el entorno inmediato (hogar, comunidad, clima, costumbres, uso de recursos cotidianos).
+- Lenguaje pedagógico: usa expresiones como "la docente guía", "las niñas y los niños exploran, dialogan, acuerdan", "el grupo compara y decide", etc.
+- Evita redactar la actividad como una lista mecánica de instrucciones. NO uses "Paso 1", "Paso 2", etc.
+- Todas las acciones deben guardar coherencia con la problemática, el propósito del proyecto y el producto final (la actividad aporta algo reconocible al producto).
+
+COHERENCIA INTERNA DE LA ACTIVIDAD:
+- Define una sola intención didáctica dominante para esta actividad (por ejemplo: observación, exploración, experimentación, representación o reflexión) y manténla durante todo el INICIO, DESARROLLO y CIERRE.
+- Todas las acciones dentro de la actividad deben corresponder al MISMO tipo de experiencia. No mezcles en la misma secuencia dinámicas incompatibles (por ejemplo: video + recorrido largo + experimento en agua) si no forman parte de una sola experiencia claramente integrada.
+- No arrastres fragmentos de otras planeaciones: no introduzcas temas ajenos al proyecto actual (como clima, estaciones del año, plantas, etc.) si no forman parte explícita del tema y del proyecto proporcionado.
+- Mantén el mismo contexto durante toda la actividad (misma situación o secuencia lógica), sin cambios bruscos que confundan.
+- La actividad debe poder entenderse de principio a fin como una experiencia completa, lógica y comprensible por sí misma.
+
+NIVEL PREESCOLAR OBLIGATORIO (sin excepción):
+- Usa lenguaje sencillo y experiencias concretas (cuento, conversación, observación breve, juego con objetos, dibujo/recorte).
+- Prohibido: mapas, imágenes aéreas, conceptos de “sistemas” o infraestructura explicada de manera técnica.
+- Si el proyecto menciona infraestructura (p. ej., drenaje/alcantarillado), la actividad debe reexpresarlo en términos cotidianos y accesibles para preescolar.
+- Evita “variable/control/mantener igual” y cualquier marco de experimento propio de primaria: la exploración debe ser sencilla y comprensible.
+
 La actividad debe:
 - durar aproximadamente 40 minutos
-- fomentar participación
-- preparar el producto final del proyecto
+- favorecer la participación activa, el diálogo y la reflexión
+- aportar un avance claro hacia el producto final del proyecto
 
 La actividad debe además:
-- describir acciones observables del docente y del alumnado
-- incluir preguntas detonadoras y evaluación formativa (qué observar/registrar)
-- evitar pasos demasiado breves: escribe varios renglones por sección
+- describir acciones observables del docente y del alumnado en INICIO, DESARROLLO y CIERRE (formato narrativo, no solo frases sueltas)
+- incluir preguntas detonadoras y evaluación formativa (qué observar y qué se tomará como evidencia)
+- evitar pasos demasiado breves: en cada sección escribe varios renglones con sentido pedagógico
 
 Reglas de formato (muy importante):
 - Devuelve SOLO JSON válido (sin texto extra).
 - No devuelvas una lista/arreglo: debe ser un objeto JSON (dict) con las claves indicadas.
-- En `pasos` NO uses objetos/dicts; SOLO strings.
-- En `inicio`/`desarrollo`/`cierre` usa párrafos y/o viñetas con saltos de línea.
+- En `pasos` NO uses objetos/dicts; SOLO strings. Cada string puede describir una pequeña escena o momento de la actividad (sin numerar Paso 1, Paso 2, etc.).
+- En `inicio`/`desarrollo`/`cierre` usa párrafos con saltos de línea cuando haga falta. Describe lo que hace la docente y lo que hacen las niñas y los niños.
 - Incluye tiempos sugeridos por sección (ej. \"(5 min)\") sin exceder 40 min en total.
-- No uses títulos genéricos como "Actividad".
-- Evita repetir las mismas acciones centrales de sesiones anteriores; debe haber aumento de complejidad.
+- No uses títulos genéricos como "Actividad". El campo `actividad` debe tener un título significativo que anticipe el sentido de la experiencia.
+- Evita repetir las mismas acciones centrales de sesiones anteriores; debe haber aumento de complejidad o profundización.
 
 Devuelve SOLO JSON con esta estructura EXACTA:
 
