@@ -1,4 +1,4 @@
-from services.llm_json_service import parse_llm_json
+﻿from services.llm_json_service import parse_llm_json
 import ast
 import json
 import re
@@ -433,8 +433,8 @@ def _ensure_activity_sections(
             )
             desarrollo = desarrollo or (
                 "(25 min) Observación guiada:\n"
-                "- Salida breve al patio/ventana: observar plantas/animales/temperatura (seguro y con reglas).\n"
-                "- Alumnado registra con dibujo + 2 palabras clave (según el grado).\n"
+                "- Usando imágenes impresas o dibujos: observar plantas/animales/temperatura en representaciones.\n"
+                "- Alumnado registra con dibujo + 2 palabras clave (según el grado) basándose en lo que ven en las imágenes o recuerdan de su hogar.\n"
                 "- En equipos, comparan registros y eligen 1 hallazgo para compartir."
             )
             cierre = cierre or (
@@ -930,6 +930,7 @@ NIVEL PREESCOLAR OBLIGATORIO (sin excepción):
 - Prohibido: mapas, imágenes aéreas, diagramas técnicos o recursos que requieran abstracción de niveles superiores.
 - Si el proyecto menciona infraestructura o conceptos técnicos (por ejemplo: “sistema”, “drenaje”, “alcantarillado”), la actividad debe traducirlo a lenguaje cotidiano y accesible (por ejemplo: “lugares por donde corre el agua”).
 - Prohibido: lenguaje de “variable/control” o comparaciones con diseño experimental propio de primaria; cuando se hable de experiencias, que sea una exploración sencilla sin controles formales.
+- PROHIBIDO: Actividades que involucren salidas a ríos, montañas, playas, bosques o cualquier entorno natural externo que no esté disponible en todas las escuelas (ej. CDMX). Todas las actividades deben ser realizables en interiores del salón de clases, usando materiales cotidianos, dibujos, objetos traídos de casa, imágenes impresas o conversaciones. Evita cualquier referencia a observación directa de naturaleza externa; usa representaciones simbólicas o recuerdos compartidos.
 
 REQUISITOS DE FORMATO DE LA ACTIVIDAD:
 - NO uses títulos genéricos como "Actividad". Pon un título específico con sentido para el grupo.
@@ -1035,6 +1036,7 @@ COHERENCIA INTERNA DE LA ACTIVIDAD:
 NIVEL PREESCOLAR OBLIGATORIO (sin excepción):
 - Usa lenguaje sencillo y experiencias concretas (cuento, conversación, observación breve, juego con objetos, dibujo/recorte).
 - Prohibido: mapas, imágenes aéreas, conceptos de “sistemas” o infraestructura explicada de manera técnica.
+- PROHIBIDO: Actividades que involucren salidas a ríos, montañas, playas, bosques o cualquier entorno natural externo que no esté disponible en todas las escuelas (ej. CDMX). Todas las actividades deben ser realizables en interiores del salón de clases, usando materiales cotidianos, dibujos, objetos traídos de casa, imágenes impresas o conversaciones. Evita cualquier referencia a observación directa de naturaleza externa; usa representaciones simbólicas o recuerdos compartidos.
 - Si el proyecto menciona infraestructura (p. ej., drenaje/alcantarillado), la actividad debe reexpresarlo en términos cotidianos y accesibles para preescolar.
 - Evita “variable/control/mantener igual” y cualquier marco de experimento propio de primaria: la exploración debe ser sencilla y comprensible.
 
